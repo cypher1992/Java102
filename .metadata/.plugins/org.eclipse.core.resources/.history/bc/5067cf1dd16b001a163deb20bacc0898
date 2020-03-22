@@ -1,0 +1,10 @@
+package com.local.lessons.CollectionType.ArrayType;
+
+public class ArrayType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
