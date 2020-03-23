@@ -31,7 +31,6 @@ public class ArrayType {
 		
 		//ArrayList clear list
 		arrayList.clear();
-		System.out.println(arrayList);
 		
 		for(int count=1;count<4;count++) {
 			arrayList.add(count);
