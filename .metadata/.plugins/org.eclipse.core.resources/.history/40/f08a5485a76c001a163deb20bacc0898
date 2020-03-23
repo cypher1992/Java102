@@ -24,12 +24,9 @@ public class ArrayType {
 		
 		System.out.println("First Index of arraylist " + arrayList.get(0) + "\nSecond Index of arraylist" + arrayList.get(1)+ "\nThird Index of arraylist " + arrayList.get(2));
 		
-		// ArrayList remove index
 		int index = 1;
 		arrayList.remove(1);
 		System.out.println("ArrayList Index 1 or Value 2 removed " + arrayList);
-				
-		
 	}
 
 }

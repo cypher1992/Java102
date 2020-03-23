@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.local.lessons.basics.InterationControl&apos; to &apos;IterationControl&apos;&#x0D;&#x0A;- Original project: &apos;Java101BASICS&apos;&#x0D;&#x0A;- Original element: &apos;com.local.lessons.basics.InterationControl&apos;&#x0D;&#x0A;- Renamed element: &apos;com.local.lessons.basics.IterationControl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InterationControl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.local.lessons.basics{InterationControl.java[InterationControl" matchStrategy="1" name="IterationControl" qualified="false" references="true" similarDeclarations="false" stamp="1584837090902" textual="false" version="1.0"/>
+</session>
