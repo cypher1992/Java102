@@ -46,10 +46,7 @@ public class ArrayType {
 		
 		//IndexOf returns Int of location
 		int location = arrayList.indexOf(2);
-		System.out.println("Location of index for 2 is " + location);
-		
-		location = arrayList.indexOf(200);
-		System.out.println("Location of index for 200 is " + location);
+		System.out.println("Location of index for 2 is" + location);
 		
 	}
 
