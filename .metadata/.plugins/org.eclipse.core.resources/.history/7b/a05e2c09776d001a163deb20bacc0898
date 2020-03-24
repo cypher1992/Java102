@@ -51,11 +51,6 @@ public class ArrayType {
 		location = arrayList.indexOf(200);
 		System.out.println("Location of index for 200 is " + location);
 		
-		// arrayList size
-		int size = arrayList.size();
-		System.out.println("Size of ArrayList: " + size );
-		
-		
 	}
 
 }
