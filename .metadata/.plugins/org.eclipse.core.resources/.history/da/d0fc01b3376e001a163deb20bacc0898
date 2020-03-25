@@ -55,9 +55,6 @@ public class ArrayType {
 		int size = arrayList.size();
 		System.out.println("Size of ArrayList: " + size );
 		
-		//arrayList forEach 
-		arrayList.forEach((n) -> System.out.println("Foreach Iterator for each element as n: "+ n));
-		
 		
 	}
 
