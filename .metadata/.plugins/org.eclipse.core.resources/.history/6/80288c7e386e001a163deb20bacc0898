@@ -58,11 +58,8 @@ public class ArrayType {
 		//arrayList forEach 
 		arrayList.forEach((n) -> System.out.println("Foreach Iterator for each element as n: "+ n));
 		
-		
-		// add iterator at specified location
 		arrayList.add(1, 0);
-		arrayList.forEach((n) -> System.out.println("Using add(index,value) n: "+ n));
-
+		
 	}
 
 }
