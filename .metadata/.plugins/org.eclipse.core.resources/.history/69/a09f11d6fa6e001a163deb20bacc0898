@@ -72,13 +72,9 @@ public class ArrayType {
 		ArrayList<Integer> arrayListCopy = arrayList;
 		System.out.println("If arraylist is equal to arraylistcopy: "+ arrayList.equals(arrayListCopy));
 		
-		//removeIf only remove element if satisfies condition
+		//removeIf only remove element if satifies condition
 		arrayList.removeIf((n) -> (n%2 == 0));
 		System.out.println(arrayList);
-		
-		//IsEmpty returns true if only Empty
-		System.out.println(arrayList.isEmpty());
-		
 	}
 
 }

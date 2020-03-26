@@ -77,7 +77,7 @@ public class ArrayType {
 		System.out.println(arrayList);
 		
 		//IsEmpty returns true if only Empty
-		System.out.println(arrayList.isEmpty());
+		arrayList.isEmpty();
 		
 	}
 
