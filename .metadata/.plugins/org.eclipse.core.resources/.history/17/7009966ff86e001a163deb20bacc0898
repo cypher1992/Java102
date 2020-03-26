@@ -70,7 +70,7 @@ public class ArrayType {
 		
 		// Equals
 		ArrayList<Integer> arrayListCopy = arrayList;
-		System.out.println("If arraylist is equal to arraylistcopy: "+ arrayList.equals(arrayListCopy));
+		System.out.println("If arraylist is equal to arraylistcopy: "arrayList.equals(arrayListCopy));
 		
 	}
 
