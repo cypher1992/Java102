@@ -14,7 +14,7 @@ public class LinkedListType {
 		
 		//declaring a LinkedList as a Integer type
 		LinkedList<Integer> linkedList = new LinkedList();
-		println("Here is a LinkedList " + linkedList);
+		println(linkedList + "Here is a LinkedList" );
 		
 
 	}
