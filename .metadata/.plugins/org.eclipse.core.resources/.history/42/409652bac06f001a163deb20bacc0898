@@ -24,11 +24,6 @@ public class LinkedListType {
 		println(linkedList);
 		
 		
-		// get an element from linkedlist based on position
-		println(linkedList.get(0));
-		
-		
-		
 	}
 
 }
