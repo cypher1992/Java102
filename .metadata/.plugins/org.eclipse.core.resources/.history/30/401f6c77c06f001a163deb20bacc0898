@@ -21,6 +21,7 @@ public class LinkedListType {
 		{
 			linkedList.add(count);
 		}
+		
 		println(linkedList);
 		
 		

@@ -19,8 +19,9 @@ public class LinkedListType {
 		// add 0 to 9 LinkedList
 		for(int count =0; count <10;count++ ) 
 		{
-			linkedList.add(count);
+			linkedList.add(1);
 		}
+		
 		println(linkedList);
 		
 		
