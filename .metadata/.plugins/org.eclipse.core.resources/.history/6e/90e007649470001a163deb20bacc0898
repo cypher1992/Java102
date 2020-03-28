@@ -33,9 +33,7 @@ public class LinkedListType {
 		LinkedList<Integer> copyLinkedList = linkedList;
 		println("List before remove()" + copyLinkedList);
 		copyLinkedList.remove();
-		println("List after remove(): Value 0 or Index 0" + copyLinkedList);
-		
-		
+		println("List after remove()" + copyLinkedList);
 		
 		
 	}

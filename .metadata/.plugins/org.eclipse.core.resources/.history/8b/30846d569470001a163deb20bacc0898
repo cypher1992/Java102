@@ -29,14 +29,6 @@ public class LinkedListType {
 		println(linkedList.get(0));
 		
 		
-		//remove the head element in a linkedList
-		LinkedList<Integer> copyLinkedList = linkedList;
-		println("List before remove()" + copyLinkedList);
-		copyLinkedList.remove();
-		println("List after remove(): Value 0 or Index 0" + copyLinkedList);
-		
-		
-		
 		
 	}
 
