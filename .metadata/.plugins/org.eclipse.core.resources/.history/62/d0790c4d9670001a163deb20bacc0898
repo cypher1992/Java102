@@ -31,19 +31,19 @@ public class LinkedListType {
 		
 		//remove the head element in a linkedList
 		LinkedList<Integer> copyLinkedList = linkedList;
-		println("List before remove() " + copyLinkedList);
+		println("List before remove()" + copyLinkedList);
 		copyLinkedList.remove();
-		println("List after remove(): Value 0 or Index 0 " + copyLinkedList);
+		println("List after remove(): Value 0 or Index 0" + copyLinkedList);
 		
 		//remove nth index in linkedList
-		println("List before remove() " + copyLinkedList);
+		println("List before remove()" + copyLinkedList);
 		copyLinkedList.remove(4);
-		println("List after remove(): Value 5 or Index 4 " + copyLinkedList);
+		println("List after remove(): Value 5 or Index 4" + copyLinkedList);
 		
 		//insert element nth index using add()
 		println("List before add(4,5)" + copyLinkedList);
 		copyLinkedList.add(4,5);
-		println("List adter add(4,5): Append 5 to index 4 " + copyLinkedList);
+		println("List adter add(4,5): Append 5 to index 4" + copyLinkedList);
 		
 		
 		
