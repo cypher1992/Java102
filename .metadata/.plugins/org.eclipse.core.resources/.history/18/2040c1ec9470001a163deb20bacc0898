@@ -35,12 +35,6 @@ public class LinkedListType {
 		copyLinkedList.remove();
 		println("List after remove(): Value 0 or Index 0" + copyLinkedList);
 		
-		//remove nth index in linkedList
-		println("List before remove()" + copyLinkedList);
-		copyLinkedList.remove(4);
-		println("List after remove(): Value 5 or Index 4" + copyLinkedList);
-		
-		
 		
 		
 		
