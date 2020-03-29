@@ -48,13 +48,11 @@ public class LinkedListType {
 		copyLinkedList.clear();
 		println(copyLinkedList);
 		
-		//Push an element into the front of a Linked List - head
+		//Push an element into the front of a list - head
 		linkedList.push(11);
 		println(linkedList);
 		
-		//Pop an element off the front of a Linked List - head
-		linkedList.pop();
-		println(linkedList);
+
 		
 	}
 
