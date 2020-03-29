@@ -47,12 +47,7 @@ public class LinkedListType {
 		//Clear entire LinkedList
 		copyLinkedList.clear();
 		println(copyLinkedList);
-		
-		//Push an element into the front of a list - head
-		linkedList.push(11);
-		println(linkedList);
-		
-
+		 
 		
 	}
 
