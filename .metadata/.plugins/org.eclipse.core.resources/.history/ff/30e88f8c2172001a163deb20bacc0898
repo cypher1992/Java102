@@ -56,14 +56,6 @@ public class LinkedListType {
 		linkedList.pop();
 		println(linkedList);
 		
-		for(int count =0; count<10; count++) {
-			linkedList.push(count);
-		}
-		println(linkedList);
-		
-		// indexOf(Object) => postion as Int
-		int location = linkedList.indexOf(0);
-		println("Location of 0 expected 9: actual = " + location);
 	}
 
 }

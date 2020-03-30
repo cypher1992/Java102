@@ -61,7 +61,6 @@ public class LinkedListType {
 		}
 		println(linkedList);
 		
-		// indexOf(Object) => postion as Int
 		int location = linkedList.indexOf(0);
 		println("Location of 0 expected 9: actual = " + location);
 	}
