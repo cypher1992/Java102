@@ -42,7 +42,7 @@ public class LinkedListType {
 		//insert element nth index using add()
 		println("List before add(4,5)" + copyLinkedList);
 		copyLinkedList.add(4,5);
-		println("List after add(4,5): Append 5 to index 4 " + copyLinkedList);
+		println("List adter add(4,5): Append 5 to index 4 " + copyLinkedList);
 		
 		//Clear entire LinkedList
 		copyLinkedList.clear();
@@ -61,15 +61,9 @@ public class LinkedListType {
 		}
 		println(linkedList);
 		
-		// indexOf(Object) => position as Int
+		// indexOf(Object) => postion as Int
 		int location = linkedList.indexOf(0);
 		println("Location of 0 expected 9: actual = " + location);
-		
-		// indexOf(Object) => position as Int but two instances of the object in LinkedList
-		linkedList.push(0);
-		location = linkedList.indexOf(0);
-		println("Location of 0 expected 0: actual = " + location);
-		
 	}
 
 }
