@@ -73,16 +73,7 @@ public class LinkedListType {
 		// get the first element without removing it
 		println(linkedList.element());
 		
-		LinkedList<Integer> linkeListPT2 = new LinkedList();
-		for(int count =0; count <5; count++){
-			linkeListPT2.add(count*2);
-		}
-		
-		println("New List" + linkeListPT2);
-		// joining to collections into a linkedList
-		linkedList.addAll(linkeListPT2);
-		println("Combining two LinkedList " + linkedList);
-		
+		println(copyLinkedList);
 		
 	}
 

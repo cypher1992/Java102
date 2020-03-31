@@ -79,9 +79,8 @@ public class LinkedListType {
 		}
 		
 		println("New List" + linkeListPT2);
-		// joining to collections into a linkedList
 		linkedList.addAll(linkeListPT2);
-		println("Combining two LinkedList " + linkedList);
+		println(linkedList);
 		
 		
 	}
