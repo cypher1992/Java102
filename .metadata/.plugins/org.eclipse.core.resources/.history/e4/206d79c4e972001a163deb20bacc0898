@@ -71,7 +71,7 @@ public class LinkedListType {
 		println("Location of 0 expected 0: actual = " + location);
 		
 		// get the first element without removing it
-		println(linkedList.element());
+		println(linkedList);
 		
 	}
 
