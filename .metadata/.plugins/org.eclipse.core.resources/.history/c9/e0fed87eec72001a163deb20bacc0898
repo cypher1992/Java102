@@ -89,8 +89,6 @@ public class LinkedListType {
 		}
 		println(removeElements);
 		
-		linkedList.removeAll(removeElements);
-		println("Remove elements from Linkedlist" + linkedList);
 		
 	}
 

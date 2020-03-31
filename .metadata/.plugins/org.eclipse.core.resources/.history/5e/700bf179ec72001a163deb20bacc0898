@@ -83,14 +83,6 @@ public class LinkedListType {
 		linkedList.addAll(linkeListPT2);
 		println("Combining two LinkedList " + linkedList);
 		
-		LinkedList<Integer> removeElements = new LinkedList();
-		for(int count=3;count<10;count+=3){
-			removeElements.add(count);
-		}
-		println(removeElements);
-		
-		linkedList.removeAll(removeElements);
-		println("Remove elements from Linkedlist" + linkedList);
 		
 	}
 
