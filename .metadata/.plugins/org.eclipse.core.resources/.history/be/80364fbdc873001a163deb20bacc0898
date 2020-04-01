@@ -26,7 +26,7 @@ public class MapType {
 		println("Instance of a Map Stock " + mapStock);
 		
 		Double returnBXStock = mapStock.get("BX");
-		println("Bx Stock $" + returnBXStock);
+		println("Bx Stock $ " + returnBXStock);
 
 	}
 

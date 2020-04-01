@@ -24,9 +24,6 @@ public class MapType {
 		mapStock.put("WFC", new Double(1.31));
 		
 		println("Instance of a Map Stock " + mapStock);
-		
-		Double returnBXStock = mapStock.get("BX");
-		println("Bx Stock $" + returnBXStock);
 
 	}
 
