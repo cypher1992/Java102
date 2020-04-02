@@ -24,19 +24,16 @@ public class MapType {
 		mapStock.put("WFC", new Double(1.31));
 		
 		println("Instance of a Map Stock " + mapStock);
-		//return a key from .get
+		
 		Double returnBXStock = mapStock.get("BX");
 		println("Bx Stock $" + returnBXStock);
 		
 		Double doesNotExistStock = mapStock.get("B");
 		println("B Stock $" + doesNotExistStock);
 		
-		//map.replace replace value based on newValue
 		mapStock.replace("C", new Double(7.14));
 		println("Returnt update key:C with price of 7.14 "+ mapStock);
 
-		//returns true if key exist and false key does not exist
-		println(mapStock.containsKey("C"));		
 	}
 
 }

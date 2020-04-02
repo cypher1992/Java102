@@ -35,8 +35,8 @@ public class MapType {
 		mapStock.replace("C", new Double(7.14));
 		println("Returnt update key:C with price of 7.14 "+ mapStock);
 
-		//returns true if key exist and false key does not exist
-		println(mapStock.containsKey("C"));		
+		//
+		println(mapStock.containsKey(101.25));		
 	}
 
 }
