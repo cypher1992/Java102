@@ -30,9 +30,6 @@ public class MapType {
 		
 		Double doesNotExistStock = mapStock.get("B");
 		println("B Stock $" + doesNotExistStock);
-		
-		mapStock.replace("C", new Double(7.14));
-		println("Returnt update key:C with price of 7.14 "+ mapStock);
 
 	}
 
