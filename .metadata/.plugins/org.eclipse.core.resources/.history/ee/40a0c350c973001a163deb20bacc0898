@@ -27,9 +27,6 @@ public class MapType {
 		
 		Double returnBXStock = mapStock.get("BX");
 		println("Bx Stock $" + returnBXStock);
-		
-		Double doesNotExistStock = mapStock.get("B");
-		println("B Stock $" + doesNotExistStock);
 
 	}
 
