@@ -36,10 +36,7 @@ public class MapType {
 		println("Returnt update key:C with price of 7.14 "+ mapStock);
 
 		//returns true if key exist and false key does not exist
-		println(mapStock.containsKey("C"));
-		
-		//returns size of mapstock
-		println(mapStock.size());
+		println(mapStock.containsKey("C"));		
 	}
 
 }
