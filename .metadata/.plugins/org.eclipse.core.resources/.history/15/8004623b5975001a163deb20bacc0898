@@ -47,6 +47,8 @@ public class MapType {
 		//foreach using lambda expression
 		mapStock.forEach((k,v) -> println(k +" "+ v));
 		
+		//
+		mapStock.
 	
 	}
 

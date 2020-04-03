@@ -39,7 +39,7 @@ public class MapType {
 		println(mapStock.containsKey("C"));
 		
 		//return collection of all values
-		println("Value Collection: " + mapStock.values());
+		println("Value Collection: "mapStock.values());
 		
 		//returns size of mapstock
 		println(mapStock.size());
@@ -47,6 +47,8 @@ public class MapType {
 		//foreach using lambda expression
 		mapStock.forEach((k,v) -> println(k +" "+ v));
 		
+		//
+		mapStock.
 	
 	}
 

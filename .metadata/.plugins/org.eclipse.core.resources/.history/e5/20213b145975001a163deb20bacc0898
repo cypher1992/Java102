@@ -38,16 +38,11 @@ public class MapType {
 		//returns true if key exist and false key does not exist
 		println(mapStock.containsKey("C"));
 		
-		//return collection of all values
-		println("Value Collection: " + mapStock.values());
-		
 		//returns size of mapstock
 		println(mapStock.size());
 		
 		//foreach using lambda expression
 		mapStock.forEach((k,v) -> println(k +" "+ v));
-		
-	
 	}
 
 }
