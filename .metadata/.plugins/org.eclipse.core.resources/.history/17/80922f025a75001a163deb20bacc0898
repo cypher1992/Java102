@@ -39,7 +39,7 @@ public class MapType {
 		println(mapStock.containsKey("C"));
 
 		//return a set of keys
-		println("Set of Key: " + mapStock.keySet());
+		println("Set of Key: "mapStock.keySet());
 		
 		//return collection of all values
 		println("Value Collection: " + mapStock.values());
