@@ -40,9 +40,6 @@ public class MapType {
 		
 		//returns size of mapstock
 		println(mapStock.size());
-		
-		//foreach using lambda expression
-		mapStock.forEach((k,v) -> println(k +" "+ v));
 	}
 
 }
