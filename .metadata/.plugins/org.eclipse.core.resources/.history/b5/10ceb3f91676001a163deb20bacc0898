@@ -28,9 +28,6 @@ public class MapType {
 		//return boolean if key exist
 		println("Returns True if key exist: " + mapStock.containsKey("BX"));
 		
-		//return boolean if key does not exist
-		println("Returns False if key does not exist: " + mapStock.containsKey("GS"));
-		
 		//return a key from map.get
 		Double returnBXStock = mapStock.get("BX");
 		println("Bx Stock $" + returnBXStock);
