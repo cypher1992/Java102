@@ -58,7 +58,7 @@ public class MapType {
 		mapStock.forEach((k,v) -> println(k +" "+ v));
 		
 		//Is map empty? returns true/false
-		println("Is map empty? "+ mapStock.isEmpty());
+		println(mapStock.isEmpty());
 		
 	
 	}
