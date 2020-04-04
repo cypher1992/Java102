@@ -24,11 +24,7 @@ public class MapType {
 		mapStock.put("WFC", new Double(1.31));
 		
 		println("Instance of a Map Stock " + mapStock);
-		
-		//return boolean if key exist
-		println("Returns True if key exist: " + mapStock.containsKey("BX"));
-		
-		//return a key from map.get
+		//return a key from .get
 		Double returnBXStock = mapStock.get("BX");
 		println("Bx Stock $" + returnBXStock);
 		
@@ -53,7 +49,6 @@ public class MapType {
 		
 		//foreach using lambda expression
 		mapStock.forEach((k,v) -> println(k +" "+ v));
-		
 		
 	
 	}
