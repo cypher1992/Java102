@@ -62,7 +62,7 @@ public class MapType {
 		
 		// clearing Map of all values
 		mapStock.clear();
-		println("Cleared Map "+ mapStock);
+		println(mapStock);
 		println("Is map empty? "+ mapStock.isEmpty());
 		
 	

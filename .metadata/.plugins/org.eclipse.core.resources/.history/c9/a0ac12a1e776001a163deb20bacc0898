@@ -60,11 +60,6 @@ public class MapType {
 		//Is map empty? returns true/false
 		println("Is map empty? "+ mapStock.isEmpty());
 		
-		// clearing Map of all values
-		mapStock.clear();
-		println("Cleared Map "+ mapStock);
-		println("Is map empty? "+ mapStock.isEmpty());
-		
 	
 	}
 
