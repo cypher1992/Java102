@@ -1,0 +1,32 @@
+package com.local.lessson.financialclass;
+
+import java.time.LocalDateTime;
+
+/*
+ Implementing Abstraction Class
+*/
+
+public abstract class Instrument {
+
+	//creating attributes
+	private String name;
+	private String identifier;
+	private Double price;
+	private String assetType;
+	private LocalDateTime dateTime;
+	
+	//creating a constructor but never instantiated as Abstract Class
+	public Instrument(String name, String identifier, Double price, String assetType, LocalDateTime dateTime) {
+	
+		this.name = name;
+		this.identifier = identifier;
+		this.price = price;
+		this.assetType = assetType;
+		this.dateTime = dateTime; 
+	}
+	
+	
+	
+	
+	
+}

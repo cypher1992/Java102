@@ -1,0 +1,9 @@
+package com.local.lessson.financialclass;
+
+public abstract class Instrument {
+
+	private Double price;
+	private String assetType;
+	
+	
+}

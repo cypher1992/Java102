@@ -1,0 +1,5 @@
+package com.local.lessson.financialclass;
+
+public abstract class Instrument {
+
+}

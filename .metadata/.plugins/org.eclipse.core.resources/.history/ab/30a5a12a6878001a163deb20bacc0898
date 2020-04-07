@@ -1,0 +1,14 @@
+package com.local.lessson.financialclass;
+
+import java.time.LocalDateTime;
+
+public abstract class Instrument {
+
+	private String name;
+	private String identifier;
+	private Double price;
+	private String assetType;
+	private LocalDateTime dateTime;
+	
+	
+}
