@@ -80,13 +80,6 @@ public abstract class Instrument {
 		
 		return instrumentMap; 
 	}
-
-	@Override
-	public String toString() {
-		return "Instrument [name=" + name + ", identifier=" + identifier + ", price=" + price + ", assetType="
-				+ assetType + ", dateTime=" + dateTime + "]";
-	}
-	
 	
 	
 	

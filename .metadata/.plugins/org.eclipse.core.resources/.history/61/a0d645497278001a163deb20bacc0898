@@ -1,0 +1,19 @@
+package com.local.lessson.financialclass;
+
+import java.time.LocalDateTime;
+
+public class Equity extends Instrument {
+
+	private String company;
+	private String ticker; 
+	
+	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime) {
+		super(name, identifier, price, assetType, dateTime);
+		this.setAssetType("EQUITY");
+		this.company = company;
+		this.ticker = ticker; 
+	}
+	
+	
+
+}
