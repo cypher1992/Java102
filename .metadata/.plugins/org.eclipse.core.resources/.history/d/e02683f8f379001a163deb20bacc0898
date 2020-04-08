@@ -44,11 +44,7 @@ class EquityTest {
 	@Test
 	void testSetCompany() {
 		Double citiPrice = new Double(26.41);
-		Equity citi = new Equity("CITI-EQT","C",citiPrice,"EQUITY",dateTime,"CITI","C");
-		citi.setCompany("CITI CORP");
-		String actual = citi.getCompany();
-		String expected = "CITI CORP";
-		assertEquals(expected, actual);
+		Equity citi = new Equity("CITI-EQT","C",citiPrice,"EQUITY",dateTime,"CITI CORP","C");
 	}
 
 	@Test

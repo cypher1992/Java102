@@ -48,7 +48,7 @@ class EquityTest {
 		citi.setCompany("CITI CORP");
 		String actual = citi.getCompany();
 		String expected = "CITI CORP";
-		assertEquals(expected, actual);
+		assertTrue(actual.equals(expected));
 	}
 
 	@Test
