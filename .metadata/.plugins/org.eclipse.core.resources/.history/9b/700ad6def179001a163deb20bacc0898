@@ -27,9 +27,7 @@ class EquityTest {
 	
 	@Test
 	void testGetCompany() {
-		String actual = blackstone.getCompany();
-		String expected = "BLACKSTONE";
-		assertEquals(expected,actual);
+		fail("Not yet implemented");
 	}
 
 	@Test
