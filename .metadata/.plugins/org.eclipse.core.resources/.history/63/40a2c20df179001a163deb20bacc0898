@@ -21,11 +21,6 @@ class EquityTest {
 	}
 	
 	@Test
-	void testInstrument() {
-		assertTrue(blackstone instanceof Instrument);
-	}
-	
-	@Test
 	void testGetCompany() {
 		fail("Not yet implemented");
 	}
