@@ -7,7 +7,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import com.local.lessson.financialclass.Equity;
-import com.local.lessson.financialclass.Instrument;
 
 class EquityTest {
 
@@ -17,9 +16,9 @@ class EquityTest {
 
 	@Test
 	void testEquity() {
-		assertTrue(blackstone instanceof Equity);
+		assertTrue(blackstone instanceof Equity );
 	}
-	
+
 	@Test
 	void testGetCompany() {
 		fail("Not yet implemented");

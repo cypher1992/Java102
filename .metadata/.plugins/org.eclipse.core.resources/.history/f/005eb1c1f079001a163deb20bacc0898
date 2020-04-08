@@ -19,6 +19,11 @@ class EquityTest {
 	void testEquity() {
 		assertTrue(blackstone instanceof Equity);
 	}
+
+	@Test
+	void testInstrument() {
+		assertTrue(blackstone instanceof Instrument);
+	}
 	
 	@Test
 	void testGetCompany() {
