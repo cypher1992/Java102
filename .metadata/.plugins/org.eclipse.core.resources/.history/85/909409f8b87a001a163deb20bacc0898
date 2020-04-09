@@ -1,8 +1,8 @@
 package com.local.lessson.financialclass;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 // inherit Instrument via extends
 public class Equity extends Instrument {
@@ -36,7 +36,7 @@ public class Equity extends Instrument {
 	@Override
 	public Map instrumentMap(){
 		
-		Map<String,Object> instrumentMap = new TreeMap<String,Object>();
+		Map<String,Object> instrumentMap = new HashMap<String,Object>();
 		
 		instrumentMap.put("NAME:", this.getName());
 		instrumentMap.put("IDENTIFIER", this.getIdentifier());

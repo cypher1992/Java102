@@ -62,7 +62,6 @@ class EquityTest {
 	@Test
 	void testInstrumentMap() {
 		Map<String,Object> actual = blackstone.instrumentMap();
-		// treeMap deal with sorting keys
 		Map<String, Object> expected = new TreeMap<String,Object>();
 		expected.put("NAME", "BLACKSTONE-EQT");
 		expected.put("IDENTIFIER", "BX-W");
