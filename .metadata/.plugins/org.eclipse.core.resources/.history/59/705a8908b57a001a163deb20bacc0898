@@ -53,12 +53,7 @@ class EquityTest {
 
 	@Test
 	void testSetTicker() {
-		Double goldmanPrice = new Double(145.12);
-		Equity goldmanSacs = new Equity("GOLDMANSACS-EQT","GS",goldmanPrice,"EQUITY",dateTime,"GOLDMAN SACS", "GSX");
-		goldmanSacs.setTicker("GS");
-		String actual = goldmanSacs.getTicker();
-		String expected = "GS";
-		assertEquals(expected,actual);
+		fail("Not yet implemented");
 	}
 
 	@Test
