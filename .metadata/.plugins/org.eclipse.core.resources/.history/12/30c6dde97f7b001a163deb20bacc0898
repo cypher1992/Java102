@@ -93,13 +93,4 @@ class EquityTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testGetIdentifier() {
-		String actual = blackstone.getIdentifier();
-		String expected = "BX-W";
-		assertEquals(expected, actual);
-		
-	}
-	
 }
-
