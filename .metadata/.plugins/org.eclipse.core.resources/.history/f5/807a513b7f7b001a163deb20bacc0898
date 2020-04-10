@@ -85,12 +85,10 @@ class EquityTest {
 	@Test
 	void testSetName() {
 		
-		Equity bofa = new Equity("BOFA-EQTX","BAC",new Double(23.41),"EQUITY",dateTime,"BANK OF AMERICA CORP.", "BAC");
+		Equity bofa = new Equity("BOFA-EQTX","BAC",new Double(23.41),"EQUITY",dateTime,"BANK OF AMERICA CORP.", "BAC")
 		bofa.setName("BOFA-EQT");
 		String actual = bofa.getName();
-		String expected = "BOFA-EQT";
-		
-		assertEquals(expected,actual);
+		String expected = "BOFA-EQT"
 	}
 	
 }
