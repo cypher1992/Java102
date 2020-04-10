@@ -75,11 +75,4 @@ class EquityTest {
 		assertEquals(actual,actual);
 	}
 	
-	@Test
-	void testGetName() {
-		String actual = blackstone.getName();
-		String expected = "BLACKSTONE-EQT";
-		assertEquals(expected,actual);
-	}
-	
 }
