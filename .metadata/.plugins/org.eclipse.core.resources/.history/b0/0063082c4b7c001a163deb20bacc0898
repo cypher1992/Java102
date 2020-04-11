@@ -111,12 +111,5 @@ class EquityTest {
 		
 	}
 	
-	@Test
-	void testGetPrice() {
-		Double actual = blackstone.getPrice();
-		Double expected = new Double(46.63);
-		assertEquals(expected,actual);
-	}
-	
 }
 
