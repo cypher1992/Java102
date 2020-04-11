@@ -101,15 +101,5 @@ class EquityTest {
 		
 	}
 	
-	@Test
-	void testSetIdentifier() {
-		Equity jpm = new Equity("JMP-EQT","JP",new Double(142.16),"EQUITY",dateTime,"JP Morgan Chase", "JPM");
-		jpm.setIdentifier("JPM");
-		String actual = jpm.getIdentifier();
-		String expected = "JPM";
-		assertEquals(expected,actual);
-		
-	}
-	
 }
 
