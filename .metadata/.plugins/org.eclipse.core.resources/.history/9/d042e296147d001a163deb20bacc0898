@@ -127,13 +127,5 @@ class EquityTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test 
-	void testgetAssetType() {
-		String actual = blackstone.getAssetType();
-		String expected = "EQUITY";
-		assertEquals(expected,actual);
-	}
-	
-	
 }
 
