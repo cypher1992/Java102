@@ -135,19 +135,13 @@ class EquityTest {
 	}
 	
 	@Test
-	void testSetAssetPrice(){
+	void setAssetPrice(){
 		blackstone.setAssetType("CORP-EQUITY");
 		String actual = blackstone.getAssetType();
 		String expected = "CORP-EQUITY";
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testGetDate() {
-		LocalDateTime actual = blackstone.getDateTime();
-		LocalDateTime expected = LocalDateTime.of(2020,Month.APRIL,6,17,00,00);
-		assertEquals(expected,actual);
-	}
 	
 }
 
