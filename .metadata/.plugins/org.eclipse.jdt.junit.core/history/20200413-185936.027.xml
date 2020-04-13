@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EquityTest" project="Java101BASICS" tests="17" started="17" failures="0" errors="0" ignored="0">
+  <testsuite name="EquityTest" time="0.182" uniqueid="[engine:junit-jupiter]/[class:EquityTest]">
+    <testcase name="testGetAssetType" classname="EquityTest" time="0.06" displayname="testGetAssetType()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetAssetType()]"/>
+    <testcase name="testGetPrice" classname="EquityTest" time="0.003" displayname="testGetPrice()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetPrice()]"/>
+    <testcase name="testSetDateTime" classname="EquityTest" time="0.004" displayname="testSetDateTime()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetDateTime()]"/>
+    <testcase name="testSetCompany" classname="EquityTest" time="0.003" displayname="testSetCompany()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetCompany()]"/>
+    <testcase name="testGetDateTime" classname="EquityTest" time="0.002" displayname="testGetDateTime()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetDateTime()]"/>
+    <testcase name="testInstrumentMap" classname="EquityTest" time="0.003" displayname="testInstrumentMap()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testInstrumentMap()]"/>
+    <testcase name="testGetName" classname="EquityTest" time="0.002" displayname="testGetName()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetName()]"/>
+    <testcase name="testGetIdentifier" classname="EquityTest" time="0.003" displayname="testGetIdentifier()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetIdentifier()]"/>
+    <testcase name="testSetAssetPrice" classname="EquityTest" time="0.002" displayname="testSetAssetPrice()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetAssetPrice()]"/>
+    <testcase name="testInstrument" classname="EquityTest" time="0.004" displayname="testInstrument()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testInstrument()]"/>
+    <testcase name="testSetIdentifier" classname="EquityTest" time="0.002" displayname="testSetIdentifier()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetIdentifier()]"/>
+    <testcase name="testGetCompany" classname="EquityTest" time="0.0" displayname="testGetCompany()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetCompany()]"/>
+    <testcase name="testSetTicker" classname="EquityTest" time="0.0" displayname="testSetTicker()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetTicker()]"/>
+    <testcase name="testEquity" classname="EquityTest" time="0.0" displayname="testEquity()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testEquity()]"/>
+    <testcase name="testGetTicker" classname="EquityTest" time="0.0" displayname="testGetTicker()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testGetTicker()]"/>
+    <testcase name="testSetName" classname="EquityTest" time="0.0" displayname="testSetName()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetName()]"/>
+    <testcase name="testSetPrice" classname="EquityTest" time="0.0" displayname="testSetPrice()" uniqueid="[engine:junit-jupiter]/[class:EquityTest]/[method:testSetPrice()]"/>
+  </testsuite>
+</testrun>
