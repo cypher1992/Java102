@@ -44,7 +44,8 @@ class PortfolioTest {
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
 		portfolio.appendEquity(bx);
 		Map actual = portfolio.getPortfolio();
-		Map<String,Equity> expected = new TreeMap<String,Equity>();		
+		Map<String,Equity> expected = new TreeMap<String,Equity>();
+		Equity testBX = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");		
 		expected.put(bx.getTicker(),bx);
 		assertEquals(expected,actual);
 	}

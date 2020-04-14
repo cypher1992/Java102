@@ -40,12 +40,14 @@ class PortfolioTest {
 	@Test
 	void testAppendEquity(){
 		Portfolio portfolio = new Portfolio();
+		Map<String,Equity> expected = new TreeMap<String,Equity>();
+		System.out.println(portfolio.getPortfolio().equals(expected));
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
 		portfolio.appendEquity(bx);
 		Map actual = portfolio.getPortfolio();
-		Map<String,Equity> expected = new TreeMap<String,Equity>();		
-		expected.put(bx.getTicker(),bx);
+		Equity testBX = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");		
+		expected.put(testBX.getTicker(),testBX);
 		assertEquals(expected,actual);
 	}
 	

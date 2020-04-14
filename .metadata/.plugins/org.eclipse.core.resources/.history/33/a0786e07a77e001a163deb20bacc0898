@@ -49,11 +49,6 @@ public class Equity extends Instrument {
 		return instrumentMap; 
 		
 	}
-
-	@Override
-	public String toString() {
-		return "Equity [company=" + company + ", ticker=" + ticker + ", toString()=" + super.toString() + "]";
-	}
 	
 	
 
