@@ -27,12 +27,7 @@ class PortfolioTest {
 
 	@Test
 	void testSetPortfolio() {
-		Portfolio testPortfolio = new Portfolio();
-		Map<String,Equity> newPortfolio = new TreeMap<String,Equity>();
-		testPortfolio.setPortfolio(newPortfolio);
-		Map actual = testPortfolio.getPortfolio();
-		Map expected = new TreeMap<String,Equity>();
-		assertEquals(expected,actual);
+		fail("Not yet implemented");
 	}
 
 }
