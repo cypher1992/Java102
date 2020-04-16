@@ -21,11 +21,7 @@ public class Portfolio {
 	}
 	
 	public void appendEquity(Equity equity){
-		if(!(equity.equals(null))){
-			this.getPortfolio().put(equity.getTicker(), equity);
-		}else {
-			System.out.println("Equity is install of Null");
-		}
+		this.getPortfolio().put(equity.getTicker(), equity);
 	}
 	
 	public void removeEquity(String key){
