@@ -75,4 +75,23 @@ class PortfolioTest {
 		
 	}
 	
+	
+	@Test
+	void testNonExistentTickerRemoveEquity(){
+		Portfolio portfolio = new Portfolio();
+		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
+		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
+		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR");
+		portfolio.appendEquity(bx);
+		portfolio.appendEquity(kkr);
+		Portfolio testPortfolio = new Portfolio();
+		testPortfolio.appendEquity(bx);
+		testPortfolio.appendEquity(kkr);
+		portfolio.removeEquity("GS");
+		assertEquals(portfolio.getPortfolio(),testPortfolio.getPortfolio());
+		
+	}
+	
+	
+	
 }
