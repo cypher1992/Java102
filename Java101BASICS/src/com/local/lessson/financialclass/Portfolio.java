@@ -21,10 +21,10 @@ public class Portfolio {
 	}
 	
 	public void appendEquity(Equity equity){
-		if(!(equity.equals(null))){
+		if(equity != null){
 			this.getPortfolio().put(equity.getTicker(), equity);
 		}else {
-			System.out.println("Equity is install of Null");
+			System.out.println("Equity is instance of Null");
 		}
 	}
 	

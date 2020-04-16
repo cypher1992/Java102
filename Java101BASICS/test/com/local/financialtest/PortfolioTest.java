@@ -38,6 +38,16 @@ class PortfolioTest {
 	}
 
 	@Test
+	void testnullAppendEquity(){
+		Portfolio portfolio = new Portfolio();
+		Equity bx = null;
+		portfolio.appendEquity(bx);
+		Map actual = portfolio.getPortfolio();
+		Map<String,Equity> expected = new TreeMap<String,Equity>();		
+		assertEquals(expected,actual);
+	}
+	
+	@Test
 	void testAppendEquity(){
 		//Need to work on comparison logic or compareto
 		Portfolio portfolio = new Portfolio();
