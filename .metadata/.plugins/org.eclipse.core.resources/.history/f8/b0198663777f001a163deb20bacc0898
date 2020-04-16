@@ -24,8 +24,4 @@ public class Portfolio {
 		this.getPortfolio().put(equity.getTicker(), equity);
 	}
 	
-	public void removeEquity(String key){
-		this.equityPortfolio.remove(key);
-	}
-	
 }
