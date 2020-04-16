@@ -29,7 +29,11 @@ public class Portfolio {
 	}
 	
 	public void removeEquity(String key){
-		this.equityPortfolio.remove(key);
+		if(this.equityPortfolio.containsKey(key) && key != null){
+			this.equityPortfolio.remove(key);
+		}else {
+			System.out.println("Ticker is not valid");
+		}
 	}
 	
 }

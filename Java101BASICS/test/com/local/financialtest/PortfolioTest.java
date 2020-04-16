@@ -38,7 +38,7 @@ class PortfolioTest {
 	}
 
 	@Test
-	void testnullAppendEquity(){
+	void testNullAppendEquity(){
 		Portfolio portfolio = new Portfolio();
 		Equity bx = null;
 		portfolio.appendEquity(bx);
