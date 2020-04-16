@@ -61,7 +61,7 @@ class PortfolioTest {
 		Portfolio testPortfolio = new Portfolio();
 		testPortfolio.appendEquity(bx);
 		portfolio.removeEquity(kkr.getTicker());
-		assertEquals(portfolio.getPortfolio(),testPortfolio.getPortfolio());
+		assertEquals(portfolio,testPortfolio);
 		
 	}
 	
