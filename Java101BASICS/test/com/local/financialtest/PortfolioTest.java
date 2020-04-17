@@ -100,5 +100,18 @@ class PortfolioTest {
 		assertEquals(expected,actual);
 	}
 	
+	@Test
+	void testFindEquityreturnsEquity(){
+		Portfolio portfolio = new Portfolio();
+		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
+		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
+		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR");
+		portfolio.appendEquity(bx);
+		portfolio.appendEquity(kkr);
+		Equity actual = portfolio.findEquity(bx.getTicker());
+		Equity expected = bx;
+		assertEquals(expected,actual);
+	}
+	
 	
 }
