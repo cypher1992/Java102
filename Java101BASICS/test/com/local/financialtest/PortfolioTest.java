@@ -92,6 +92,13 @@ class PortfolioTest {
 		
 	}
 	
+	@Test
+	void testFindEquityreturnsNull(){
+		Portfolio portfolio = new Portfolio();
+		Equity actual = portfolio.findEquity("GS");
+		Equity expected = null;
+		assertEquals(expected,actual);
+	}
 	
 	
 }
