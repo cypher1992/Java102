@@ -36,4 +36,12 @@ public class Portfolio {
 		}
 	}
 	
+	public Equity findEquity(String ticker){
+		Equity value = null;
+		if(this.getPortfolio().containsKey(ticker)) {
+			value = (Equity) this.getPortfolio().get(ticker);
+		}
+		
+		return value;
+	}
 }
