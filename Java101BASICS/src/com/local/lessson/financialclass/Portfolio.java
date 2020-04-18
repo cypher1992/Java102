@@ -44,4 +44,15 @@ public class Portfolio {
 		
 		return value;
 	}
+	
+	public void updatePortfolio(String ticker,Equity equity){
+		if(ticker != null || equity != null) {
+			this.getPortfolio().put(ticker, equity);
+			}
+		else {
+			System.out.println("Can not take a null");
+			}
+		
+	}
+	
 }
