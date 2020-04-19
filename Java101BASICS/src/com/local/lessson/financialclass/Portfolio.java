@@ -45,8 +45,8 @@ public class Portfolio {
 		return value;
 	}
 	
-	public void updatePortfolio(String ticker,Equity equity){
-		if(ticker != null || equity != null) {
+	public void updateEquity(String ticker,Equity equity){
+		if(ticker != null && equity != null) {
 			this.getPortfolio().put(ticker, equity);
 			}
 		else {

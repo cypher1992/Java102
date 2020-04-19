@@ -114,4 +114,18 @@ class PortfolioTest {
 	}
 	
 	
+	@Test
+	void testUpdateEquityreturnsvoid(){
+		Portfolio actual = new Portfolio();
+		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
+		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
+		actual.appendEquity(bx);
+		Equity nullEq = null;
+		String bxTicker = bx.getTicker();
+		actual.updateEquity(bxTicker, nullEq);
+		Portfolio expected = new Portfolio();
+		expected.appendEquity(bx);
+		assertEquals(expected.getPortfolio(),actual.getPortfolio());
+	}
+	
 }
