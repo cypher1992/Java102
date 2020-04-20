@@ -9,12 +9,20 @@ public class Equity extends Instrument {
 	
 	//define attributes of equity
 	private String company;
-	private String ticker; 
+	private String ticker;
+	private int volume;
 	
 	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime,String company, String ticker) {
 		super(name, identifier, price, assetType, dateTime);
 		this.company = company;
 		this.ticker = ticker; 
+	}
+	
+	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime,String company, String ticker, int volume) {
+		super(name, identifier, price, assetType, dateTime);
+		this.company = company;
+		this.ticker = ticker;
+		this.volume = volume;
 	}
 
 	public String getCompany() {
@@ -31,6 +39,14 @@ public class Equity extends Instrument {
 
 	public void setTicker(String ticker) {
 		this.ticker = ticker;
+	}
+
+	public int getVolume() {
+		return this.volume;
+	}
+	
+	public void setVolume(int volume) {
+		this.volume = volume;
 	}
 	
 	@Override
