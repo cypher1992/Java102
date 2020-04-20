@@ -162,13 +162,13 @@ class EquityTest {
 	
 	@Test
 	void testInstanceofEquityVolume(){
-		assertTrue(blackstoneVolume instanceof Equity);
+		assertTrue(bx instanceof Equity);
 	}
 	
 	
 	@Test
 	public void testGetVolume() {
-		int actual = blackstoneVolume.getVolume();
+		int actual = bx.getVolume();
 		int expected = 10000;
 		assertEquals(expected, actual);	
 	}
@@ -176,11 +176,18 @@ class EquityTest {
 	@Test
 	public void testSetVolume() {
 		int newVolume = 20000;
-		blackstoneVolume.setVolume(newVolume);
-		int actual = blackstoneVolume.getVolume();
+		bx.setVolume(newVolume);
+		int actual = bx.getVolume();
 		int expected = 20000;
 		assertEquals(expected, actual);	
 	}
 	
+	
+	@Test
+	public void testGetCost() {
+		double actual = bx.getCost();
+		double expected = 466300.00;
+		assertEquals(expected, actual);	
+	}
 }
 
