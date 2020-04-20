@@ -161,6 +161,12 @@ class EquityTest {
 	}
 	
 	@Test
+	void testInstanceofEquityVolume(){
+		assertTrue(blackstoneVolume instanceof Equity);
+	}
+	
+	
+	@Test
 	public void testGetVolume() {
 		int actual = blackstoneVolume.getVolume();
 		int expected = 10000;
