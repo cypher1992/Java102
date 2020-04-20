@@ -164,8 +164,16 @@ class EquityTest {
 	public void testGetVolume() {
 		int actual = blackstoneVolume.getVolume();
 		int expected = 10000;
-		assertEquals(expected, actual);
-				
+		assertEquals(expected, actual);	
+	}
+	
+	@Test
+	public void testSetVolume() {
+		int newVolume = 20000;
+		blackstoneVolume.setVolume(newVolume);
+		int actual = blackstoneVolume.getVolume();
+		int expected = 20000;
+		assertEquals(expected, actual);	
 	}
 	
 }
