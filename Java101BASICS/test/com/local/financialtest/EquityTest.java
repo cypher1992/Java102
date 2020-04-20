@@ -13,7 +13,7 @@ class EquityTest {
 	Double price = new Double(46.63);
 	LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,6,17,00,00); 	
 	Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
-	Equity blackstoneVolume = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX",10000);
+	Equity bx = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX",10000);
 	
 	@Test
 	void testEquity() {

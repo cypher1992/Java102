@@ -11,7 +11,9 @@ public class Equity extends Instrument {
 	private String company;
 	private String ticker;
 	private int volume;
+	private double cost;
 	
+	//constructors
 	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime,String company, String ticker) {
 		super(name, identifier, price, assetType, dateTime);
 		this.company = company;
@@ -23,6 +25,7 @@ public class Equity extends Instrument {
 		this.company = company;
 		this.ticker = ticker;
 		this.volume = volume;
+		this.cost = this.getVolume() * this.getPrice();
 	}
 
 	public String getCompany() {
@@ -47,6 +50,14 @@ public class Equity extends Instrument {
 	
 	public void setVolume(int volume) {
 		this.volume = volume;
+	}
+	
+	public double getCost() {
+		return this.cost;
+	}
+	
+	public void setCost(double cost) {
+		this.cost = cost;
 	}
 	
 	@Override
