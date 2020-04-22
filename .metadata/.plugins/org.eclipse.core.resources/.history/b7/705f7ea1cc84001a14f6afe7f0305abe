@@ -65,7 +65,7 @@ public class Equity extends Instrument {
 			this.cost = cost;
 		}
 		else {
-			throw new ArithmeticException("Cost cannot be below 0.01");
+			throw new ArithmeticException("Cost cannot be below 0.00");
 		}
 	}
 	
