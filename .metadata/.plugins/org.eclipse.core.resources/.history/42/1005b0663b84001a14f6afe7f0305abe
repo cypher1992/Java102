@@ -196,7 +196,7 @@ class EquityTest {
 		double actual = bx.getCost();
 		assertEquals(expected, actual);	
 	}
-	//Add to git
+	
 	@Test
 	public void testSetCostThrowsException() {
 		double expected = 0.00;
