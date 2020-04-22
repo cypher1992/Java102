@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PortfolioTest" project="Java101BASICS" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="com.local.financialtest.PortfolioTest" time="0.123" displayname="PortfolioTest" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.PortfolioTest]">
-    <testcase name="testSetPortfolio" classname="com.local.financialtest.PortfolioTest" time="0.062" displayname="testSetPortfolio()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.PortfolioTest]/[method:testSetPortfolio()]"/>
-    <testcase name="testPortfolio" classname="com.local.financialtest.PortfolioTest" time="0.005" displayname="testPortfolio()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.PortfolioTest]/[method:testPortfolio()]"/>
-    <testcase name="testAppendEquity" classname="com.local.financialtest.PortfolioTest" time="0.014" displayname="testAppendEquity()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.PortfolioTest]/[method:testAppendEquity()]"/>
-    <testcase name="testGetPortfolio" classname="com.local.financialtest.PortfolioTest" time="0.041" displayname="testGetPortfolio()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.PortfolioTest]/[method:testGetPortfolio()]"/>
-  </testsuite>
-</testrun>

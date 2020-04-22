@@ -182,11 +182,18 @@ class EquityTest {
 		assertEquals(expected, actual);	
 	}
 	
-	
 	@Test
 	public void testGetCost() {
 		double actual = bx.getCost();
 		double expected = 466300.00;
+		assertEquals(expected, actual);	
+	}
+	
+	@Test
+	public void testSetCost() {
+		double expected = 1.00;
+		bx.setCost(expected);
+		double actual = bx.getCost();
 		assertEquals(expected, actual);	
 	}
 }
