@@ -57,7 +57,7 @@ public class Equity extends Instrument {
 	}
 	
 	public void setCost(double cost) {
-		if(cost > 0.00 ) {
+		if(cost < 0.00 ) {
 			this.cost = cost;
 		}
 		else {

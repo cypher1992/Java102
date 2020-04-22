@@ -196,6 +196,5 @@ class EquityTest {
 		double actual = bx.getCost();
 		assertEquals(expected, actual);	
 	}
-	
 }
 

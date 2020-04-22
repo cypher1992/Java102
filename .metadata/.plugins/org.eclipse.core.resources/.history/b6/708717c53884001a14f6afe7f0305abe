@@ -57,12 +57,7 @@ public class Equity extends Instrument {
 	}
 	
 	public void setCost(double cost) {
-		if(cost > 0.00 ) {
-			this.cost = cost;
-		}
-		else {
-			throw new ArithmeticException("Cost cannot be below 0.00");
-		}
+		this.cost = cost;
 	}
 	
 	@Override

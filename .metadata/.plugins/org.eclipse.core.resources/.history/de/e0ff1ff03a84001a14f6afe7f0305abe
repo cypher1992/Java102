@@ -197,5 +197,10 @@ class EquityTest {
 		assertEquals(expected, actual);	
 	}
 	
+	@Test
+	public void testSetCostThrowsException() {
+		double expected = 0.00;
+		assertThrows(NullPointerException.class,() -> bx.setCost(expected),"Cost cannot be below 0.00");
+	}
 }
 
