@@ -183,13 +183,6 @@ class EquityTest {
 	}
 	
 	@Test
-	public void testSetVolumeThrowsException() {
-		int expected = 0;
-		assertThrows(ArithmeticException.class,() -> bx.setVolume(expected),"Volume cannot be below 1");
-	}
-	
-	
-	@Test
 	public void testGetCost() {
 		double actual = bx.getCost();
 		double expected = 466300.00;
@@ -207,7 +200,7 @@ class EquityTest {
 	@Test
 	public void testSetCostThrowsException() {
 		double expected = 0.00;
-		assertThrows(ArithmeticException.class,() -> bx.setCost(expected),"Cost cannot be below 0.01");
+		assertThrows(ArithmeticException.class,() -> bx.setCost(expected),"Cost cannot be below 0.00");
 	}
 }
 

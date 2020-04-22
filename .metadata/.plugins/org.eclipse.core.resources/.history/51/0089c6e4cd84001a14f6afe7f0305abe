@@ -45,15 +45,15 @@ public class Equity extends Instrument {
 	}
 
 	public int getVolume() {
+		if(this.volume > 0) {
 		return this.volume;
-	}
-	
-	public void setVolume(int volume) {
-		if(volume > 0) {
-			this.volume = volume;
 		}else {
 			throw new ArithmeticException("Volume cannot be below 1");
 		}
+	}
+	
+	public void setVolume(int volume) {
+		this.volume = volume;
 	}
 	
 	public double getCost() {
@@ -65,7 +65,7 @@ public class Equity extends Instrument {
 			this.cost = cost;
 		}
 		else {
-			throw new ArithmeticException("Cost cannot be below 0.00");
+			throw new ArithmeticException("Cost cannot be below 0.01");
 		}
 	}
 	

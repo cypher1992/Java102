@@ -49,7 +49,7 @@ public class Equity extends Instrument {
 	}
 	
 	public void setVolume(int volume) {
-		if(volume > 0) {
+		if(this.volume > 0) {
 			this.volume = volume;
 		}else {
 			throw new ArithmeticException("Volume cannot be below 1");

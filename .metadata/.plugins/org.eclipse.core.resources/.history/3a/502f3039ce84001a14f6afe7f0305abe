@@ -207,7 +207,7 @@ class EquityTest {
 	@Test
 	public void testSetCostThrowsException() {
 		double expected = 0.00;
-		assertThrows(ArithmeticException.class,() -> bx.setCost(expected),"Cost cannot be below 0.01");
+		assertThrows(ArithmeticException.class,() -> bx.setCost(expected),"Cost cannot be below 0.00");
 	}
 }
 
