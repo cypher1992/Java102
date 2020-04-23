@@ -115,7 +115,7 @@ class PortfolioTest {
 	
 	
 	@Test
-	void testUpdateEquityNullreturnsvoid(){
+	void testUpdateEquityreturnsvoid(){
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -129,7 +129,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testUpdateEquityStrNullStringreturnsvoid(){
+	void testUpdateEquityNullStringreturnsvoid(){
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -142,20 +142,14 @@ class PortfolioTest {
 		assertEquals(expected.getPortfolio(),actual.getPortfolio());
 	}
 	
+
 	@Test
-	void testUpdateEquityStringreturnsvoid(){
-		Portfolio actual = new Portfolio();
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
-		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
-		actual.appendEquity(bx);
-		Equity equity = bx;
-		String ticker = "BX";
-		actual.updateEquity(ticker, equity);
-		Portfolio expected = new Portfolio();
-		expected.appendEquity(bx);
-		assertEquals(expected.getPortfolio(),actual.getPortfolio());
+	void testCapitalConstructor(){
+		Portfolio actual = new Portfolio(new Double(500000));
+		Portfolio expected = new Portfolio(new Double(500000));
+		
+		assertTrue(expected==actual);
 	}
-	
 
 }
 

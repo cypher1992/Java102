@@ -156,6 +156,15 @@ class PortfolioTest {
 		assertEquals(expected.getPortfolio(),actual.getPortfolio());
 	}
 	
+	
+
+	@Test
+	void testCapitalConstructor(){
+		Portfolio actual = new Portfolio(new Double(500000));
+		Portfolio expected = actual;
+		
+		assertTrue(expected.equals(actual));
+	}
 
 }
 
