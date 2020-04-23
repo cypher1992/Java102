@@ -61,9 +61,10 @@ class EquityTest {
 		assertEquals(expected,actual);
 	}
 
+	// Need to revised
 	@Test
 	void testInstrumentMap() {
-		Map<String,Object> actual = blackstone.instrumentMap();
+		Map<String,Object> actual = bx.instrumentMap();
 		// treeMap deal with sorting keys
 		Map<String, Object> expected = new TreeMap<String,Object>();
 		expected.put("NAME", "BLACKSTONE-EQT");
@@ -73,8 +74,9 @@ class EquityTest {
 		expected.put("PRICE", new Double(46.63));
 		expected.put("COMPANY", "BLACKSTONE");
 		expected.put("TICKER", "BX");
-	
-		assertEquals(actual,actual);
+		expected.put("VOLUME",new Integer(10000));
+		expected.put("COST",new Double(466300.0));
+		assertSame(actual,actual);
 	}
 	
 	@Test

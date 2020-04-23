@@ -10,8 +10,8 @@ public class Equity extends Instrument {
 	//define attributes of equity
 	private String company;
 	private String ticker;
-	private int volume;
-	private double cost;
+	private Integer volume;
+	private Double cost;
 	
 	//constructors
 	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime,String company, String ticker) {
@@ -44,7 +44,7 @@ public class Equity extends Instrument {
 		this.ticker = ticker;
 	}
 
-	public int getVolume() {
+	public Integer getVolume() {
 		return this.volume;
 	}
 	
@@ -56,11 +56,11 @@ public class Equity extends Instrument {
 		}
 	}
 	
-	public double getCost() {
+	public Double getCost() {
 		return this.cost;
 	}
 	
-	public void setCost(double cost) {
+	public void setCost(Double cost) {
 		if(cost > 0.00 ) {
 			this.cost = cost;
 		}
@@ -74,7 +74,7 @@ public class Equity extends Instrument {
 		
 		Map<String,Object> instrumentMap = new TreeMap<String,Object>();
 		
-		instrumentMap.put("NAME:", this.getName());
+		instrumentMap.put("NAME", this.getName());
 		instrumentMap.put("IDENTIFIER", this.getIdentifier());
 		instrumentMap.put("ASSETTYPE", this.getAssetType());
 		instrumentMap.put("DATETIME", this.getDateTime());

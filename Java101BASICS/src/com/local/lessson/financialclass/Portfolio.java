@@ -7,17 +7,32 @@ import com.local.lessson.financialclass.Equity;
 public class Portfolio {
 
 	private Map<String,Equity> equityPortfolio = new TreeMap<String,Equity>();
+	private Double capital;
 	
 	public Portfolio() {
 		this.equityPortfolio = equityPortfolio;
 	}
-
+	
+	public Portfolio(Double capital) {
+		this.equityPortfolio = equityPortfolio;
+		this.capital = capital;
+	}
+	
+	
 	public Map getPortfolio(){
 		return this.equityPortfolio;
 	}
 	
 	public Map setPortfolio(Map newPortfolio){
 		return this.equityPortfolio = newPortfolio;
+	}
+	
+	public Double getCapital() {
+		return this.capital;
+	}
+	
+	public void setCapital(Double newCapital) {
+		this.capital = newCapital;
 	}
 	
 	public void appendEquity(Equity equity){
