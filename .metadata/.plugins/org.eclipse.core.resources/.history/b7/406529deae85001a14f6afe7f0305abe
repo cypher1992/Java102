@@ -81,8 +81,6 @@ public class Equity extends Instrument {
 		instrumentMap.put("PRICE", this.getPrice());
 		instrumentMap.put("COMPANY", this.getCompany());
 		instrumentMap.put("TICKER", this.getTicker());
-		instrumentMap.put("VOLUME",this.getVolume());
-		instrumentMap.put("COST",this.getCost());
 		
 		return instrumentMap; 
 		
