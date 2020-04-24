@@ -165,19 +165,10 @@ class PortfolioTest {
 
 	
 	@Test
-	void testGetCapital(){
+	void testgetCapital(){
 		Portfolio portfolio = new Portfolio(new Double(1000000));
 		Double actual = portfolio.getCapital();
 		Double expected = new Double(1000000);
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testSetCapital(){
-		Portfolio portfolio = new Portfolio(new Double(1000000));
-		portfolio.setCapital(new Double(2000000));
-		Double actual = portfolio.getCapital();
-		Double expected = new Double(2000000);
 		assertEquals(expected,actual);
 	}
 }
