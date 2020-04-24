@@ -163,14 +163,6 @@ class PortfolioTest {
 		assertTrue(actual instanceof Portfolio);
 	}
 
-	
-	@Test
-	void testgetCapital(){
-		Portfolio portfolio = new Portfolio(new Double(1000000));
-		Double actual = portfolio.getCapital();
-		Double expected = new Double(1000000);
-		assertEquals(expected,actual);
-	}
 }
 
 
