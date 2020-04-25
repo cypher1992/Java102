@@ -82,7 +82,7 @@ class PortfolioTest {
 		portfolio.appendEquityCapital(bx);
 		portfolio.appendEquityCapital(kkr);
 		Double actual = portfolio.getCapital();
-		Double expected = new Double(519700.00);
+		Double expected = new Double(403450.00);
 		assertEquals(expected,actual);
 	}
 	
