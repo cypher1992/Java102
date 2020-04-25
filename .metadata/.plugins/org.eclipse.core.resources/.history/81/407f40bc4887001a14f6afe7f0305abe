@@ -50,7 +50,7 @@ public class Portfolio {
 				this.getPortfolio().put(equity.getTicker(), equity);
 			}
 			else {
-				System.out.println("Insufficient Capital");
+				System.out.println();
 			}
 		}else {
 			System.out.println("Equity is instance of Null");

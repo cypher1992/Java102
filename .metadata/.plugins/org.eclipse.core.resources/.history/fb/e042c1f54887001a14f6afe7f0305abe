@@ -65,7 +65,7 @@ class PortfolioTest {
 		Portfolio portfolio = new Portfolio(new Double (1000000));
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX",10000);
-		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR",5000);
+		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR",50000);
 		portfolio.appendEquityCapital(bx);
 		portfolio.appendEquityCapital(kkr);
 		Double actual = portfolio.getCapital();
