@@ -37,18 +37,8 @@ public class Portfolio {
 	
 	public void appendEquity(Equity equity){
 		if(equity != null){
+			this.setCapital((equity.getCost()));
 			this.getPortfolio().put(equity.getTicker(), equity);
-		}else {
-			System.out.println("Equity is instance of Null");
-		}
-	}
-	
-	public void appendEquityCapital(Equity equity){
-		if(equity != null){
-			if(this.getCapital() > equity.getCost()){
-				this.setCapital(this.capital-equity.getCost());
-				this.getPortfolio().put(equity.getTicker(), equity);
-			}
 		}else {
 			System.out.println("Equity is instance of Null");
 		}
