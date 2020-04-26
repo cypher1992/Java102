@@ -100,7 +100,8 @@ class PortfolioTest {
 		assertEquals(portfolio.getPortfolio(),testPortfolio.getPortfolio());
 		
 	}
-		
+	
+	
 	@Test
 	void testNonExistentTickerRemoveEquity(){
 		Portfolio portfolio = new Portfolio();
@@ -184,9 +185,11 @@ class PortfolioTest {
 	@Test
 	void testCapitalConstructor(){
 		Portfolio actual = new Portfolio(new Double(500000));
+		
 		assertTrue(actual instanceof Portfolio);
 	}
 
+	
 	@Test
 	void testGetCapital(){
 		Portfolio portfolio = new Portfolio(new Double(1000000));
