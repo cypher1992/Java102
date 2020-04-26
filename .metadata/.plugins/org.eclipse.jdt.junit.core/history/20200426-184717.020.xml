@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PortfolioExceptionTest" project="Java101BASICS" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.local.financialtest.financialexceptiontest.PortfolioExceptionTest" time="0.118" displayname="PortfolioExceptionTest" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.financialexceptiontest.PortfolioExceptionTest]">
+    <testcase name="test" classname="com.local.financialtest.financialexceptiontest.PortfolioExceptionTest" time="0.118" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.financialexceptiontest.PortfolioExceptionTest]/[method:test()]"/>
+  </testsuite>
+</testrun>

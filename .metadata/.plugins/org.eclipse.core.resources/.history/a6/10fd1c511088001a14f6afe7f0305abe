@@ -1,10 +1,7 @@
 package com.local.financialtest;
 
 import com.local.lessson.financialclass.Portfolio;
-import com.local.lessson.financialclass.financialexception.PortfolioException;
 import com.local.lessson.financialclass.Equity;
-
-import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDateTime;
@@ -12,7 +9,6 @@ import java.time.Month;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class PortfolioTest {
@@ -65,7 +61,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testAppendEquityUpdateCapital() throws PortfolioException{
+	void testAppendEquityUpdateCapital(){
 		Portfolio portfolio = new Portfolio(new Double (1000000));
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX",10000);
@@ -78,13 +74,16 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testAppendEquityUpdateCapitalInsufficientfund() throws PortfolioException{
+	void testAppendEquityUpdateCapitalInsufficientfund(){
 		Portfolio portfolio = new Portfolio(new Double (1000000));
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX",10000);
 		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR",50000);
 		portfolio.appendEquityCapital(bx);
-		Assertions.assertThrows(PortfolioException.class, () -> {portfolio.appendEquityCapital(kkr);});
+		portfolio.appendEquityCapital(kkr);
+		Double actual = portfolio.getCapital();
+		Double expected = new Double(519700.00);
+		assertEquals(expected,actual);
 	}
 	
 	@Test
