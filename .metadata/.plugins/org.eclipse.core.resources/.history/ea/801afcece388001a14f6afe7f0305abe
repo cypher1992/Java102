@@ -54,7 +54,7 @@ public class Portfolio {
 				throw new PortfolioException("Insufficient Capital");
 			}
 		}else {
-			throw new PortfolioException("Equity cannot be Null");
+			System.out.println("Equity is instance of Null");
 		}
 	}
 	
