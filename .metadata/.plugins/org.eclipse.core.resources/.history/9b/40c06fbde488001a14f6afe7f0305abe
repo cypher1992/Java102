@@ -36,7 +36,7 @@ public class Portfolio {
 		this.capital = newCapital;
 	}
 	
-	public void appendEquity(Equity equity) throws PortfolioException{
+	public void appendEquity(Equity equity){
 		if(equity != null){
 			this.getPortfolio().put(equity.getTicker(), equity);
 		}else {

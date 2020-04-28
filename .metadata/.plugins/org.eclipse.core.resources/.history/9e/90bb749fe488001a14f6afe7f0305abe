@@ -40,16 +40,19 @@ class PortfolioTest {
 		Map expected = new TreeMap<String,Equity>();
 		assertEquals(expected,actual);
 	}
-	
+
 	@Test
-	void testNullAppendEquityThrowsException() throws PortfolioException{
+	void testNullAppendEquity(){
 		Portfolio portfolio = new Portfolio();
 		Equity bx = null;
-		Assertions.assertThrows(PortfolioException.class, () -> {portfolio.appendEquity(bx);});
+		portfolio.appendEquity(bx);
+		Map actual = portfolio.getPortfolio();
+		Map<String,Equity> expected = new TreeMap<String,Equity>();		
+		assertEquals(expected,actual);
 	}
 	
 	@Test
-	void testAppendEquity() throws PortfolioException{
+	void testAppendEquity(){
 		//Need to work on comparison logic or compareto
 		Portfolio portfolio = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
@@ -96,7 +99,7 @@ class PortfolioTest {
 	
 	
 	@Test
-	void testRemoveEquity() throws PortfolioException{
+	void testRemoveEquity(){
 		Portfolio portfolio = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -111,7 +114,7 @@ class PortfolioTest {
 	}
 		
 	@Test
-	void testNonExistentTickerRemoveEquity() throws PortfolioException{
+	void testNonExistentTickerRemoveEquity(){
 		Portfolio portfolio = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -135,7 +138,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testFindEquityreturnsEquity() throws PortfolioException{
+	void testFindEquityreturnsEquity(){
 		Portfolio portfolio = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -149,7 +152,7 @@ class PortfolioTest {
 	
 	
 	@Test
-	void testUpdateEquityNullreturnsvoid() throws PortfolioException{
+	void testUpdateEquityNullreturnsvoid(){
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -163,7 +166,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testUpdateEquityStrNullStringreturnsvoid() throws PortfolioException{
+	void testUpdateEquityStrNullStringreturnsvoid(){
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
@@ -177,7 +180,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testUpdateEquityStringreturnsvoid() throws PortfolioException{
+	void testUpdateEquityStringreturnsvoid(){
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");

@@ -40,6 +40,20 @@ class PortfolioTest {
 		Map expected = new TreeMap<String,Equity>();
 		assertEquals(expected,actual);
 	}
+
+	@Test
+	void testNullAppendEquity(){
+		Portfolio portfolio = new Portfolio();
+		Equity bx = null;
+		try {
+		portfolio.appendEquity(bx);
+		}
+		catch(PortfolioException e){
+			Map actual = portfolio.getPortfolio();
+			Map<String,Equity> expected = new TreeMap<String,Equity>();		
+			assertEquals(expected,actual);
+		}
+	}
 	
 	@Test
 	void testNullAppendEquityThrowsException() throws PortfolioException{

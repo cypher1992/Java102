@@ -36,11 +36,11 @@ public class Portfolio {
 		this.capital = newCapital;
 	}
 	
-	public void appendEquity(Equity equity) throws PortfolioException{
+	public void appendEquity(Equity equity){
 		if(equity != null){
 			this.getPortfolio().put(equity.getTicker(), equity);
 		}else {
-			throw new PortfolioException("Equity cannot be Null");
+			System.out.println("Equity is instance of Null");
 		}
 	}
 	
