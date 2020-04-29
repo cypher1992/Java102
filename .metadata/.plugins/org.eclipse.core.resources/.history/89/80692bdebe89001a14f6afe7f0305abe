@@ -134,6 +134,7 @@ class PortfolioTest {
 		portfolio.appendEquity(kkr);
 		String ticker = null;
 		Assertions.assertThrows(NullPointerException.class, () -> {portfolio.removeEquity(ticker);});
+		
 	}
 	
 		
@@ -148,11 +149,8 @@ class PortfolioTest {
 		Portfolio testPortfolio = new Portfolio();
 		testPortfolio.appendEquity(bx);
 		testPortfolio.appendEquity(kkr);
-		try {
 		portfolio.removeEquity("GS");
-		}catch(PortfolioException e) {
 		assertEquals(portfolio.getPortfolio(),testPortfolio.getPortfolio());
-		}
 		
 	}
 	
