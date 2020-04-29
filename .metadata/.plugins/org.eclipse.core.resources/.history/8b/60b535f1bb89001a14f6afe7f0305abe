@@ -62,7 +62,7 @@ public class Portfolio {
 		if(this.equityPortfolio.containsKey(key) && key != null){
 			this.equityPortfolio.remove(key);
 		}else {
-			throw new PortfolioException("Ticker did not exist in portfolio or was a Null");
+			throw new PortfolioException("Ticker did not exist in portfolio");
 		}
 	}
 	

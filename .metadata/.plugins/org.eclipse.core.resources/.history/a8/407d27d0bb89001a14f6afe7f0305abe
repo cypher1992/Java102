@@ -58,11 +58,11 @@ public class Portfolio {
 		}
 	}
 	
-	public void removeEquity(String key) throws PortfolioException{
+	public void removeEquity(String key){
 		if(this.equityPortfolio.containsKey(key) && key != null){
 			this.equityPortfolio.remove(key);
 		}else {
-			throw new PortfolioException("Ticker did not exist in portfolio or was a Null");
+			System.out.println("Ticker is not valid");
 		}
 	}
 	
