@@ -133,7 +133,7 @@ class PortfolioTest {
 		portfolio.appendEquity(bx);
 		portfolio.appendEquity(kkr);
 		String ticker = null;
-		Assertions.assertThrows(NullPointerException.class, () -> {portfolio.removeEquity(ticker);});
+		Assertions.assertThrows(PortfolioException.class, () -> {portfolio.removeEquity(ticker);});
 		
 	}
 	

@@ -40,20 +40,6 @@ class PortfolioTest {
 		Map expected = new TreeMap<String,Equity>();
 		assertEquals(expected,actual);
 	}
-
-	@Test
-	void testNullAppendEquity(){
-		Portfolio portfolio = new Portfolio();
-		Equity bx = null;
-		try {
-		portfolio.appendEquity(bx);
-		}
-		catch(PortfolioException e){
-			Map actual = portfolio.getPortfolio();
-			Map<String,Equity> expected = new TreeMap<String,Equity>();		
-			assertEquals(expected,actual);
-		}
-	}
 	
 	@Test
 	void testNullAppendEquityThrowsException() throws PortfolioException{
@@ -123,20 +109,6 @@ class PortfolioTest {
 		assertEquals(portfolio.getPortfolio(),testPortfolio.getPortfolio());
 		
 	}
-	
-	@Test
-	void testRemoveEquityKeyIsNull() throws PortfolioException{
-		Portfolio portfolio = new Portfolio();
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
-		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
-		Equity kkr = new Equity("KKR-EQT","KKR",new Double(23.25),"EQUITY",dateTime,"KKR","KKR");
-		portfolio.appendEquity(bx);
-		portfolio.appendEquity(kkr);
-		String ticker = null;
-		Assertions.assertThrows(NullPointerException.class, () -> {portfolio.removeEquity(ticker);});
-		
-	}
-	
 		
 	@Test
 	void testNonExistentTickerRemoveEquity() throws PortfolioException{
