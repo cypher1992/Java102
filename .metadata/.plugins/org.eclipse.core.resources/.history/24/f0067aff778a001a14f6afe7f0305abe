@@ -171,7 +171,7 @@ class PortfolioTest {
 	@Test
 	void testFindEquityreturnsNull()throws PortfolioException{
 		Portfolio portfolio = new Portfolio();
-		Equity actual = null;
+		Equity actual = new Equity();
 		try {
 		actual = portfolio.findEquity("GS");
 		}catch(PortfolioException e) {

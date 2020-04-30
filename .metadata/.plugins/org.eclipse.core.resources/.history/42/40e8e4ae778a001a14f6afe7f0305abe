@@ -15,9 +15,6 @@ public class Equity extends Instrument {
 	
 	//constructors
 	
-	public Equity(){
-	}
-	
 	public Equity(String name, String identifier, Double price, String assetType, LocalDateTime dateTime,String company, String ticker) {
 		super(name, identifier, price, assetType, dateTime);
 		this.company = company;

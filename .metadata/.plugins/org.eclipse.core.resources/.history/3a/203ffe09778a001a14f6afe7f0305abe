@@ -66,12 +66,10 @@ public class Portfolio {
 		}
 	}
 	
-	public Equity findEquity(String ticker) throws PortfolioException{
+	public Equity findEquity(String ticker){
 		Equity value = null;
 		if(this.getPortfolio().containsKey(ticker)) {
 			value = (Equity) this.getPortfolio().get(ticker);
-		}else {
-			throw new PortfolioException("ticker does not exist");
 		}
 		
 		return value;

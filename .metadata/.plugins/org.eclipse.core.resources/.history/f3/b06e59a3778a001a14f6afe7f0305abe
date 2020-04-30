@@ -17,9 +17,6 @@ public abstract class Instrument {
 	private String assetType;
 	private LocalDateTime dateTime;
 	
-	public Instrument() 
-	{}
-	
 	//creating a constructor but never instantiated as Abstract Class
 	public Instrument(String name, String identifier, Double price, String assetType, LocalDateTime dateTime) {
 	
