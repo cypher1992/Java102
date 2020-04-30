@@ -17,8 +17,6 @@ import org.junit.jupiter.api.Test;
 
 class PortfolioTest {
 
-	//lessons use try catch to catch errors instead throws
-	
 	@Test
 	void testPortfolio() {
 		Portfolio testPortfolio = new Portfolio();
@@ -138,17 +136,7 @@ class PortfolioTest {
 		Assertions.assertThrows(NullPointerException.class, () -> {portfolio.removeEquity(ticker);});
 	}
 	
-	
-	@Test
-	void testTickerDNERemoveEquity()throws PortfolioException{
-		Portfolio portfolio = new Portfolio();
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
-		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
-		portfolio.appendEquity(bx);
-		String ticker = "GS";
-		Assertions.assertThrows(PortfolioException.class, () -> {portfolio.removeEquity(ticker);});
-	}
-	
+		
 	@Test
 	void testNonExistentTickerRemoveEquity() throws PortfolioException{
 		Portfolio portfolio = new Portfolio();

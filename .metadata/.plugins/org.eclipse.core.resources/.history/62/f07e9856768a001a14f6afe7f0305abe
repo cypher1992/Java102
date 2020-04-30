@@ -145,7 +145,7 @@ class PortfolioTest {
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
 		portfolio.appendEquity(bx);
-		String ticker = "GS";
+		String ticker = "BX";
 		Assertions.assertThrows(PortfolioException.class, () -> {portfolio.removeEquity(ticker);});
 	}
 	
