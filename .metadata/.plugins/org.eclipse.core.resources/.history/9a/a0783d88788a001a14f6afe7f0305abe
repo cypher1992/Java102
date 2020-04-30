@@ -169,7 +169,7 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testFindEquityreturnsNullThroughTryCatch()throws PortfolioException{
+	void testFindEquityreturnsNull()throws PortfolioException{
 		Portfolio portfolio = new Portfolio();
 		Equity actual = null;
 		try {
