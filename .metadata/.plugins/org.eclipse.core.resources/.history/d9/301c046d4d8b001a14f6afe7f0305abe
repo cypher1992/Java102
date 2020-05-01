@@ -179,13 +179,6 @@ class PortfolioTest {
 		assertEquals(expected,actual);
 		}
 	}
-	@Test
-	void testFindEquityreturnsPortfolioException()throws PortfolioException{
-		Portfolio portfolio = new Portfolio();
-		Equity actual = null;
-		Assertions.assertThrows(PortfolioException.class,() -> {portfolio.findEquity("GS");});
-	}
-	
 	
 	@Test
 	void testFindEquityreturnsEquity() throws PortfolioException{
