@@ -222,24 +222,26 @@ class PortfolioTest {
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
 		try {
 			actual.appendEquity(bx);
-		} catch (PortfolioException e2) {
+		} catch (PortfolioException e) {
 			// TODO Auto-generated catch block
-			e2.printStackTrace();
+			e.printStackTrace();
 		}
 		Equity equity = bx;
 		String nullTicker = null;
 		try {
 			actual.updateEquity(nullTicker, equity);
 		} catch (PortfolioException e) {
-			Portfolio expected = new Portfolio();
-			try {
-				expected.appendEquity(bx);
-			} catch (PortfolioException ex) {
-				// TODO Auto-generated catch block
-				ex.printStackTrace();
-			}
-			assertEquals(expected.getPortfolio(),actual.getPortfolio());
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		Portfolio expected = new Portfolio();
+		try {
+			expected.appendEquity(bx);
+		} catch (PortfolioException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		assertEquals(expected.getPortfolio(),actual.getPortfolio());
 	}
 	
 	@Test

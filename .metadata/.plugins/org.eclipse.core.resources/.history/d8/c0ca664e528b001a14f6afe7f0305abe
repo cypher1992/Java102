@@ -79,7 +79,7 @@ public class Portfolio {
 	
 	public void updateEquity(String ticker,Equity equity) throws PortfolioException{
 		if(ticker != null && equity != null) {
-			this.getPortfolio().replace(ticker, equity);
+			this.getPortfolio().put(ticker, equity);
 			}
 		else {
 			throw new PortfolioException("Can not take a null");

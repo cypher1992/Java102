@@ -77,12 +77,13 @@ public class Portfolio {
 		return value;
 	}
 	
-	public void updateEquity(String ticker,Equity equity) throws PortfolioException{
+	public void updateEquity(String ticker,Equity equity)throws NullPointerException{
 		if(ticker != null && equity != null) {
-			this.getPortfolio().replace(ticker, equity);
+			// this.getPortfolio().put(ticker, equity);
+			System.out.println("Something");
 			}
 		else {
-			throw new PortfolioException("Can not take a null");
+			throw new NullPointerException("Null Equity");
 			}
 		
 	}

@@ -216,30 +216,17 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testUpdateEquityStrNullStringreturnsvoid() {
+	void testUpdateEquityStrNullStringreturnsvoid() throws NullPointerException, PortfolioException{
 		Portfolio actual = new Portfolio();
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
 		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
-		try {
-			actual.appendEquity(bx);
-		} catch (PortfolioException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
+		actual.appendEquity(bx);
 		Equity equity = bx;
 		String nullTicker = null;
-		try {
-			actual.updateEquity(nullTicker, equity);
-		} catch (PortfolioException e) {
-			Portfolio expected = new Portfolio();
-			try {
-				expected.appendEquity(bx);
-			} catch (PortfolioException ex) {
-				// TODO Auto-generated catch block
-				ex.printStackTrace();
-			}
-			assertEquals(expected.getPortfolio(),actual.getPortfolio());
-		}
+		actual.updateEquity(nullTicker, equity);
+		Portfolio expected = new Portfolio();
+		expected.appendEquity(bx);
+		assertEquals(expected.getPortfolio(),actual.getPortfolio());
 	}
 	
 	@Test
@@ -250,10 +237,13 @@ class PortfolioTest {
 		actual.appendEquity(bx);
 		Equity equity = bx;
 		String ticker = "BX";
-		actual.updateEquity(ticker, equity);
-		Portfolio expected = new Portfolio();
-		expected.appendEquity(bx);
-		assertEquals(expected.getPortfolio(),actual.getPortfolio());
+		try {
+			actual.updateEquity(ticker, equity);
+		}catch(PortfolioException e){
+			Portfolio expected = new Portfolio();
+			expected.appendEquity(bx);
+			assertEquals(expected.getPortfolio(),actual.getPortfolio());
+		}
 	}
 	
 	@Test
