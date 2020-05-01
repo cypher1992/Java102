@@ -82,7 +82,7 @@ public class Portfolio {
 			this.getPortfolio().put(ticker, equity);
 			}
 		else {
-			throw new NullPointerException();
+			System.out.println("Can not take a null");
 			}
 		
 	}
