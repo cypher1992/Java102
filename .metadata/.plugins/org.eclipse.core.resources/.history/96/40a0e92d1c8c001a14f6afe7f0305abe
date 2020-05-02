@@ -281,7 +281,7 @@ class PortfolioTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Assertions.assertThrows(PortfolioException.class, () -> {actual.updateEquity("BX", null);});
+		Assertions.assertThrows(NullPointerException.class, () -> {actual.updateEquity("BX", null);});
 		
 	}
 	

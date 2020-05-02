@@ -271,21 +271,6 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testUpdateEquity_EquityNull_Throws_PortfolioExeption(){
-		Portfolio actual = new Portfolio();
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.APRIL,14,17,00,00);
-		Equity bx = new Equity("BLACKSTONE-EQT","BX-W",new Double(48.03),"EQUITY",dateTime,"BLACKSTONE","BX");
-		try {
-			actual.appendEquity(bx);
-		} catch (PortfolioException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Assertions.assertThrows(PortfolioException.class, () -> {actual.updateEquity("BX", null);});
-		
-	}
-	
-	@Test
 	void testCapitalConstructor(){
 		Portfolio actual = new Portfolio(new Double(500000));
 		assertTrue(actual instanceof Portfolio);
