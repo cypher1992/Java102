@@ -331,12 +331,6 @@ class PortfolioTest {
 		Double expected = new Double(10000.00);
 		assertEquals(expected,actual);
 	}
-	
-	@Test
-	void testDepositCapitalIncrease_NegativeDepositCapital() {
-		Portfolio portfolio = new Portfolio(new Double(5000.00));
-			Assertions.assertThrows(PortfolioException.class,() -> {portfolio.depositCapital(new Double(-5000.00));}  );
-	}
 
 }
 
