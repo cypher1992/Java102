@@ -36,14 +36,6 @@ public class Portfolio {
 		this.capital = newCapital;
 	}
 	
-	public void depositCapital(Double deposit) throws PortfolioException {
-		if(deposit >0.00) {
-			this.setCapital(this.getCapital()+ deposit);
-		}else{
-			throw new PortfolioException("Negative deposit");
-		}
-	}
-	
 	public void appendEquity(Equity equity) throws PortfolioException{
 		if(equity != null){
 			this.getPortfolio().put(equity.getTicker(), equity);

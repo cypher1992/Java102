@@ -9,6 +9,7 @@ public class Portfolio {
 
 	private Map<String,Equity> equityPortfolio = new TreeMap<String,Equity>();
 	private Double capital;
+	private Double deposit;
 	
 	public Portfolio() {
 		this.equityPortfolio = equityPortfolio;
@@ -34,14 +35,6 @@ public class Portfolio {
 	
 	public void setCapital(Double newCapital) {
 		this.capital = newCapital;
-	}
-	
-	public void depositCapital(Double deposit) throws PortfolioException {
-		if(deposit >0.00) {
-			this.setCapital(this.getCapital()+ deposit);
-		}else{
-			throw new PortfolioException("Negative deposit");
-		}
 	}
 	
 	public void appendEquity(Equity equity) throws PortfolioException{
