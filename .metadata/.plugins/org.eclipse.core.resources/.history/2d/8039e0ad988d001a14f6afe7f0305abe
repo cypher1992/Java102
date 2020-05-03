@@ -44,14 +44,6 @@ public class Portfolio {
 		}
 	}
 	
-	public void withdrawCapital(Double withdraw) throws PortfolioException {
-		if(withdraw >0.00) {
-			this.setCapital(this.getCapital()-withdraw);
-		}else {
-			throw new PortfolioException("Withdraw is below 0.00");
-		}
-	}
-	
 	public void appendEquity(Equity equity) throws PortfolioException{
 		if(equity != null){
 			this.getPortfolio().put(equity.getTicker(), equity);
