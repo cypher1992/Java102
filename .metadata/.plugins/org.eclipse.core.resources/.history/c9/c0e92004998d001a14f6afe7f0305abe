@@ -337,16 +337,6 @@ class PortfolioTest {
 		Portfolio portfolio = new Portfolio(new Double(5000.00));
 			Assertions.assertThrows(PortfolioException.class,() -> {portfolio.depositCapital(new Double(-5000.00));}  );
 	}
-	
-	@Test
-	void testWithdrawCapitalIncreaseCapital() throws PortfolioException {
-		Portfolio portfolio = new Portfolio(new Double(5000.00));
-		portfolio.withdrawCapital(new Double(4000.00));
-		Double actual = portfolio.getCapital();
-		Double expected = new Double(1000.00);
-		assertEquals(expected,actual);
-	}
-	
 
 }
 

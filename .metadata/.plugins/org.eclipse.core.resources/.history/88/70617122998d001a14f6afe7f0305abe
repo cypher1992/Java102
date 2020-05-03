@@ -347,6 +347,11 @@ class PortfolioTest {
 		assertEquals(expected,actual);
 	}
 	
+	@Test
+	void testWithdrawCapitalIncrease_NegativeDepositCapital() {
+		Portfolio portfolio = new Portfolio(new Double(5000.00));
+			Assertions.assertThrows(PortfolioException.class,() -> {portfolio.withdrawCapital(new Double(-1000.00));}  );
+	}
 
 }
 
