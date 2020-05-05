@@ -333,15 +333,6 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testDepositCapital001IncreaseCapital() throws PortfolioException {
-		Portfolio portfolio = new Portfolio(new Double(5000.00));
-		portfolio.depositCapital(new Double(0.01));
-		Double actual = portfolio.getCapital();
-		Double expected = new Double(5000.01);
-		assertEquals(expected,actual);
-	}
-	
-	@Test
 	void testDepositCapitalIncrease_NegativeDepositCapital() {
 		Portfolio portfolio = new Portfolio(new Double(5000.00));
 			Assertions.assertThrows(PortfolioException.class,() -> {portfolio.depositCapital(new Double(-5000.00));}  );
@@ -353,15 +344,6 @@ class PortfolioTest {
 		portfolio.withdrawCapital(new Double(4000.00));
 		Double actual = portfolio.getCapital();
 		Double expected = new Double(1000.00);
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testWithdrawCapital001IncreaseCapital() throws PortfolioException {
-		Portfolio portfolio = new Portfolio(new Double(5000.00));
-		portfolio.withdrawCapital(new Double(0.01));
-		Double actual = portfolio.getCapital();
-		Double expected = new Double(4999.99);
 		assertEquals(expected,actual);
 	}
 	
