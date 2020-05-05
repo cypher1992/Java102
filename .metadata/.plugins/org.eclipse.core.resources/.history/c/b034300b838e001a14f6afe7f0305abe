@@ -342,15 +342,12 @@ class PortfolioTest {
 	}
 	
 	@Test
-	void testDepositCapital000IncreaseCapital() {
+	void testDepositCapital000IncreaseCapital() throws PortfolioException {
 		Portfolio portfolio = new Portfolio(new Double(5000.00));
-		try {
-			portfolio.depositCapital(new Double(0.00));
-		} catch (PortfolioException e) {
-			Double actual = portfolio.getCapital();
-			Double expected = new Double(5000.00);
-			assertEquals(expected,actual);
-		}
+		portfolio.depositCapital(new Double(0.00));
+		Double actual = portfolio.getCapital();
+		Double expected = new Double(5000.00);
+		assertEquals(expected,actual);
 	}
 	
 	
