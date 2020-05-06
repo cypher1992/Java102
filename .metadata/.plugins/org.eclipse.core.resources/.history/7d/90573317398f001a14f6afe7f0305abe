@@ -10,6 +10,4 @@ public interface Exchange {
 	public List<Instrument> listing();
 	//sold on the exchange
 	public List<Instrument> add(); 
-	//not sold on the exchange
-	public List<Instrument> remove();
 }
