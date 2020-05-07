@@ -18,14 +18,5 @@ class NYSETest {
 		NYSE nyse = NYSE.getInstance();
 		assertTrue(nyse instanceof Exchange);
 	}
-	
-	@Test
-	void testInstanceIsSingleton() {
-		NYSE actual = NYSE.getInstance();
-		NYSE expected = NYSE.getInstance();
-		assertTrue(actual == expected);
-	}
-	
-	
 
 }

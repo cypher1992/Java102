@@ -23,6 +23,8 @@ class NYSETest {
 	void testInstanceIsSingleton() {
 		NYSE actual = NYSE.getInstance();
 		NYSE expected = NYSE.getInstance();
+		System.out.println(actual.hashCode());
+		System.out.println(expected.hashCode());
 		assertTrue(actual == expected);
 	}
 	
