@@ -9,11 +9,7 @@ import com.local.lessson.financialclass.Instrument;
 public class NYSE implements Exchange{
 
 	private  Map<String,Equity> activeStock = new TreeMap<String,Equity>();
-	private  Map<String,Equity> inactiveStock = new TreeMap<String,Equity>();
 
-	public NYSE(){
-	} 
-	
 	@Override
 	public Map<String, Instrument> listing() {
 		// TODO Auto-generated method stub
