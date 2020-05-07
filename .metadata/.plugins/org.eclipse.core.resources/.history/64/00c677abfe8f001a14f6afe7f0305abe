@@ -7,24 +7,12 @@ import com.local.lessson.financialclass.Equity;
 import com.local.lessson.financialclass.Instrument;
 
 public class NYSE implements Exchange{
-	
-	private static NYSE INSTANCE;
-	private  Map<String,Equity> activeStocks = new TreeMap<String,Equity>();
-	private  Map<String,Equity> inactiveStocks = new TreeMap<String,Equity>();
-	
-	
-	private NYSE(){
-		this.activeStocks = activeStocks;
-		this.inactiveStocks = inactiveStocks;
+
+	private  Map<String,Equity> activeStock = new TreeMap<String,Equity>();
+	private  Map<String,Equity> inactiveStock = new TreeMap<String,Equity>();
+
+	public NYSE(){
 	} 
-	
-	public static NYSE getInstance(){
-		if(INSTANCE == null) {
-			INSTANCE = new NYSE();
-		}
-		return INSTANCE;
-	}
-	
 	
 	@Override
 	public Map<String, Instrument> listing() {
