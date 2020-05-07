@@ -43,6 +43,7 @@ public class NYSE implements Exchange{
 
 	@Override
 	public Map<String, Equity> listing() {
+		
 		return this.activeStocks;
 	}
 

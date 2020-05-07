@@ -43,17 +43,18 @@ public class NYSE implements Exchange{
 
 	@Override
 	public Map<String, Equity> listing() {
+		
 		return this.activeStocks;
 	}
 
 	@Override
-	public Map<String, Equity> add() {
+	public Map<String, Instrument> add() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Map<String, Equity> remove() {
+	public Map<String, Instrument> remove() {
 		// TODO Auto-generated method stub
 		return null;
 	} 
