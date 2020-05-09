@@ -47,13 +47,8 @@ public class NYSE implements Exchange{
 	}
 
 	@Override
-	public void add(Map<String,Equity> tgtMap,String ticker, Equity equity) {
-		if(!(ticker.equals(null) || equity.equals(null) )) {
-			tgtMap.put(ticker, equity); 
-			this.setActiveStocks(tgtMap);
-		}else {
-			System.out.println("Need to throw exception");
-		}
+	public void add(Map<String,Equity> tgtList,String ticker, Equity equity) {
+		
 	}
 
 	@Override
