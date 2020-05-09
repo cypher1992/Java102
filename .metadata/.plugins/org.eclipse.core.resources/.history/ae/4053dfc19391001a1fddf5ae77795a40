@@ -48,7 +48,7 @@ public class NYSE implements Exchange{
 
 	@Override
 	public void add(Map<String,Equity> tgtList) {
-		
+		// TODO Auto-generated method stub
 	}
 
 	@Override

@@ -10,5 +10,5 @@ public interface Exchange {
 	//sold on the exchange
 	public  void add(Map<String,Equity> tgtList,String ticker, Equity equity); 
 	//not sold on the exchange
-	public  void remove(Map<String,Equity> tgtList,String ticker, Equity equity);
+	public  void remove(Map<String,Equity> tgtList,String ticker, Equity equity));
 }
