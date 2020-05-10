@@ -48,13 +48,11 @@ public class NYSE implements Exchange{
 
 	@Override
 	public void add(Map<String,Equity> tgtMap,String ticker, Equity equity) {
-		try {
-				if(!(ticker.equals(null) || equity.equals(null) )) {
-					tgtMap.put(ticker, equity); 
-					this.setActiveStocks(tgtMap);
-				}
-		}catch(NullPointerException e) {
-			System.out.println("Ticker or Equity can not be null");
+		if(!(equity.equals(null) )) {
+			tgtMap.put(ticker, equity); 
+			this.setActiveStocks(tgtMap);
+		}else {
+			System.out.println("Need to throw exception");
 		}
 	}
 

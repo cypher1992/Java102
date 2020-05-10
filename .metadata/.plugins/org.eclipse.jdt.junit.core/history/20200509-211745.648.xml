@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="NYSETest" project="Java101BASICS" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.local.financialtest.NYSETest" time="0.177" displayname="NYSETest" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]">
+    <testcase name="testInstanceIsSingleton" classname="com.local.financialtest.NYSETest" time="0.089" displayname="testInstanceIsSingleton()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testInstanceIsSingleton()]"/>
+    <testcase name="testListingReturnsactiveStocks" classname="com.local.financialtest.NYSETest" time="0.011" displayname="testListingReturnsactiveStocks()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testListingReturnsactiveStocks()]"/>
+    <testcase name="testAddEquityToMapReturnsMapWithEquity" classname="com.local.financialtest.NYSETest" time="0.019" displayname="testAddEquityToMapReturnsMapWithEquity()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testAddEquityToMapReturnsMapWithEquity()]"/>
+    <testcase name="testNYSEIsInstanceOfExchange" classname="com.local.financialtest.NYSETest" time="0.004" displayname="testNYSEIsInstanceOfExchange()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testNYSEIsInstanceOfExchange()]"/>
+    <testcase name="testIsInstanceOfNYSE" classname="com.local.financialtest.NYSETest" time="0.054" displayname="testIsInstanceOfNYSE()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testIsInstanceOfNYSE()]"/>
+  </testsuite>
+</testrun>

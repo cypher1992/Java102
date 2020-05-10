@@ -14,11 +14,6 @@ import com.local.lessson.financialclass.interfacexchange.Exchange;
 
 class NYSETest {
 
-	
-	Double price = new Double(52.87);
-	LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
-	Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
-	
 	@Test
 	void testIsInstanceOfNYSE() {
 		NYSE nyse = NYSE.getInstance();
@@ -49,8 +44,11 @@ class NYSETest {
 	@Test
 	void testAddEquityToMapReturnsMapWithEquity(){
 		NYSE nyse = NYSE.getInstance();
-		Map<String,Equity> actual = nyse.getActiveStocks();
+		Double price = new Double(52.87);
+		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
+		Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
 		nyse.add(nyse.getActiveStocks(), blackstone.getTicker(), blackstone);
+		Map<String,Equity> actual = nyse.getActiveStocks();
 		Map<String,Equity> expected = new TreeMap<String,Equity>();
 		expected.put(blackstone.getTicker(), blackstone);
 		assertEquals(expected,actual);
@@ -61,11 +59,11 @@ class NYSETest {
 		NYSE nyse = NYSE.getInstance();
 		Double price = new Double(52.87);
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
+		Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
 		nyse.add(nyse.getActiveStocks(), null, blackstone);
 		Map<String,Equity> actual = nyse.getActiveStocks();
 		Map<String,Equity> expected = new TreeMap<String,Equity>();
-		expected.put(blackstone.getTicker(), blackstone);
-		assertEquals(actual.toString(),expected.toString());
+		assertEquals(expected,actual);
 	}
 	
 	
