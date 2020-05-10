@@ -2,8 +2,6 @@ package com.local.financialtest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -41,18 +39,7 @@ class NYSETest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testAddEquityToMapReturnsMapWithEquity(){
-		NYSE nyse = NYSE.getInstance();
-		Double price = new Double(52.87);
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
-		Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
-		nyse.add(nyse.getActiveStocks(), blackstone.getTicker(), blackstone);
-		Map<String,Equity> actual = nyse.getActiveStocks();
-		Map<String,Equity> expected = new TreeMap<String,Equity>();
-		expected.put(blackstone.getTicker(), blackstone);
-		assertEquals(expected,actual);
-	}
+	
 	
 	
 

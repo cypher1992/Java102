@@ -50,7 +50,7 @@ class NYSETest {
 		nyse.add(nyse.getActiveStocks(), blackstone.getTicker(), blackstone);
 		Map<String,Equity> actual = nyse.getActiveStocks();
 		Map<String,Equity> expected = new TreeMap<String,Equity>();
-		expected.put(blackstone.getTicker(), blackstone);
+		expected.put(blackstone.getTicker(), null);
 		assertEquals(expected,actual);
 	}
 	
