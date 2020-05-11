@@ -89,7 +89,7 @@ class NYSETest {
 		nyse.remove(nyse.getTestStocksListing(), blackstone.getTicker());
 		Map<String,Equity> actual = nyse.getTestStocksListing();
 		Map<String,Equity> expected = null;
-		assertEquals(actual,expected);
+		assertEquals(actual.toString(),expected.toString());
 	}
 	
 	

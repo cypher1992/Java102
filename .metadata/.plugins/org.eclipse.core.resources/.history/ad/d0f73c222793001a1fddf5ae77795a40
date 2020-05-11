@@ -81,17 +81,5 @@ class NYSETest {
 	}
 	
 	
-	@Test
-	void testremoveNullListingNoChangesToMap(){
-		NYSE nyse = NYSE.getInstance();
-		Double price = new Double(52.87);
-		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
-		nyse.remove(nyse.getTestStocksListing(), blackstone.getTicker());
-		Map<String,Equity> actual = nyse.getTestStocksListing();
-		Map<String,Equity> expected = null;
-		assertEquals(actual,expected);
-	}
-	
-	
 
 }

@@ -11,7 +11,6 @@ public class NYSE implements Exchange{
 	private static NYSE INSTANCE;
 	private  Map<String,Equity> activeStocks = new TreeMap<String,Equity>();
 	private  Map<String,Equity> inactiveStocks = new TreeMap<String,Equity>();
-	private  Map<String,Equity> testStocksListing = null;
 	
 	
 	 private NYSE(){
@@ -40,14 +39,6 @@ public class NYSE implements Exchange{
 
 	public void setInactiveStocks(Map<String, Equity> inactiveStocks) {
 		this.inactiveStocks = inactiveStocks;
-	}
-	
-	public Map<String, Equity> getTestStocksListing() {
-		return testStocksListing;
-	}
-
-	public void setTestStocksListing(Map<String, Equity> testStocksListing) {
-		this.testStocksListing = testStocksListing;
 	}
 
 	@Override

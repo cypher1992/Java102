@@ -41,14 +41,6 @@ public class NYSE implements Exchange{
 	public void setInactiveStocks(Map<String, Equity> inactiveStocks) {
 		this.inactiveStocks = inactiveStocks;
 	}
-	
-	public Map<String, Equity> getTestStocksListing() {
-		return testStocksListing;
-	}
-
-	public void setTestStocksListing(Map<String, Equity> testStocksListing) {
-		this.testStocksListing = testStocksListing;
-	}
 
 	@Override
 	public Map<String, Equity> listing() {
