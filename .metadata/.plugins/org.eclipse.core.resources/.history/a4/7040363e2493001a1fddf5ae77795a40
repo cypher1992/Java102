@@ -60,15 +60,7 @@ public class NYSE implements Exchange{
 
 	@Override
 	public void remove(Map<String,Equity> tgtList,String ticker) {
-		try {
-			if(tgtList.containsKey(ticker)) {
-				tgtList.remove(ticker);
-			}else {
-				System.out.println("Ticker does not exist.");
-			}
-		}catch(NullPointerException e) {
-			System.out.println("Ticker or Listing cannot be null");
-		}
+		// TODO Auto-generated method stub
 	} 
 	
 
