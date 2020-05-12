@@ -98,7 +98,7 @@ class NYSETest {
 		Double price = new Double(52.87);
 		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00); 	
 		nyse.remove(nyse.getActiveStocks(), blackstone.getTicker());
-		Map<String,Equity> actual = nyse.getActiveStocks();
+		Map<String,Equity> actual = nyse.getTestStocksListing();
 		Map<String,Equity> expected = new TreeMap<String,Equity>();
 		assertEquals(actual.toString(),expected.toString());
 	}
