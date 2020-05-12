@@ -16,8 +16,11 @@ class NYSETest {
 
 	
 	Double price = new Double(52.87);
+	Double kkrPrice = new Double(26.41);
 	LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00);
+	LocalDateTime kkrDateTime = LocalDateTime.of(2020,Month.MAY,11,17,00,00);
 	Equity blackstone = new Equity("BLACKSTONE-EQT","BX-W",price,"EQUITY",dateTime,"BLACKSTONE","BX");
+	Equity kkr = new Equity("KKR-EQT","KKR",price,"EQUITY",kkrDateTime,"KKR","KKR");
 	
 	@Test
 	void testIsInstanceOfNYSE() {
@@ -103,6 +106,18 @@ class NYSETest {
 		assertEquals(actual.toString(),expected.toString());
 	}
 	
+	
+	@Test
+	void testremoveMultiEquityListingNoChangesToMap(){
+		NYSE nyse = NYSE.getInstance();
+		Double price = new Double(52.87);
+		LocalDateTime dateTime = LocalDateTime.of(2020,Month.MAY,9,17,00,00);
+		nyse.add(nyse.getActiveStocks(), kkr.getTicker(), kkr);
+		nyse.remove(nyse.getActiveStocks(), kkr.getTicker());
+		Map<String,Equity> actual = nyse.getActiveStocks();
+		Map<String,Equity> expected = new TreeMap<String,Equity>();
+		assertEquals(expected.toString(),actual.toString());
+	}
 	
 	
 
