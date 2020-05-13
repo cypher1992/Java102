@@ -1,4 +1,4 @@
-package com.local.lessons.collectiontype;
+package com.local.lessons.CollectionType;
 
 import java.util.Arrays;
 import java.util.ArrayList;
