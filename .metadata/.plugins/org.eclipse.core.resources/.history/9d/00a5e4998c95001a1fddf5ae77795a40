@@ -36,6 +36,8 @@ public class DemoDB extends Thread {
 	}
 	
 	public static void main(String[] arg){
+		DemoDB db = new DemoDB();
+		db
 	} 
 	
 }
