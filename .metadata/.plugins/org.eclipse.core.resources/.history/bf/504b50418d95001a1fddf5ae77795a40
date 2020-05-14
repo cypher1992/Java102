@@ -17,4 +17,9 @@ public class DemoDB extends Thread {
 		}
 	}
 	
+	public static void main(String[] arg){
+		DemoDB db = new DemoDB();
+		DemoDBB dbb = new DemoDBB();
+	} 
+	
 }
