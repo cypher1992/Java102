@@ -1,0 +1,17 @@
+package com.local.lessons.generics;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListMethods{
+
+	public <T> List<T> add(T[] args){
+		List<T> list = new ArrayList<T>();
+		for(T i : args) {
+			list.add(i);
+		}
+		return list;
+		
+	}
+	
+}
