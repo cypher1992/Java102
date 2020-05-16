@@ -1,0 +1,10 @@
+package com.local.lessons.generics;
+
+public class GenericMapClass<K,V> {
+	
+	private K key;
+	private V value;
+	
+	
+
+}

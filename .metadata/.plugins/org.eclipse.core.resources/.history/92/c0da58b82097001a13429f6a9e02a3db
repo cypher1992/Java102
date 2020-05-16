@@ -5,6 +5,11 @@ public class GenericMapClass<K,V> {
 	private K key;
 	private V value;
 	
+	public GenericMapClass(K key,V value){
+		this.key = key;
+		this.value = value;
+	}
+	
 	public K getKey() {
 		return key;
 	}
@@ -18,4 +23,6 @@ public class GenericMapClass<K,V> {
 		this.value = value;
 	}
 	
+	
+
 }

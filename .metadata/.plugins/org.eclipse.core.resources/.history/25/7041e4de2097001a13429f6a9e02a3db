@@ -18,4 +18,6 @@ public class GenericMapClass<K,V> {
 		this.value = value;
 	}
 	
+	
+
 }
