@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListMethods{
-	
-	public ListMethods(){		
-	}
 
 	public <T> List<T> add(T[] args){
 		List<T> list = new ArrayList<T>();
