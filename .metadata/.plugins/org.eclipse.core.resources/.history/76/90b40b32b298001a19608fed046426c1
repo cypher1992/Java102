@@ -12,7 +12,7 @@ class ListMethodsTest {
 
 	
 	@Test
-	void testAddVarArgsReturnsNullListOfString() {
+	void testAddVarArgsReturnsListOfString() {
 		ListMethods lm = new ListMethods();
 		String[] strs = new String[3];
 		strs[0] = null;
