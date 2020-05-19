@@ -1,0 +1,7 @@
+package com.local.lessons.genericstest;
+
+import com.local.lessons.generics.GenericMapClass;
+
+public class GenericMapClassTest extends GenericMapClass<K, V> {
+
+}
