@@ -9,13 +9,9 @@ public class GenericMapClass<K,V> {
 	private V value;
 	private Map<K,V> map = new TreeMap<K,V>();
 	
-	public GenericMapClass(){
-	}
-	
 	public GenericMapClass(K key,V value){
 		this.key = key;
 		this.value = value;
-		this.map.put(key, value);
 	}
 	
 	public K getKey() {

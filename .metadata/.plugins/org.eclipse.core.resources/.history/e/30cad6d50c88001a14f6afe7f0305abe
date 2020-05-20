@@ -1,5 +1,0 @@
-package com.local.lessson.financialclass.financialexception;
-
-public class PortfolioException extends Exception {
-
-}

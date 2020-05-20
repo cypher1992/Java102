@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="NYSETest" project="Java101BASICS" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.local.financialtest.NYSETest" time="0.118" displayname="NYSETest" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]">
-    <testcase name="testNYSEIsInstanceOfExchange" classname="com.local.financialtest.NYSETest" time="0.078" displayname="testNYSEIsInstanceOfExchange()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testNYSEIsInstanceOfExchange()]"/>
-    <testcase name="testIsInstanceOfNYSE" classname="com.local.financialtest.NYSETest" time="0.04" displayname="testIsInstanceOfNYSE()" uniqueid="[engine:junit-jupiter]/[class:com.local.financialtest.NYSETest]/[method:testIsInstanceOfNYSE()]"/>
-  </testsuite>
-</testrun>
