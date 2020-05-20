@@ -12,12 +12,5 @@ class GenericMapTest {
 		Boolean isInstanceOfGMC = gmc instanceof GenericMapClass;
 		assertTrue(isInstanceOfGMC);
 	}
-	
-	@Test
-	void testIfobjectIsInstanceOfGenericMapClassParam() {
-		GenericMapClass gmc = new GenericMapClass(new String("BX"), new Double(55.00));
-		Boolean isInstanceOfGMC = gmc instanceof GenericMapClass;
-		assertTrue(isInstanceOfGMC);
-	}
 
 }
