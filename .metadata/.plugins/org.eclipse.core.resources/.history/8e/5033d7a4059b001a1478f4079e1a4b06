@@ -23,7 +23,7 @@ class GenericMapTest {
 	@Test
 	void testifKeyIsAString(){
 		GenericMapClass gmc = new GenericMapClass(new String("BX"), new Double(55.00));
-		Boolean isInstanceOfString = gmc.getKey() instanceof String;
+		Boolean isInstanceOfString = gmc.getKey() instanceof GenericMapClass;
 		assertTrue(isInstanceOfString);
 	}
 
