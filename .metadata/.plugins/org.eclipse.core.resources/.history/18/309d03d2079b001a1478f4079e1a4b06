@@ -34,12 +34,5 @@ class GenericMapTest {
 		assertTrue(isInstanceOfDouble);
 	}
 	
-	
-	@Test
-	void testifKeyIsACharacter(){
-		GenericMapClass gmc = new GenericMapClass(new Character('X'), new Integer(55));
-		Boolean isInstanceOfCharacter = gmc.getKey() instanceof Character;
-		assertTrue(isInstanceOfCharacter);
-	}
 
 }

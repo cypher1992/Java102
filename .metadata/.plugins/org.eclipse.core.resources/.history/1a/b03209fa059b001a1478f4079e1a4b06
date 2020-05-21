@@ -26,20 +26,5 @@ class GenericMapTest {
 		Boolean isInstanceOfString = gmc.getKey() instanceof String;
 		assertTrue(isInstanceOfString);
 	}
-	
-	@Test
-	void testifValueIsADouble(){
-		GenericMapClass gmc = new GenericMapClass(new String("BX"), new Double(55.00));
-		Boolean isInstanceOfDouble = gmc.getValue() instanceof Double;
-		assertTrue(isInstanceOfDouble);
-	}
-	
-	
-	@Test
-	void testifKeyIsACharacter(){
-		GenericMapClass gmc = new GenericMapClass(new Character('X'), new Integer(55));
-		Boolean isInstanceOfCharacter = gmc.getKey() instanceof Character;
-		assertTrue(isInstanceOfCharacter);
-	}
 
 }
