@@ -53,5 +53,17 @@ class ListMethodsTest {
 		assertTrue(isStrOfString);
 	}
 	
+	
+	@Test
+	void testAddVarArgsReturnsIsATypeofListDouble() {
+		ListMethods lm = new ListMethods();
+		Double[] doub = new Double[3];
+		doub[0] = new Double(55.16);
+		doub[1] = new Double(55.15);
+		doub[2] = new Double(55.14);
+		Double doubValue = lm.add(doub).get(0);
+		Boolean isDoubValueOfDouble = doubValue instanceof Double ;
+		assertTrue(isDoubValueOfDouble);
+	}
 
 }
