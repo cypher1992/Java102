@@ -41,6 +41,17 @@ class ListMethodsTest {
 		assertEquals(expected,actual);
 	}
 	
+	@Test
+	void testAddVarArgsReturnsIsATypeofListString() {
+		ListMethods lm = new ListMethods();
+		String[] strs = new String[3];
+		strs[0] = "BX";
+		strs[1] = "BAC";
+		strs[2] = "WFC";
+		String str = lm.add(strs).get(0);
+		Boolean isStrOfString = str instanceof String ;
+		assertTrue(isStrOfString);
+	}
 	
 
 }
