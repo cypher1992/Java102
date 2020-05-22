@@ -2,6 +2,7 @@ package com.local.lessons.genericstest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,4 +67,16 @@ class ListMethodsTest {
 		assertTrue(isDoubValueOfDouble);
 	}
 
+	
+	@Test
+	void testAddVarArgsReturnsIsATypeofListBigDecimal() {
+		ListMethods lm = new ListMethods();
+		BigDecimal[] bg = new BigDecimal[3];
+		bg[0] = new BigDecimal(55.1664);
+		bg[1] = new BigDecimal(55.1554);
+		bg[2] = new BigDecimal(55.1444);
+		BigDecimal bgValue = lm.add(bg).get(2);
+		Boolean isBgValueOfBigDecimal = bgValue instanceof BigDecimal ;
+		assertTrue(isBgValueOfBigDecimal);
+	}
 }
