@@ -25,5 +25,9 @@ public class DateNTime {
 		return LocalDate.now().getDayOfYear();
 	}
 	
+	public boolean isLeapYear(){
+		return LocalDate.now().isLeapYear();
+	}
+	
 	
 }
