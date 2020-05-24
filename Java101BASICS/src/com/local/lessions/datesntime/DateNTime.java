@@ -21,5 +21,9 @@ public class DateNTime {
 		return LocalDate.now().getEra().toString();
 	}
 	
+	public int getDayOfYear(){
+		return LocalDate.now().getDayOfYear();
+	}
+	
 	
 }
