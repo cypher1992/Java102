@@ -29,5 +29,8 @@ public class DateNTime {
 		return LocalDate.now().isLeapYear();
 	}
 	
+	public int getLengthOfMonth(){
+		return LocalDate.now().lengthOfMonth();
+	}
 	
 }
