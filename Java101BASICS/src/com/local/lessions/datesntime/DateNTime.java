@@ -9,5 +9,9 @@ public class DateNTime {
 		return LocalDate.now();
 	}
 	
+	public int getToday(){
+		return LocalDate.now().getDayOfMonth();
+	}
+	
 	
 }
