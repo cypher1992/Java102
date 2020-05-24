@@ -33,4 +33,8 @@ public class DateNTime {
 		return LocalDate.now().lengthOfMonth();
 	}
 	
+	public int getLengthOfYear(){
+		return LocalDate.now().lengthOfYear();
+	}
+	
 }
