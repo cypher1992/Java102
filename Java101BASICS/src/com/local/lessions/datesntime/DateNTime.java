@@ -37,4 +37,8 @@ public class DateNTime {
 		return LocalDate.now().lengthOfYear();
 	}
 	
+	public Long getEpochDate(){
+		return LocalDate.now().toEpochDay();
+	}
+	
 }
