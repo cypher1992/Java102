@@ -13,6 +13,10 @@ public class DateNTime {
 		return LocalDate.now().getDayOfMonth();
 	}
 	
+	public int getYear(){
+		return LocalDate.now().getYear();
+	}
+	
 	public String getDayOfWeek(){
 		return LocalDate.now().getDayOfWeek().toString();
 	}
