@@ -17,5 +17,9 @@ public class DateNTime {
 		return LocalDate.now().getDayOfWeek().toString();
 	}
 	
+	public String getEra(){
+		return LocalDate.now().getEra().toString();
+	}
+	
 	
 }
