@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DateNTimeTest" project="Java101BASICS" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.local.lessions.datentimetest.DateNTimeTest" time="0.15" displayname="DateNTimeTest" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]">
+    <testcase name="testgetNowreturnsCurrentDate" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.109" displayname="testgetNowreturnsCurrentDate()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testgetNowreturnsCurrentDate()]"/>
+    <testcase name="testgetTodayreturnsgetsDayOfTheMonth" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.041" displayname="testgetTodayreturnsgetsDayOfTheMonth()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testgetTodayreturnsgetsDayOfTheMonth()]"/>
+  </testsuite>
+</testrun>

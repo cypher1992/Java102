@@ -24,10 +24,10 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testGetYearReturnsGetsYear() {
+	void testGetTodayreturnsgetsDayOfTheMonth() {
 		DateNTime dt = new DateNTime();
-		int actual = dt.getYear();
-		int expected = LocalDate.now().getYear();
+		int actual = dt.getToday();
+		int expected = LocalDate.now().getDayOfMonth();
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
