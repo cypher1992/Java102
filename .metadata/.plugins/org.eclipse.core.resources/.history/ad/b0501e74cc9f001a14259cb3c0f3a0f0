@@ -14,14 +14,5 @@ class DateNTimeTest {
 		LocalDate expected = LocalDate.now();
 		assertEquals(expected,actual);
 	}
-	
-	@Test
-	void testgetTodayreturnsgetsDayOfTheMonth() {
-		DateNTime dt = new DateNTime();
-		int actual = dt.getToday();
-		int expected = LocalDate.now().getDayOfMonth();
-		System.out.println(actual);
-		assertEquals(expected,actual);
-	}
 
 }
