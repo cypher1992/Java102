@@ -1,0 +1,14 @@
+package com.local.lessions.datentimetest;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import java.time.LocalDate;
+
+class DateNTimeTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

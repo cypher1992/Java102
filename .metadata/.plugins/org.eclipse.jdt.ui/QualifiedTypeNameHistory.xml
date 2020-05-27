@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="com.local.lessons.generics.GenericMapClass"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
 </qualifiedTypeNameHistroy>

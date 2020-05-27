@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="GenericMapTest" project="Java101BASICS" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="com.local.lessons.genericstest.GenericMapTest" time="0.117" displayname="GenericMapTest" uniqueid="[engine:junit-jupiter]/[class:com.local.lessons.genericstest.GenericMapTest]">
-    <testcase name="testIfObjectIsInstanceOfGenericMapClass" classname="com.local.lessons.genericstest.GenericMapTest" time="0.071" displayname="testIfObjectIsInstanceOfGenericMapClass()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessons.genericstest.GenericMapTest]/[method:testIfObjectIsInstanceOfGenericMapClass()]"/>
-    <testcase name="testifKeyIsAString" classname="com.local.lessons.genericstest.GenericMapTest" time="0.003" displayname="testifKeyIsAString()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessons.genericstest.GenericMapTest]/[method:testifKeyIsAString()]"/>
-    <testcase name="testifValueIsADouble" classname="com.local.lessons.genericstest.GenericMapTest" time="0.003" displayname="testifValueIsADouble()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessons.genericstest.GenericMapTest]/[method:testifValueIsADouble()]"/>
-    <testcase name="testIfObjectIsInstanceOfGenericMapClassParam" classname="com.local.lessons.genericstest.GenericMapTest" time="0.04" displayname="testIfObjectIsInstanceOfGenericMapClassParam()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessons.genericstest.GenericMapTest]/[method:testIfObjectIsInstanceOfGenericMapClassParam()]"/>
-  </testsuite>
-</testrun>
