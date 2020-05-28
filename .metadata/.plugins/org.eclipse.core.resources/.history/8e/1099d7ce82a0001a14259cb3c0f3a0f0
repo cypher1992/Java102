@@ -44,18 +44,8 @@ class DateNTimeTest {
 		DateNTime dt = new DateNTime();
 		String actual = dt.getEra();
 		String expected = LocalDate.now().getEra().toString();
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testDayOfYearReturnsGetDayOfYear() {
-		DateNTime dt = new DateNTime();
-		int actual = dt.getDayOfYear();
-		int expected = LocalDate.now().getDayOfYear();
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
-	
-	
 
 }
