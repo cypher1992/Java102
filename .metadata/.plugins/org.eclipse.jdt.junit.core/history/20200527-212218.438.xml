@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DateNTimeTest" project="Java101BASICS" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.local.lessions.datentimetest.DateNTimeTest" time="0.172" displayname="DateNTimeTest" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]">
+    <testcase name="testGetTodayreturnsgetsDayOfTheMonth" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.115" displayname="testGetTodayreturnsgetsDayOfTheMonth()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testGetTodayreturnsgetsDayOfTheMonth()]"/>
+    <testcase name="testGetYearReturnsGetsYear" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.006" displayname="testGetYearReturnsGetsYear()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testGetYearReturnsGetsYear()]"/>
+    <testcase name="testGetNowreturnsCurrentDate" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.01" displayname="testGetNowreturnsCurrentDate()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testGetNowreturnsCurrentDate()]"/>
+    <testcase name="testGetDayOfWeekReturnsGetsYear" classname="com.local.lessions.datentimetest.DateNTimeTest" time="0.041" displayname="testGetDayOfWeekReturnsGetsYear()" uniqueid="[engine:junit-jupiter]/[class:com.local.lessions.datentimetest.DateNTimeTest]/[method:testGetDayOfWeekReturnsGetsYear()]"/>
+  </testsuite>
+</testrun>

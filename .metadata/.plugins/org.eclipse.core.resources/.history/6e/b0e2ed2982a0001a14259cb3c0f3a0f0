@@ -33,7 +33,7 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testGetDayOfWeekReturnsGetsDay() {
+	void testGetDayOfWeekReturnsGetsYear() {
 		DateNTime dt = new DateNTime();
 		String actual = dt.getDayOfWeek();
 		String expected = LocalDate.now().getDayOfWeek().toString();

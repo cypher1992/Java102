@@ -40,13 +40,5 @@ class DateNTimeTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testGetEraReturnsGetsEra() {
-		DateNTime dt = new DateNTime();
-		String actual = dt.getEra();
-		String expected = LocalDate.now().getEra().toString();
-		System.out.println(actual);
-		assertEquals(expected,actual);
-	}
 
 }
