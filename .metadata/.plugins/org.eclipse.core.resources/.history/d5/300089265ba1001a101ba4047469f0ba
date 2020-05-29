@@ -60,14 +60,6 @@ class DateNTimeTest {
 		DateNTime dt = new DateNTime();
 		boolean actual = dt.isLeapYear();
 		boolean expected = LocalDate.now().isLeapYear();
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testLengthOfMonthReturnIntLengthOfMonth() {
-		DateNTime dt = new DateNTime();
-		int actual = dt.getLengthOfMonth();
-		int expected = LocalDate.now().lengthOfMonth();
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}

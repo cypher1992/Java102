@@ -64,10 +64,10 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testLengthOfMonthReturnIntLengthOfMonth() {
+	void testDayOfYearReturnsGetDayOfYear() {
 		DateNTime dt = new DateNTime();
-		int actual = dt.getLengthOfMonth();
-		int expected = LocalDate.now().lengthOfMonth();
+		int actual = dt.getDayOfYear();
+		int expected = LocalDate.now().getDayOfYear();
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
