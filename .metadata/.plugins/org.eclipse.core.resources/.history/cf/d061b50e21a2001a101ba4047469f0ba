@@ -10,10 +10,6 @@ public class DateNTime {
 		return LocalDate.now();
 	}
 	
-	public LocalDateTime getTimeNow(){
-		return LocalDateTime.now();
-	}
-	
 	public int getToday(){
 		return LocalDate.now().getDayOfMonth();
 	}

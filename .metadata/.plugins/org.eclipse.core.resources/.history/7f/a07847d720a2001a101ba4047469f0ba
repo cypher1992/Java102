@@ -1,6 +1,5 @@
 package com.local.lessions.datesntime;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class DateNTime {
 
@@ -8,10 +7,6 @@ public class DateNTime {
 
 	public LocalDate getNow() {
 		return LocalDate.now();
-	}
-	
-	public LocalDateTime getTimeNow(){
-		return LocalDateTime.now();
 	}
 	
 	public int getToday(){
