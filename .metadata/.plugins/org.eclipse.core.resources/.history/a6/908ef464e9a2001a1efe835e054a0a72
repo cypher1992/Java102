@@ -14,10 +14,6 @@ public class DateNTime {
 		return LocalDateTime.now();
 	}
 	
-	public LocalDateTime MinusDays(LocalDateTime dt,Long days) {
-		return dt.minusDays(days);
-	}
-	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}

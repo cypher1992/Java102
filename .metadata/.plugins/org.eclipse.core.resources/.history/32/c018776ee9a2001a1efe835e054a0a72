@@ -15,7 +15,7 @@ public class DateNTime {
 	}
 	
 	public LocalDateTime MinusDays(LocalDateTime dt,Long days) {
-		return dt.minusDays(days);
+		return dt.minus(days);
 	}
 	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
