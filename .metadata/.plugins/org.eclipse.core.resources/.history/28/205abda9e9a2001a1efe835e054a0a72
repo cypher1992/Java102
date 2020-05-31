@@ -18,10 +18,6 @@ public class DateNTime {
 		return dt.minusDays(days);
 	}
 	
-	public LocalDateTime MinusHours(LocalDateTime dt,Long hours) {
-		return dt.minusHours(hours);
-	}
-	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}
