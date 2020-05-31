@@ -22,9 +22,6 @@ public class DateNTime {
 		return dt.minusHours(hours);
 	}
 	
-	public LocalDateTime MinusMins(LocalDateTime dt,Long minutes) {
-		return dt.minusMinutes(minutes);
-	}
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}
