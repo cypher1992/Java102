@@ -31,10 +31,6 @@ public class DateNTime {
 		return ldt.plusDays(days);
 	}
 	
-	public LocalDateTime plusMinutes(int mins,LocalDateTime ldt) {
-		return ldt.plusMinutes(mins);
-	}
-	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}
