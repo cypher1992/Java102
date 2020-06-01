@@ -27,10 +27,6 @@ public class DateNTime {
 		return dt.minusMinutes(minutes);
 	}
 	
-	public LocalDateTime plusDayz(int days,LocalDateTime ldt) {
-		return ldt.plusDays(days);
-	}
-	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}
@@ -39,7 +35,6 @@ public class DateNTime {
 		DateTimeFormatter format = DateTimeFormatter.ofPattern(strFormat);
 		return dt.format(format);	
 	}
-	
 	
 	public int getToday(){
 		return LocalDate.now().getDayOfMonth();
