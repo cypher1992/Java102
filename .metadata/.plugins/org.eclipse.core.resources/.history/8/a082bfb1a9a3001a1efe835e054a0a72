@@ -34,7 +34,7 @@ public class DateNTime {
 	public String formatDateTime(LocalDateTime dt, String strFormat) {
 		DateTimeFormatter format = DateTimeFormatter.ofPattern(strFormat);
 		return dt.format(format);	
-	}
+		}
 	
 	
 	public int getToday(){

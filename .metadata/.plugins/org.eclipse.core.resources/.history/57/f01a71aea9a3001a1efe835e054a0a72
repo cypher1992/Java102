@@ -1,7 +1,6 @@
 package com.local.lessions.datesntime;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class DateNTime {
 
@@ -26,16 +25,9 @@ public class DateNTime {
 	public LocalDateTime MinusMins(LocalDateTime dt,Long minutes) {
 		return dt.minusMinutes(minutes);
 	}
-	
 	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
 		return LocalDateTime.of(year,month,date,hour,min);
 	}
-	
-	public String formatDateTime(LocalDateTime dt, String strFormat) {
-		DateTimeFormatter format = DateTimeFormatter.ofPattern(strFormat);
-		return dt.format(format);	
-	}
-	
 	
 	public int getToday(){
 		return LocalDate.now().getDayOfMonth();
