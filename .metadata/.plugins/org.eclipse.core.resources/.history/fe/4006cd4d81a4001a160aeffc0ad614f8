@@ -101,8 +101,8 @@ class DateNTimeTest {
 	void testminusDays() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.MinusDays(ldt, new Long(365));
-		LocalDateTime expected = ldt.minusDays(new Long(365));
+		LocalDateTime actual = dt.MinusDays(ldt, new Long(100));
+		LocalDateTime expected = ldt.minusDays(new Long(100));
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
