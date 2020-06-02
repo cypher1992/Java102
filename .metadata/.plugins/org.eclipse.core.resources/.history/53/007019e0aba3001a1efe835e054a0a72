@@ -44,6 +44,7 @@ public class DateNTime {
 		return dt.format(format);	
 	}
 	
+	
 	public int getToday(){
 		return LocalDate.now().getDayOfMonth();
 	}
