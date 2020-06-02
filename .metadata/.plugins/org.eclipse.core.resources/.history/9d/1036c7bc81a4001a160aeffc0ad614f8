@@ -110,8 +110,8 @@ class DateNTimeTest {
 	void testminusHours() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.MinusHours(ldt, new Long(8784));
-		LocalDateTime expected = ldt.minusHours(new Long(8784));
+		LocalDateTime actual = dt.MinusHours(ldt, new Long(8760));
+		LocalDateTime expected = ldt.minusHours(new Long(8760));
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
