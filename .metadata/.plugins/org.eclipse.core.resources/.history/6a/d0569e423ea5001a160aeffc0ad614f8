@@ -82,7 +82,7 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testGetEpochDate() {
+	void testgetEpochDate() {
 		DateNTime dt = new DateNTime();
 		long actual = dt.getEpochDate();
 		long expected = LocalDate.now().toEpochDay();
@@ -90,7 +90,7 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testGetTimeNow() {
+	void testgetTimeNow() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime actual = dt.getTimeNow();
 		LocalDateTime expected = LocalDateTime.now();
@@ -98,7 +98,7 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testMinusDays() {
+	void testminusDays() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		LocalDateTime actual = dt.MinusDays(ldt, new Long(365));
@@ -107,20 +107,12 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testMinusDaysZeroDays() {
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.MinusDays(ldt, new Long(0));
-		LocalDateTime expected = ldt.minusDays(new Long(0));
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testMinusHours() {
+	void testminusHours() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		LocalDateTime actual = dt.MinusHours(ldt, new Long(8784));
 		LocalDateTime expected = ldt.minusHours(new Long(8784));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
