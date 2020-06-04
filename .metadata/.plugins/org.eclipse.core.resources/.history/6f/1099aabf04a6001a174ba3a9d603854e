@@ -160,14 +160,5 @@ class DateNTimeTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testMinusNegativeMinutes() {
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.MinusMins(ldt, new Long(-525600));
-		LocalDateTime expected = ldt.minusMinutes(new Long(-525600));
-		assertEquals(expected,actual);
-	}
-	
 
 }
