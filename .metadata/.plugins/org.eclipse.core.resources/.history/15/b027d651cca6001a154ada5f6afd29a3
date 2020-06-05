@@ -178,5 +178,23 @@ class DateNTimeTest {
 		LocalDateTime expected = ldt.plusDays(new Integer(365));
 		assertEquals(expected,actual);
 	}
+	
+	@Test
+	void testZeroPlusDayz() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusDayz(new Integer(0),ldt);
+		LocalDateTime expected = ldt.plusDays(new Integer(0));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testNegetivePlusDayz() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusDayz(new Integer(-365),ldt);
+		LocalDateTime expected = ldt.plusDays(new Integer(-365));
+		assertEquals(expected,actual);
+	}
 
 }
