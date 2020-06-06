@@ -200,9 +200,17 @@ class DateNTimeTest {
 	void testPositivePlusMinutes() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.plusMinutes(new Integer(525600),ldt);
-		LocalDateTime expected = ldt.plusMinutes(new Integer(525600));
+		LocalDateTime actual = dt.plusMinutes(new Integer(365),ldt);
+		LocalDateTime expected = ldt.plusMinutes(new Integer(365));
 		assertEquals(expected,actual);
 	}
 	
+	@Test
+	void testZeroPlusMinutes() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusMinutes(new Integer(0),ldt);
+		LocalDateTime expected = ldt.plusMinutes(new Integer(0));
+		assertEquals(expected,actual);
+	}
 }
