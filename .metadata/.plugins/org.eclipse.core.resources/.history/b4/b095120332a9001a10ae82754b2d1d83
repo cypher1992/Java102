@@ -233,13 +233,4 @@ class DateNTimeTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testFormatDateTimeYYMMDD() {
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"yy MM dd");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("yy MM dd"));
-		assertEquals(expected,actual);
-	}
-	
 }
