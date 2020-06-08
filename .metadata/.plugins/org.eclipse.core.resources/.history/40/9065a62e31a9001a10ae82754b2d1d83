@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 import com.local.lessions.datesntime.*;
 
@@ -223,14 +222,4 @@ class DateNTimeTest {
 		LocalDateTime expected = ldt.plusMinutes(new Integer(-525600));
 		assertEquals(expected,actual);
 	}
-	
-	@Test
-	void testFormatDateTimeYYYYMMDD() {
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"yyyy MM dd");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("yyyy MM dd"));
-		assertEquals(expected,actual);
-	}
-	
 }
