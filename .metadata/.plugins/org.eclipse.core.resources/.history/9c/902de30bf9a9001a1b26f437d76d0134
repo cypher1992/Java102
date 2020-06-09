@@ -226,9 +226,6 @@ class DateNTimeTest {
 	
 	@Test
 	void testFormatDateTimeYYYYMMDD() {
-		// YY year
-		// MM Month
-		// DD Date
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"yyyy MM dd");
@@ -238,9 +235,6 @@ class DateNTimeTest {
 	
 	@Test
 	void testFormatDateTimeYYMMDD() {
-		// yy year
-		// MM Month
-		// dd Date
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"yy MM dd");
