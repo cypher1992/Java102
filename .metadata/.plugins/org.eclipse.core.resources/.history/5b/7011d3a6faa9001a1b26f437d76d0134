@@ -270,12 +270,12 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testFormatDateTimeNFractSec() {
-		// S - Fraction of a Second
+	void testFormatDateTimeN() {
+		// n - nanosecond
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"S");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("S"));
+		String actual = dt.formatDateTime(ldt,"n");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("n"));
 		assertEquals(expected,actual);
 	}
 	

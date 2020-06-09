@@ -271,7 +271,7 @@ class DateNTimeTest {
 	
 	@Test
 	void testFormatDateTimeNFractSec() {
-		// S - Fraction of a Second
+		// n - nanosecond
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"S");
