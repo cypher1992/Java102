@@ -306,6 +306,7 @@ class DateNTimeTest {
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"a");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("a"));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	

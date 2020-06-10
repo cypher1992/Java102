@@ -246,7 +246,8 @@ class DateNTimeTest {
 		String actual = dt.formatDateTime(ldt,"yy MM dd");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("yy MM dd"));
 		assertEquals(expected,actual);
-	}	
+	}
+	
 	
 	@Test
 	void testFormatDateTimeH() {
@@ -255,17 +256,6 @@ class DateNTimeTest {
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"H");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("H"));
-		assertEquals(expected,actual);
-	}
-	
-	@Test
-	void testFormatDateTimem() {
-		// m - hour
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"m");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("m"));
-		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
@@ -306,6 +296,7 @@ class DateNTimeTest {
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"a");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("a"));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
