@@ -250,7 +250,7 @@ class DateNTimeTest {
 	
 	
 	@Test
-	void testFormatDateTimeHHmmssa() {
+	void testFormatDateTimeHHmmss() {
 		// HH hour
 		// mm min
 		// ss secs
@@ -280,6 +280,7 @@ class DateNTimeTest {
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"m");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("m"));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	

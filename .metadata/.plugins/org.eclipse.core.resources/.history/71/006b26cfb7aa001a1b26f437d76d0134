@@ -250,7 +250,7 @@ class DateNTimeTest {
 	
 	
 	@Test
-	void testFormatDateTimeHHmmssa() {
+	void testFormatDateTimeHHmmss() {
 		// HH hour
 		// mm min
 		// ss secs
