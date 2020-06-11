@@ -297,7 +297,7 @@ class DateNTimeTest {
 	@Test
 	void testFormatDateTimeDayMonthDateYear() {
 		// yyyy year
-		// MMMM month
+		// L month
 		// dd Date
 		// E day
 		DateNTime dt = new DateNTime();
