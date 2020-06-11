@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import com.local.lessions.datesntime.*;
 
@@ -164,10 +165,163 @@ class DateNTimeTest {
 	void testMinusNegativeMinutes() {
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		LocalDateTime actual = dt.MinusMins(ldt, new Long(-525601));
+		LocalDateTime actual = dt.MinusMins(ldt, new Long(-525600));
 		LocalDateTime expected = ldt.minusMinutes(new Long(-525600));
 		assertEquals(expected,actual);
 	}
 	
+	@Test
+	void testPositivePlusDayz() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusDayz(new Integer(365),ldt);
+		LocalDateTime expected = ldt.plusDays(new Integer(365));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testZeroPlusDayz() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusDayz(new Integer(0),ldt);
+		LocalDateTime expected = ldt.plusDays(new Integer(0));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testNegetivePlusDayz() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusDayz(new Integer(-365),ldt);
+		LocalDateTime expected = ldt.plusDays(new Integer(-365));
+		assertEquals(expected,actual);
+	}
 
+	@Test
+	void testPositivePlusMinutes() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusMinutes(new Integer(525600),ldt);
+		LocalDateTime expected = ldt.plusMinutes(new Integer(525600));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testZeroPlusMinutes() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusMinutes(new Integer(0),ldt);
+		LocalDateTime expected = ldt.plusMinutes(new Integer(0));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testNegetivePlusMinutes() {
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		LocalDateTime actual = dt.plusMinutes(new Integer(-525600),ldt);
+		LocalDateTime expected = ldt.plusMinutes(new Integer(-525600));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeYYYYMMDD() {
+		// YY year
+		// MM Month
+		// DD Date
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"yyyy MM dd");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("yyyy MM dd"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeYYMMDD() {
+		// yy year
+		// MM Month
+		// dd Date
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"yy MM dd");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("yy MM dd"));
+		assertEquals(expected,actual);
+	}	
+	
+	
+	@Test
+	void testFormatDateTimeHHmmssa() {
+		// HH hour
+		// mm min
+		// ss secs
+		// am/pm
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"HH:mm:ss a");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("HH:mm:ss a"));
+		System.out.println(actual);
+		assertEquals(expected,actual);
+	}	
+	
+	@Test
+	void testFormatDateTimeH() {
+		// H - hour
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"H");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("H"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimem() {
+		// m - mins
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"m");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("m"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeS() {
+		// s - second
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"s");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("s"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeNFractSec() {
+		// S - Fraction of a Second
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"S");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("S"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeN() {
+		// n - nanosecond
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"n");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("n"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimez() {
+		// a - am/pm
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"a");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("a"));
+		assertEquals(expected,actual);
+	}
+	
+	
 }
