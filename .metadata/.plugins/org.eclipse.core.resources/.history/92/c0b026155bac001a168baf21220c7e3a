@@ -324,8 +324,9 @@ class DateNTimeTest {
 		// am/pm
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"MM/dd/yy HH:mm:ss:SS:n a");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss:SS:n a"));
+		String actual = dt.formatDateTime(ldt,"MM/dd/yy HH:mm:ss:SS:nn a");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss:SS:nn a"));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
