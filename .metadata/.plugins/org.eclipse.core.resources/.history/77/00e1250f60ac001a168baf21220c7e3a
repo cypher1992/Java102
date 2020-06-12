@@ -344,6 +344,7 @@ class DateNTimeTest {
 	
 	@Test
 	void testFormatDateTimeMMddYYYY() {
+		// z - timezone
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"MM.dd.YYYY");

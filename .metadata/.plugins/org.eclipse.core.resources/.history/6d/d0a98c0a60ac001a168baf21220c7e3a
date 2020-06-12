@@ -343,11 +343,12 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testFormatDateTimeMMddYYYY() {
+	void testFormatDateTimez() {
+		// z - timezone
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"MM.dd.YYYY");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("MM.dd.YYYY"));
+		String actual = dt.formatDateTime(ldt,"z");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("z"));
 		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
