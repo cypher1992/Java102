@@ -279,8 +279,8 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testFormatDateTimeMMddYYHHmmssa() {
-		// yy year
+	void testFormatDateTimeMMddYYYYHHmmssa() {
+		// yyyy year
 		// MM Month
 		// dd Date
 		// HH hour
@@ -289,8 +289,26 @@ class DateNTimeTest {
 		// am/pm
 		DateNTime dt = new DateNTime();
 		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"MM/dd/yy HH:mm:ss a");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss a"));
+		String actual = dt.formatDateTime(ldt,"MM/dd/yyyy HH:mm:ss a");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss a"));
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testFormatDateTimeMMddYYHHmmssSSa() {
+		// yy year
+		// MM Month
+		// dd Date
+		// HH hour
+		// mm min
+		// ss secs
+		// Ss fraction of a second
+		// am/pm
+		DateNTime dt = new DateNTime();
+		LocalDateTime ldt = dt.getTimeNow();
+		String actual = dt.formatDateTime(ldt,"MM/dd/yy HH:mm:ss:SS a");
+		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss:SS a"));
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
@@ -304,7 +322,6 @@ class DateNTimeTest {
 		LocalDateTime ldt = dt.getTimeNow();
 		String actual = dt.formatDateTime(ldt,"E dd, MMMM, yyyy");
 		String expected = ldt.format(DateTimeFormatter.ofPattern("E dd, MMMM, yyyy"));
-		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
