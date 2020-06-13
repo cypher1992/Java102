@@ -420,12 +420,4 @@ class DateNTimeTest {
 		assertEquals(expected,actual);
 	}
 	
-	@Test
-	void testOfDateTime19910215231559(){
-		DateNTime dt = new DateNTime();
-		LocalDateTime actual = dt.ofDateTime(1991, 02, 15, 23, 15,59 );
-		LocalDateTime expected = LocalDateTime.of(1991, 02, 15, 23, 15,59);
-		assertEquals(expected,actual);
-	}
-	
 }
