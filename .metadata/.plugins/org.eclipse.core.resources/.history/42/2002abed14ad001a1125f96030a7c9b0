@@ -35,8 +35,8 @@ public class DateNTime {
 		return ldt.plusMinutes(mins);
 	}
 	
-	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min, int secs) {
-		return LocalDateTime.of(year,month,date,hour,min,secs);
+	public LocalDateTime ofDateTime(int year,int month,int date, int hour, int min) {
+		return LocalDateTime.of(year,month,date,hour,min);
 	}
 	
 	public String formatDateTime(LocalDateTime dt, String strFormat) {
