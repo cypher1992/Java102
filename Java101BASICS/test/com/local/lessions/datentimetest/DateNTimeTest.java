@@ -279,22 +279,6 @@ class DateNTimeTest {
 	}
 	
 	@Test
-	void testFormatDateTimeMMddYYYYHHmmssa() {
-		// yyyy year
-		// MM Month
-		// dd Date
-		// HH hour
-		// mm min
-		// ss secs
-		// am/pm
-		DateNTime dt = new DateNTime();
-		LocalDateTime ldt = dt.getTimeNow();
-		String actual = dt.formatDateTime(ldt,"MM/dd/yyyy HH:mm:ss a");
-		String expected = ldt.format(DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss a"));
-		assertEquals(expected,actual);
-	}
-	
-	@Test
 	void testFormatDateTimeMMddYYHHmmssSSa() {
 		// yy year
 		// MM Month
