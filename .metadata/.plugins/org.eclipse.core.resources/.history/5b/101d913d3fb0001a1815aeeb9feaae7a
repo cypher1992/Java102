@@ -18,7 +18,8 @@ public class ListDao<T> implements DAO<T> {
 	
 	@Override
 	public void add(T object) {
-		this.list.add(object);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
