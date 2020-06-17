@@ -27,6 +27,7 @@ public class ListDao<T> implements DAO<T> {
 			this.list.remove(object);
 			this.add(newObject);
 		}
+		
 	}
 
 	@Override

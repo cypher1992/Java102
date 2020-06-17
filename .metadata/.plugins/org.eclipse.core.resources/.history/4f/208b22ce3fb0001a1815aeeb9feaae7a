@@ -22,11 +22,9 @@ public class ListDao<T> implements DAO<T> {
 	}
 
 	@Override
-	public void update(T object, T newObject) {
-		if(this.list.contains(object)){
-			this.list.remove(object);
-			this.add(newObject);
-		}
+	public void update(T Object) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
