@@ -35,8 +35,8 @@ public class ListDao<T> implements DAO<T> {
 	}
 
 	@Override
-	public T read(T object) {
-		// TODO Auto-generated method stub'
+	public void read(T Object) {
+		// TODO Auto-generated method stub
 	}
 
 }
