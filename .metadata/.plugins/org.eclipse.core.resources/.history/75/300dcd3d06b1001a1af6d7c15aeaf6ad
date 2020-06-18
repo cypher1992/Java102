@@ -36,13 +36,7 @@ public class ListDao<T> implements DAO<T> {
 
 	@Override
 	public T read(T object) {
-		T temp = null;
-		for(T item : this.getList()){
-			if(temp.equals(object)){
-				temp = object;
-			}
-		}
-		return temp;
+		// TODO Auto-generated method stub'
 	}
 
 }
