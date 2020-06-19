@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 class ListDaoTest<Double> {
 	
 	@Test
-	void testGetListreturnsEmptyDoubleArrayList() {
+	void testGetList() {
 		ListDao ld = new ListDao<Double>();
 		List actual = ld.getList();
 		List expected = new ArrayList<Double>();

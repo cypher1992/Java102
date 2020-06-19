@@ -1,13 +1,12 @@
 package com.local.lessons.persistence.listpersist;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.local.lessons.persistence.DAO;
 
 public class ListDao<T> implements DAO<T> {
 	
-	private List<T> list = new ArrayList<T>();
+	private List<T> list;
 
 	public List<T> getList() {
 		return list;
