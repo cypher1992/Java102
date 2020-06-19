@@ -1,0 +1,39 @@
+package com.local.lessons.persistence.listpersist;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ListDaoTest {
+
+	@Test
+	void testGetList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSetList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testAdd() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUpdate() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDelete() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRead() {
+		fail("Not yet implemented");
+	}
+
+}
