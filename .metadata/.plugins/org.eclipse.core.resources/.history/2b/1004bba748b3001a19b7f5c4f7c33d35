@@ -40,12 +40,12 @@ class ListDaoTest<Double> {
 	}
 	
 	@Test
-	void testAddNotNullreturnList() {
+	void testAddNullreturnList() {
 		ListDao actual = new ListDao<String>();
 		List expected = new ArrayList<String>();
-		String Blackstone = "Blackstone";
+		String Blackstone = "Blackstone"
 		actual.add(Blackstone);
-		expected.add(Blackstone);
+		expected.add(nul);
 		assertEquals(expected,actual.getList());
 	}
 

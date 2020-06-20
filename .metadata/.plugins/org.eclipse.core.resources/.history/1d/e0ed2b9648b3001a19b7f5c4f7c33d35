@@ -38,16 +38,6 @@ class ListDaoTest<Double> {
 		expected.add(null);
 		assertEquals(expected,actual.getList());
 	}
-	
-	@Test
-	void testAddNotNullreturnList() {
-		ListDao actual = new ListDao<String>();
-		List expected = new ArrayList<String>();
-		String Blackstone = "Blackstone";
-		actual.add(Blackstone);
-		expected.add(Blackstone);
-		assertEquals(expected,actual.getList());
-	}
 
 	@Test
 	void testUpdate() {
