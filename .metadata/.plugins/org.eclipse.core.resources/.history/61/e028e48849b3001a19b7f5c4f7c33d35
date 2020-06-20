@@ -48,19 +48,6 @@ class ListDaoTest<Double> {
 		expected.add(Blackstone);
 		assertEquals(expected,actual.getList());
 	}
-	
-	@Test
-	void testAddMultiObjreturnList() {
-		ListDao actual = new ListDao<String>();
-		List expected = new ArrayList<String>();
-		String Blackstone = "Blackstone";
-		String WellsFargo = "Wells Fargo";
-		actual.add(Blackstone);
-		actual.add(WellsFargo);
-		expected.add(Blackstone);
-		expected.add(WellsFargo);
-		assertEquals(expected,actual.getList());
-	}
 
 	@Test
 	void testUpdate() {
