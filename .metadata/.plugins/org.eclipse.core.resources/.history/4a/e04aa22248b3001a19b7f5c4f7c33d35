@@ -36,7 +36,8 @@ class ListDaoTest<Double> {
 		List expected = new ArrayList<Double>();
 		actual.add(null);
 		expected.add(null);
-		assertEquals(expected,actual.getList());
+		System.out.println(actual.getList());
+		assertEquals(expected,actual);
 	}
 
 	@Test

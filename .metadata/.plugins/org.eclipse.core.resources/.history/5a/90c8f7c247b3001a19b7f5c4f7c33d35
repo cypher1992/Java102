@@ -31,12 +31,8 @@ class ListDaoTest<Double> {
 	}
 
 	@Test
-	void testAddNullreturnList() {
-		ListDao actual = new ListDao<Double>();
-		List expected = new ArrayList<Double>();
-		actual.add(null);
-		expected.add(null);
-		assertEquals(expected,actual.getList());
+	void testAdd() {
+		fail("Not yet implemented");
 	}
 
 	@Test
