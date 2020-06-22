@@ -72,18 +72,6 @@ class ListDaoTest<Double> {
 		expected.add(blackstone);
 		assertEquals(expected,actual.getList());
 	}
-	
-	@Test
-	void testUpdateObjStrStrreturnsList() {
-		ListDao actual = new ListDao<String>();
-		List expected = new ArrayList<String>();
-		String blackstone = "Blackstone";
-		String wellsfargo = "WellsFargo";
-		actual.add(blackstone);
-		actual.update(blackstone, wellsfargo);
-		expected.add(wellsfargo);
-		assertEquals(expected,actual.getList());
-	}
 
 	@Test
 	void testDelete() {
