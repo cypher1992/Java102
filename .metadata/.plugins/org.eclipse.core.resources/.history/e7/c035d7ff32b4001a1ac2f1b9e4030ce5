@@ -63,14 +63,8 @@ class ListDaoTest<Double> {
 	}
 
 	@Test
-	void testUpdateNullStringreturnsList() {
-		ListDao actual = new ListDao<String>();
-		List expected = new ArrayList<String>();
-		String blackstone = "Blackstone";
-		actual.add(null);
-		actual.update(null, blackstone);
-		expected.add(blackstone);
-		assertEquals(expected,actual.getList());
+	void testUpdate() {
+		fail("Not yet implemented");
 	}
 
 	@Test
