@@ -100,15 +100,8 @@ class ListDaoTest<Double> {
 	}
 
 	@Test
-	void testDeleteSingleInstancereturnsEmptyList() {
-		ListDao actual = new ListDao<String>();
-		List expected = new ArrayList<String>();
-		String blackstone = "Blackstone";
-		actual.add(blackstone);
-		actual.delete(blackstone);
-		expected.add(blackstone);
-		expected.remove(blackstone);
-		assertEquals(expected,actual.getList());
+	void testDelete() {
+		fail("Not yet implemented");
 	}
 
 	@Test

@@ -110,6 +110,16 @@ class ListDaoTest<Double> {
 		expected.remove(blackstone);
 		assertEquals(expected,actual.getList());
 	}
+	
+	@Test
+	void testDeleteNoneInstancereturnsEmptyList() {
+		ListDao actual = new ListDao<String>();
+		List expected = new ArrayList<String>();
+		String blackstone = "Blackstone";
+		actual.delete(blackstone);
+		expected.remove(blackstone);
+		assertEquals(expected,actual.getList());
+	}
 
 	@Test
 	void testRead() {
