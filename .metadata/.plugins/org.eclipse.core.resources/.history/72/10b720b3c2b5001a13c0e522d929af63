@@ -145,6 +145,22 @@ class ListDaoTest<Double> {
 		expected.add(wellsfargo);
 		assertEquals(expected,actual.getList());
 	}
+	
+	@Test
+	void testDeleteOrderMultipleDiffInstancereturnsList() {
+		ListDao actual = new ListDao<String>();
+		List expected = new ArrayList<String>();
+		String blackstone = "Blackstone";
+		String wellsfargo = "WellsFargo";
+		String bofa = "BankOfAmerica";
+		actual.add(blackstone);
+		actual.add(wellsfargo);
+		actual.add(bofa);
+		actual.delete(blackstone);
+		expected.add(wellsfargo);
+		expected.add(bofa);
+		assertEquals(expected,actual.getList());
+	}
 
 	@Test
 	void testRead() {
