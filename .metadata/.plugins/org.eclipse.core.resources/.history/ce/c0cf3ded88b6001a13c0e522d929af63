@@ -162,13 +162,4 @@ class ListDaoTest<Double> {
 		assertEquals(expected,actual.getList());
 	}
 
-	@Test
-	void testRead() {
-		ListDao list = new ListDao<String>();
-		String expected = "Blackstone";
-		list.add(expected);
-		String actual = (String) list.read(expected);
-		assertEquals(expected,actual);
-	}
-
 }
