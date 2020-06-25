@@ -163,7 +163,7 @@ class ListDaoTest<Double> {
 	}
 
 	@Test
-	void testReadExistentObjectReturnsObject() {
+	void testRead() {
 		ListDao list = new ListDao<String>();
 		String expected = "Blackstone";
 		list.add(expected);
@@ -171,12 +171,4 @@ class ListDaoTest<Double> {
 		assertEquals(expected,actual);
 	}
 
-	@Test
-	void testReadNonExistentObjectReturnsNull() {
-		ListDao list = new ListDao<String>();
-		String nonExistentObj = "Blackstone";
-		String actual = (String) list.read(nonExistentObj);
-		String expected = null;
-		assertEquals(expected,actual);
-	}
 }
