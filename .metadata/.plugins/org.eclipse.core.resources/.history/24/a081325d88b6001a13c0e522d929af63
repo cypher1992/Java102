@@ -43,7 +43,7 @@ public class ListDao<T> implements DAO<T> {
 	public T read(T object) {
 		T temp = null;
 		for(T item : this.getList()){
-			if(item.equals(object)){
+			if(temp == object){
 				temp = object;
 			}
 		}

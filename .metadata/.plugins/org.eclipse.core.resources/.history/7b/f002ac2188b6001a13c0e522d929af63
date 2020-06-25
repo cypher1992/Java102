@@ -162,4 +162,9 @@ class ListDaoTest<Double> {
 		assertEquals(expected,actual.getList());
 	}
 
+	@Test
+	void testRead() {
+		fail("Not yet implemented");
+	}
+
 }
