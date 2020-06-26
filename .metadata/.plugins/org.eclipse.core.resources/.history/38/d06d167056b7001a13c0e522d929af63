@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.local.lessons.persistence.template.DAO;
+import com.local.lessons.persistence.DAO;
 
 public class ListDao<T> implements DAO<T> {
 	

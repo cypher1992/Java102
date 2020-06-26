@@ -1,0 +1,12 @@
+package com.local.lessons.persistence.stocks;
+
+public class Stock {
+
+	private String ticker;
+	private String date;
+	private double closedPrice;
+	private double openedPrice;
+	private double highs;
+	private double lows;
+	
+}

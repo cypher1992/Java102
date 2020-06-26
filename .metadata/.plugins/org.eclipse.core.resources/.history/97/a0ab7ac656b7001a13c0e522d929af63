@@ -1,0 +1,5 @@
+package com.local.lessons.persistence.stocks;
+
+public class Stock {
+
+}
