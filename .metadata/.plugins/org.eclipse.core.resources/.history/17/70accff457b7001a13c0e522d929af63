@@ -42,7 +42,7 @@ public class Stock {
 	public double getLow() {
 		return low;
 	}
-	public void setLow(double low) {
+	public void setLows(double low) {
 		this.low = low;
 	}
 	
