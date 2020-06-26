@@ -4,8 +4,6 @@ public class Stock {
 
 	private String ticker;
 	private String date;
-	private double closedPrice;
-	private double openedPrice;
 	
 	public String getTicker() {
 		return ticker;
@@ -19,7 +17,6 @@ public class Stock {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	
 	
 	
 }
