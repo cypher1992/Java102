@@ -10,8 +10,6 @@ public class Stock {
 	private double low;
 	private double peRatio;
 	private double dividendYield;
-	private double roe;
-	private double profitMargin;
 	
 	public String getTicker() {
 		return ticker;
@@ -60,18 +58,6 @@ public class Stock {
 	}
 	public void setDividendYield(double dividendYield) {
 		this.dividendYield = dividendYield;
-	}
-	public double getRoe() {
-		return roe;
-	}
-	public void setRoe(double roe) {
-		this.roe = roe;
-	}
-	public double getProfitMargin() {
-		return profitMargin;
-	}
-	public void setProfitMargin(double profitMargin) {
-		this.profitMargin = profitMargin;
 	}
 	
 	
