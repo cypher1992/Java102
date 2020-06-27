@@ -14,7 +14,7 @@ public class Stock {
 	private double profitMargin;
 	private double currentRatio;
 	private double debtToEquityRatio;
-	private double inventoryTurnOver;
+	
 	
 	public String getTicker() {
 		return ticker;
@@ -76,25 +76,6 @@ public class Stock {
 	public void setProfitMargin(double profitMargin) {
 		this.profitMargin = profitMargin;
 	}
-	public double getCurrentRatio() {
-		return currentRatio;
-	}
-	public void setCurrentRatio(double currentRatio) {
-		this.currentRatio = currentRatio;
-	}
-	public double getDebtToEquityRatio() {
-		return debtToEquityRatio;
-	}
-	public void setDebtToEquityRatio(double debtToEquityRatio) {
-		this.debtToEquityRatio = debtToEquityRatio;
-	}
-	public double getInventoryTurnOver() {
-		return inventoryTurnOver;
-	}
-	public void setInventoryTurnOver(double inventoryTurnOver) {
-		this.inventoryTurnOver = inventoryTurnOver;
-	}
-	
 	
 	
 	
