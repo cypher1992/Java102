@@ -47,18 +47,6 @@ public class Stock {
 	public void setLow(double low) {
 		this.low = low;
 	}
-	public double getPeRatio() {
-		return peRatio;
-	}
-	public void setPeRatio(double peRatio) {
-		this.peRatio = peRatio;
-	}
-	public double getDividendYield() {
-		return dividendYield;
-	}
-	public void setDividendYield(double dividendYield) {
-		this.dividendYield = dividendYield;
-	}
 	
 	
 	
