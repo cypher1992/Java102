@@ -16,27 +16,6 @@ public class Stock {
 	private double debtToEquityRatio;
 	private double inventoryTurnOver;
 	
-	
-	
-	public Stock(String ticker, String date, double closedPrice, double openedPrice, double high, double low,
-			double peRatio, double dividendYield, double roe, double profitMargin, double currentRatio,
-			double debtToEquityRatio, double inventoryTurnOver) {
-		super();
-		this.ticker = ticker;
-		this.date = date;
-		this.closedPrice = closedPrice;
-		this.openedPrice = openedPrice;
-		this.high = high;
-		this.low = low;
-		this.peRatio = peRatio;
-		this.dividendYield = dividendYield;
-		this.roe = roe;
-		this.profitMargin = profitMargin;
-		this.currentRatio = currentRatio;
-		this.debtToEquityRatio = debtToEquityRatio;
-		this.inventoryTurnOver = inventoryTurnOver;
-	}
-	
 	public String getTicker() {
 		return ticker;
 	}
@@ -115,5 +94,12 @@ public class Stock {
 	public void setInventoryTurnOver(double inventoryTurnOver) {
 		this.inventoryTurnOver = inventoryTurnOver;
 	}
+	
+	
+	
+	
+	
+	
+	
 	
 }

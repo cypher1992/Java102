@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class StockTest {
 
 	@Test
-	void test() {
+	void testIsInstanceOfStock() {
 		fail("Not yet implemented");
 	}
 
