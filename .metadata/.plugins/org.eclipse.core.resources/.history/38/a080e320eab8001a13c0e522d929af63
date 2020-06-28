@@ -16,9 +16,7 @@ public class Stock {
 	private double debtToEquityRatio;
 	private double inventoryTurnOver;
 	
-	public Stock(){
-		super();
-	}
+	
 	
 	public Stock(String ticker, String date, double closedPrice, double openedPrice, double high, double low,
 			double peRatio, double dividendYield, double roe, double profitMargin, double currentRatio,
