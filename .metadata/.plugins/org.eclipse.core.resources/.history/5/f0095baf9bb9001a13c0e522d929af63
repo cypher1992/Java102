@@ -1,5 +1,4 @@
 package com.local.lessons.persistence.stocks;
-import yahoofinance.quotes.stock.*;
 
 public class Stock {
 
