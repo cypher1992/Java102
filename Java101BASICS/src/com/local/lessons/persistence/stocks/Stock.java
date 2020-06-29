@@ -1,29 +1,31 @@
 package com.local.lessons.persistence.stocks;
+import java.math.BigDecimal;
+
 import yahoofinance.quotes.stock.*;
 
 public class Stock {
 
 	private String ticker;
 	private String date;
-	private double closedPrice;
-	private double openedPrice;
-	private double high;
-	private double low;
-	private double peRatio;
-	private double dividendYield;
-	private double roe;
-	private double profitMargin;
-	private double currentRatio;
-	private double debtToEquityRatio;
-	private double inventoryTurnOver;
+	private BigDecimal closedPrice;
+	private BigDecimal openedPrice;
+	private BigDecimal high;
+	private BigDecimal low;
+	private BigDecimal peRatio;
+	private BigDecimal dividendYield;
+	private BigDecimal roe;
+	private BigDecimal profitMargin;
+	private BigDecimal currentRatio;
+	private BigDecimal debtToEquityRatio;
+	private BigDecimal inventoryTurnOver;
 	
 	public Stock(){
 		super();
 	}
 	
-	public Stock(String ticker, String date, double closedPrice, double openedPrice, double high, double low,
-			double peRatio, double dividendYield, double roe, double profitMargin, double currentRatio,
-			double debtToEquityRatio, double inventoryTurnOver) {
+	public Stock(String ticker, String date, BigDecimal closedPrice, BigDecimal openedPrice, BigDecimal high,
+			BigDecimal low, BigDecimal peRatio, BigDecimal dividendYield, BigDecimal roe, BigDecimal profitMargin,
+			BigDecimal currentRatio, BigDecimal debtToEquityRatio, BigDecimal inventoryTurnOver) {
 		super();
 		this.ticker = ticker;
 		this.date = date;
@@ -43,80 +45,107 @@ public class Stock {
 	public String getTicker() {
 		return ticker;
 	}
+
 	public void setTicker(String ticker) {
 		this.ticker = ticker;
 	}
+
 	public String getDate() {
 		return date;
 	}
+
 	public void setDate(String date) {
 		this.date = date;
 	}
-	public double getClosedPrice() {
+
+	public BigDecimal getClosedPrice() {
 		return closedPrice;
 	}
-	public void setClosedPrice(double closedPrice) {
+
+	public void setClosedPrice(BigDecimal closedPrice) {
 		this.closedPrice = closedPrice;
 	}
-	public double getOpenedPrice() {
+
+	public BigDecimal getOpenedPrice() {
 		return openedPrice;
 	}
-	public void setOpenedPrice(double openedPrice) {
+
+	public void setOpenedPrice(BigDecimal openedPrice) {
 		this.openedPrice = openedPrice;
 	}
-	public double getHigh() {
+
+	public BigDecimal getHigh() {
 		return high;
 	}
-	public void setHigh(double high) {
+
+	public void setHigh(BigDecimal high) {
 		this.high = high;
 	}
-	public double getLow() {
+
+	public BigDecimal getLow() {
 		return low;
 	}
-	public void setLow(double low) {
+
+	public void setLow(BigDecimal low) {
 		this.low = low;
 	}
-	public double getPeRatio() {
+
+	public BigDecimal getPeRatio() {
 		return peRatio;
 	}
-	public void setPeRatio(double peRatio) {
+
+	public void setPeRatio(BigDecimal peRatio) {
 		this.peRatio = peRatio;
 	}
-	public double getDividendYield() {
+
+	public BigDecimal getDividendYield() {
 		return dividendYield;
 	}
-	public void setDividendYield(double dividendYield) {
+
+	public void setDividendYield(BigDecimal dividendYield) {
 		this.dividendYield = dividendYield;
 	}
-	public double getRoe() {
+
+	public BigDecimal getRoe() {
 		return roe;
 	}
-	public void setRoe(double roe) {
+
+	public void setRoe(BigDecimal roe) {
 		this.roe = roe;
 	}
-	public double getProfitMargin() {
+
+	public BigDecimal getProfitMargin() {
 		return profitMargin;
 	}
-	public void setProfitMargin(double profitMargin) {
+
+	public void setProfitMargin(BigDecimal profitMargin) {
 		this.profitMargin = profitMargin;
 	}
-	public double getCurrentRatio() {
+
+	public BigDecimal getCurrentRatio() {
 		return currentRatio;
 	}
-	public void setCurrentRatio(double currentRatio) {
+
+	public void setCurrentRatio(BigDecimal currentRatio) {
 		this.currentRatio = currentRatio;
 	}
-	public double getDebtToEquityRatio() {
+
+	public BigDecimal getDebtToEquityRatio() {
 		return debtToEquityRatio;
 	}
-	public void setDebtToEquityRatio(double debtToEquityRatio) {
+
+	public void setDebtToEquityRatio(BigDecimal debtToEquityRatio) {
 		this.debtToEquityRatio = debtToEquityRatio;
 	}
-	public double getInventoryTurnOver() {
+
+	public BigDecimal getInventoryTurnOver() {
 		return inventoryTurnOver;
 	}
-	public void setInventoryTurnOver(double inventoryTurnOver) {
+
+	public void setInventoryTurnOver(BigDecimal inventoryTurnOver) {
 		this.inventoryTurnOver = inventoryTurnOver;
 	}
+	
+	
 	
 }
