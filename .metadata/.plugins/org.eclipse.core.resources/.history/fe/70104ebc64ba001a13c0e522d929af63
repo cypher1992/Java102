@@ -23,10 +23,6 @@ public class Stock {
 		super();
 	}
 	
-	public Stock(String ticker){
-		super();
-	}
-	
 	public Stock(String ticker, String date, BigDecimal closedPrice, BigDecimal openedPrice, BigDecimal high,
 			BigDecimal low, BigDecimal peRatio, BigDecimal dividendYield, BigDecimal roe, BigDecimal profitMargin,
 			BigDecimal currentRatio, BigDecimal debtToEquityRatio, BigDecimal inventoryTurnOver) {
