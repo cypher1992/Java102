@@ -28,5 +28,7 @@ public class Stock {
 	public void setRoe(BigDecimal roe) {
 		this.roe = roe;
 	}
-
+	
+	
+	
 }

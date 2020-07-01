@@ -18,7 +18,6 @@ class StockTest {
 		assertTrue(isInstanceOfStock);
 	}
 	
-
 	
 	
 
