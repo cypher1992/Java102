@@ -1,8 +1,6 @@
 package com.local.lessons.persistence.stocks;
-import java.io.IOException;
 import java.math.BigDecimal;
 
-import yahoofinance.*;
 import yahoofinance.quotes.stock.StockStats;
 
 public class Stock {
@@ -27,15 +25,8 @@ public class Stock {
 	
 	public Stock(String ticker){
 		super();
-		yahoofinance.Stock initStock = new yahoofinance.Stock(ticker);
-		StockStats stats;
-		try {
-			stats = initStock.getStats(false);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		this.roe = stats.getROE();
+		StockStats stockX = new StockStats(ticker);
+		this.roe = stockX.getROE();
 	}
 	
 	public Stock(String ticker, String date, BigDecimal closedPrice, BigDecimal openedPrice, BigDecimal high,
@@ -126,7 +117,8 @@ public class Stock {
 	}
 
 	public void setRoe(BigDecimal roe) {
-		this.roe = roe;
+		StockStats stockX = new StockStats(ticker);
+		this.roe = stockX.getROE();
 	}
 
 	public BigDecimal getProfitMargin() {

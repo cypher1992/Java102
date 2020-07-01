@@ -1,12 +1,10 @@
 package com.local.persistence.stockstest;
 
 import static org.junit.jupiter.api.Assertions.*;
-import yahoofinance.*;
+import yahoofinance.quotes.stock.StockStats;
 import java.math.BigDecimal;
 
 import com.local.lessons.persistence.stocks.*;
-import com.local.lessons.persistence.stocks.Stock;
-
 import org.junit.jupiter.api.Test;
 
 class StockTest {
@@ -18,6 +16,15 @@ class StockTest {
 		assertTrue(isInstanceOfStock);
 	}
 	
+	@Test
+	void testgetRoeForBXreturnsROE() {
+		Stock blackstone = new Stock("BX");
+		
+		BigDecimal actual = blackstone.getRoe();
+		BigDecimal expected = new StockStats("appl").getROE();
+		assertEquals(expected, actual);
+		
+	}
 	
 	
 
