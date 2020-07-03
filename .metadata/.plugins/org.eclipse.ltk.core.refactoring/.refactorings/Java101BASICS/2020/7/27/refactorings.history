@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Java101BASICS&apos;&#x0D;&#x0A;- Original project: &apos;Java101BASICS&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Java101BASICS/src/com.local.lessons.persistence.stocks&#x0D;&#x0A;     Java101BASICS/test/com.local.persistence.stockstest" description="Delete elements" element1="/test&lt;com.local.persistence.stockstest" element2="/test&lt;com.local.persistence" element3="/src&lt;com.local.lessons.persistence.stocks" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1593739640541" subPackages="false" version="1.0"/>
+</session>
