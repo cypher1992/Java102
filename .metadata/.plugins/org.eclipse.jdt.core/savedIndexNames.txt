@@ -14,7 +14,6 @@ INDEX VERSION 1.131+C:\Users\Zero\Java_WorkSpace\.metadata\.plugins\org.eclipse.
 492684334.index
 2777612265.index
 1301684271.index
-799343512.index
 3553856580.index
 3139231225.index
 406398108.index
@@ -25,7 +24,6 @@ INDEX VERSION 1.131+C:\Users\Zero\Java_WorkSpace\.metadata\.plugins\org.eclipse.
 2831726757.index
 408771512.index
 3929848548.index
-733104386.index
 4276758565.index
 1932197408.index
 911398812.index

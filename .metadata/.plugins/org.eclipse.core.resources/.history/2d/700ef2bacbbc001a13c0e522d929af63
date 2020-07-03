@@ -2,6 +2,7 @@ package com.local.lessons.persistence.stocks;
 import java.io.IOException;
 import java.math.BigDecimal;
 
+import yahoofinance.Stock;
 import yahoofinance.quotes.stock.StockStats;
 
 public class Stock {
