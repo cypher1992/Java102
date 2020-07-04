@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="StockTest" project="Java101BASICS" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.local.persistence.stockstest.StockTest" time="0.115" displayname="StockTest" uniqueid="[engine:junit-jupiter]/[class:com.local.persistence.stockstest.StockTest]">
-    <testcase name="testIsInstanceOfStockIsTrue" classname="com.local.persistence.stockstest.StockTest" time="0.115" displayname="testIsInstanceOfStockIsTrue()" uniqueid="[engine:junit-jupiter]/[class:com.local.persistence.stockstest.StockTest]/[method:testIsInstanceOfStockIsTrue()]"/>
-  </testsuite>
-</testrun>

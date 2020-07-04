@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="StockTest" project="Java101BASICS" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.local.persistence.stockstest.StockTest" time="0.093" displayname="StockTest" uniqueid="[engine:junit-jupiter]/[class:com.local.persistence.stockstest.StockTest]">
-    <testcase name="testIsInstanceOfStockIsTrue" classname="com.local.persistence.stockstest.StockTest" time="0.065" displayname="testIsInstanceOfStockIsTrue()" uniqueid="[engine:junit-jupiter]/[class:com.local.persistence.stockstest.StockTest]/[method:testIsInstanceOfStockIsTrue()]"/>
-    <testcase name="testgetRoeForBXreturnsROE" classname="com.local.persistence.stockstest.StockTest" time="0.028" displayname="testgetRoeForBXreturnsROE()" uniqueid="[engine:junit-jupiter]/[class:com.local.persistence.stockstest.StockTest]/[method:testgetRoeForBXreturnsROE()]"/>
-  </testsuite>
-</testrun>
