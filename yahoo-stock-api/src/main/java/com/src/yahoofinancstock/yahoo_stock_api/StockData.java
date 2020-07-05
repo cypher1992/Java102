@@ -13,4 +13,8 @@ public class StockData
 	private Map<String,Object> stats = new TreeMap<String,Object>();
 	private String ticker; 
 	
+	public StockData(String ticker){
+		this.ticker = ticker;
+	}
+  
 }
