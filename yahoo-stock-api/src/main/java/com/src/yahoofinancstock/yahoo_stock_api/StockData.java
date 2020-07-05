@@ -16,5 +16,15 @@ public class StockData
 	public StockData(String ticker){
 		this.ticker = ticker;
 	}
+	
+	public Map getStockStats(){
+		
+		Long outstandingShares = YahooFinance.get(ticker).getStats().getSharesOutstanding()
+		
+		stats.put("OUTSTANDINGSHARES", outstandingShares);		
+		return stats;
+		
+	}
+	
   
 }
