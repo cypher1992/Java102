@@ -22,15 +22,18 @@ public class StockData
 		
 		Long outstandingShares = null;
 		BigDecimal pe = null;
+		BigDecimal eps = null;
 		try {
 			outstandingShares = YahooFinance.get(ticker).getStats().getSharesOutstanding();
 			pe = YahooFinance.get(ticker).getStats().getPe();
+			eps = YahooFinance.get(ticker).getStats().getEps();
 		} catch (IOException e) {
 			System.out.println(e);
 		}
 		
 		stats.put("OUTSTANDINGSHARES", outstandingShares);
 		stats.put("PRICETOEARNING", pe);
+		stats.put("EARNINGPERSHARE", eps);
 		return stats;
 		
 	}
