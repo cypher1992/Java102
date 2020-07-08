@@ -16,4 +16,10 @@ public class StockDataTest extends TestCase
      * @param testName name of the test case
      */
   
+	
+	public void testIsInstanceOfStockData() {
+		StockData sd = new StockData("BX");
+		Boolean isInstanceOfStockData = sd instanceof StockData ;
+		assertTrue(isInstanceOfStockData);
+	}
 }
