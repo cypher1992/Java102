@@ -7,10 +7,10 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="yahoofinance.quotes.stock.StockStats"/>
 <fullyQualifiedTypeName name="yahoofinance.Stock"/>
 <fullyQualifiedTypeName name="yahoofinance.YahooFinance"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
 </qualifiedTypeNameHistroy>
