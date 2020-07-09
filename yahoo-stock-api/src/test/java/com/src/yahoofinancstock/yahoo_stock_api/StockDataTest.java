@@ -73,4 +73,26 @@ public class StockDataTest extends TestCase
 		
 		assertEquals(expected,actual);
 	}
+	
+	public void testGSStockStatData() {
+		String ticker = "GS";
+		StockData sd = new StockData(ticker);
+		Map<String,Object> actual = sd.getStockStats();
+		Map<String,Object> expected = new TreeMap<String,Object>();
+		try {
+			Long outstandingShares = YahooFinance.get(ticker).getStats().getSharesOutstanding();
+			BigDecimal pe = YahooFinance.get(ticker).getStats().getPe();
+			BigDecimal eps = YahooFinance.get(ticker).getStats().getEps();
+			BigDecimal ebitda = YahooFinance.get(ticker).getStats().getEBITDA();
+			expected.put("OUTSTANDINGSHARES", outstandingShares);
+			expected.put("PRICETOEARNING", pe);
+			expected.put("EARNINGPERSHARE", eps);
+			expected.put("EBITDA", ebitda);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		assertEquals(expected,actual);
+	}
 }
