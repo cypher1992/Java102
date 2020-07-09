@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="com.src.yahoofinancstock.yahoo_stock_api.StockData"/>
 </qualifiedTypeNameHistroy>
