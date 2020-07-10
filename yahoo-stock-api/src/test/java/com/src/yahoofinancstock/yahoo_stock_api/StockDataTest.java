@@ -74,8 +74,9 @@ public class StockDataTest extends TestCase
 		assertEquals(expected,actual);
 	}
 	
-	public void testGSStockStatData() {
-		String ticker = "GS";
+	public void testBLIAQStockStatData() {
+		// this is blockbuster stock why is it still pull data for a company that do not exist
+		String ticker = "BLIAQ";
 		StockData sd = new StockData(ticker);
 		Map<String,Object> actual = sd.getStockStats();
 		Map<String,Object> expected = new TreeMap<String,Object>();
@@ -92,7 +93,8 @@ public class StockDataTest extends TestCase
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
+	
 }
