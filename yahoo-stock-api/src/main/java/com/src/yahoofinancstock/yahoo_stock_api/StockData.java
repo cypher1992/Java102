@@ -42,5 +42,10 @@ public class StockData
 		
 	}
 	
+	public Map getStockHistoricalTrades(){
+		
+		
+		return historicalTrades;
+	}
   
 }
