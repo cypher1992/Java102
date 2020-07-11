@@ -12,6 +12,7 @@ import yahoofinance.YahooFinance;
 public class StockData 
 {
 	private Map<String,Object> stats = new TreeMap<String,Object>();
+	private Map<String,Object> historicalTrades = new TreeMap<String,Object>();
 	private String ticker; 
 	
 	public StockData(String ticker){

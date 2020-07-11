@@ -93,7 +93,6 @@ public class StockDataTest extends TestCase
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
@@ -117,7 +116,6 @@ public class StockDataTest extends TestCase
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 	
@@ -141,7 +139,6 @@ public class StockDataTest extends TestCase
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(actual);
 		assertEquals(expected,actual);
 	}
 }
