@@ -2,8 +2,10 @@ package com.src.yahoofinancstock.yahoo_stock_api;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.Calendar;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
@@ -14,9 +16,12 @@ public class StockData
 	private Map<String,Object> stats = new TreeMap<String,Object>();
 	private Map<String,Object> historicalTrades = new TreeMap<String,Object>();
 	private String ticker; 
+	// Need to observe Calendar date to getHistory for YahooFinance to work
+	private Calendar date; 
 	
 	public StockData(String ticker){
 		this.ticker = ticker;
+		this.date = Calendar.getInstance();
 	}
 	
 	public Map getStockStats(){
@@ -44,6 +49,11 @@ public class StockData
 	
 	public Map getStockHistoricalTrades(){
 		
+		BigDecimal high;
+		List<Object> list;
+		// Need Calendar Object
+		//YahooFinance.g
+		//YahooFinance.get(this.ticker).getHistory();
 		
 		return historicalTrades;
 	}
