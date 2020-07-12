@@ -141,4 +141,12 @@ public class StockDataTest extends TestCase
 		}
 		assertEquals(expected,actual);
 	}
+	// Not Working
+	public void testBXGetStockHistoricalTrades(){
+		String ticker = "BX";
+		StockData bx = new StockData(ticker);
+		Map<String,Object> actual = bx.getStockHistoricalTrades();
+		Map<String,Object> expected = new TreeMap<String,Object>();
+		assertEquals(actual,expected);
+	}
 }

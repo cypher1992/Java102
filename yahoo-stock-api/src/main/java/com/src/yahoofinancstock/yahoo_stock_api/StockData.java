@@ -50,15 +50,16 @@ public class StockData
 	
 	public Map getStockHistoricalTrades(){
 		
-		List<HistoricalQuote> list;
+		List<HistoricalQuote> list = null;
 		//Need Calendar Object
 		//YahooFinance.g
 		 try {
 			list = YahooFinance.get(this.ticker).getHistory();
-		} catch (IOException e) {
+		 } catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		 System.out.println(list.get(0));
 		
 		return historicalTrades;
 	}
