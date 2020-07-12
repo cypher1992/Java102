@@ -490,3 +490,14 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2020-07-10 22:48:32,498 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-07-10 22:48:32,499 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
 2020-07-10 22:48:32,502 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-10 22:48:32,503 [Worker-48: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2020-07-11 22:41:49,196 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-11 22:41:49,197 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
+2020-07-11 22:41:49,200 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-11 22:41:49,200 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2020-07-11 22:43:20,240 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-11 22:43:20,241 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
+2020-07-11 22:43:20,244 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-11 22:43:20,245 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2020-07-11 22:45:44,877 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-07-11 22:45:44,878 [Worker-79: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources

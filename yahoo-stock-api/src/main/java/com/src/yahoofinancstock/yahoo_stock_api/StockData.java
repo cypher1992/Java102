@@ -9,6 +9,7 @@ import java.util.Calendar;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
+import yahoofinance.histquotes.HistoricalQuote;
 
 
 public class StockData 
@@ -49,11 +50,15 @@ public class StockData
 	
 	public Map getStockHistoricalTrades(){
 		
-		BigDecimal high;
-		List<Object> list;
-		// Need Calendar Object
+		List<HistoricalQuote> list;
+		//Need Calendar Object
 		//YahooFinance.g
-		//YahooFinance.get(this.ticker).getHistory();
+		 try {
+			list = YahooFinance.get(this.ticker).getHistory();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return historicalTrades;
 	}
