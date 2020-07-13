@@ -57,8 +57,9 @@ public class StockData
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		 System.out.println(list.get(0).getDate());
-		
+		 Map<String,Object> tradeDate = new TreeMap<String,Object>(); 
+		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("HIGH", list.get(0).getHigh()));
+		 
 		return historicalTrades;
 	}
   
