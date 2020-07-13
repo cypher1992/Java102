@@ -59,8 +59,10 @@ public class StockData
 		}
 		 Map<String,Object> tradeDate = new TreeMap<String,Object>(); 
 		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("HIGH", list.get(0).getHigh()));
+		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("LOW", list.get(0).getLow()));
+		
 		 
-		return historicalTrades;
+		 return historicalTrades;
 	}
   
 }
