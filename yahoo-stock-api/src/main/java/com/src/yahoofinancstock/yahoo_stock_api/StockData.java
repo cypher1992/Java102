@@ -59,9 +59,12 @@ public class StockData
 			e.printStackTrace();
 		}
 		 SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		 String  simpleDate = formatDate.format(list.get(0).getDate().getTime());
 		 Map<String,Object> tradeDate = new TreeMap<String,Object>(); 
-		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("HIGH", list.get(0).getHigh()));
-		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("LOW", list.get(0).getLow()));
+		 tradeDate.put("HIGH", list.get(0).getHigh());
+		 tradeDate.put("LOW", list.get(0).getLow());
+		 historicalTrades.put(simpleDate,tradeDate);
+		 System.out.println(historicalTrades);
 		 
 		 return historicalTrades;
 	}

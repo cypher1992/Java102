@@ -146,7 +146,6 @@ public class StockDataTest extends TestCase
 		String ticker = "BX";
 		StockData bx = new StockData(ticker);
 		Map<String,Object> actual = bx.getStockHistoricalTrades();
-		System.out.println(actual.toString());
 		Map<String,Object> expected = new TreeMap<String,Object>();
 		assertEquals(actual,expected);
 	}
