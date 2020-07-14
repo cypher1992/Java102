@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.Calendar;
+import java.text.SimpleDateFormat;
 
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
@@ -57,10 +58,10 @@ public class StockData
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		 SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
 		 Map<String,Object> tradeDate = new TreeMap<String,Object>(); 
 		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("HIGH", list.get(0).getHigh()));
 		 historicalTrades.put(list.get(0).getDate().toString(),tradeDate.put("LOW", list.get(0).getLow()));
-		
 		 
 		 return historicalTrades;
 	}
