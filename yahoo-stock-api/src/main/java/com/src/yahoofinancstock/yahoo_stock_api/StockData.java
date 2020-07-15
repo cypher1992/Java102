@@ -71,7 +71,6 @@ public class StockData
 			 tradeDate.put("VOLUME",trade.getVolume());
 			 historicalTrades.put(simpleDate,tradeDate);
 		 }
-		 System.out.println(historicalTrades);
 		 
 		 return historicalTrades;
 	}

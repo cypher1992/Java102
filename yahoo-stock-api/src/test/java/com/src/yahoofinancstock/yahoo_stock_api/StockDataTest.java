@@ -4,6 +4,8 @@ import junit.framework.Test;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -12,6 +14,7 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
+import yahoofinance.histquotes.HistoricalQuote;
 
 /**
  * Unit test for simple App.
@@ -141,12 +144,23 @@ public class StockDataTest extends TestCase
 		}
 		assertEquals(expected,actual);
 	}
-	// Not Working
-	public void testBXGetStockHistoricalTrades(){
+	
+	
+	public void testBXHighFirstIndexGetStockHistoricalTrades(){
 		String ticker = "BX";
 		StockData bx = new StockData(ticker);
-		Map<String,Object> actual = bx.getStockHistoricalTrades();
-		Map<String,Object> expected = new TreeMap<String,Object>();
+		List<HistoricalQuote> listOfTrades = null;
+		 try {
+			listOfTrades = YahooFinance.get(ticker).getHistory();
+		 } catch (IOException e) {
+			e.printStackTrace();
+		}
+		SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		String  simpleDate = formatDate.format(listOfTrades.get(0).getDate().getTime());
+		
+		BigDecimal expected = listOfTrades.get(0).getHigh();
+		Map actualMap = (Map) bx.getStockHistoricalTrades().get(simpleDate);
+		BigDecimal actual = (BigDecimal) actualMap.get("HIGH");
 		assertEquals(actual,expected);
 	}
 }
