@@ -181,4 +181,22 @@ public class StockDataTest extends TestCase
 		BigDecimal actual = (BigDecimal) actualMap.get("LOW");
 		assertEquals(actual,expected);
 	}
+	
+	public void testBXCloseFirstIndexGetStockHistoricalTrades(){
+		String ticker = "BX";
+		StockData bx = new StockData(ticker);
+		List<HistoricalQuote> listOfTrades = null;
+		 try {
+			listOfTrades = YahooFinance.get(ticker).getHistory();
+		 } catch (IOException e) {
+			e.printStackTrace();
+		}
+		SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		String  simpleDate = formatDate.format(listOfTrades.get(0).getDate().getTime());
+		
+		BigDecimal expected = listOfTrades.get(0).getClose();
+		Map actualMap = (Map) bx.getStockHistoricalTrades().get(simpleDate);
+		BigDecimal actual = (BigDecimal) actualMap.get("CLOSE");
+		assertEquals(actual,expected);
+	}
 }
