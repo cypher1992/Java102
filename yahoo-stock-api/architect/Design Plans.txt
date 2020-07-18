@@ -1,0 +1,25 @@
+Create functions that get
+TDD
+----------------------------
+Data Generator
+----------------------------
+1. Stock Financial Metrics
+2. Stock Stats
+3. Stock Quotes
+----------------------------
+
+----------------------------
+Persistence of Data
+----------------------------
+Dump data into Database(Oracle SQL)
+1. Create DB
+2. Store data in table
+3. CRUD Methods
+
+----------------------------
+UI interface for Data
+----------------------------
+Take Data and Present in a form of UI
+1. Spring/Hibernate Framework for this project
+
+
