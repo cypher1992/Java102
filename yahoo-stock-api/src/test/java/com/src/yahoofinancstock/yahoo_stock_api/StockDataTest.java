@@ -331,7 +331,7 @@ public class StockDataTest extends TestCase
 		assertEquals(actual,expected);
 	}
 	
-	public void testBXHighMiddleIndexGetStockHistoricalTrades(){
+	public void testBXVolumeMiddleIndexGetStockHistoricalTrades(){
 		String ticker = "BX";
 		StockData bx = new StockData(ticker);
 		List<HistoricalQuote> listOfTrades = null;
