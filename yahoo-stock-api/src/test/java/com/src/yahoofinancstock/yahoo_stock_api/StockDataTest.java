@@ -423,6 +423,29 @@ public class StockDataTest extends TestCase
 		assertEquals(actual,expected);
 	}
 	
+	public void testBXOpenMiddleIndexGetStockHistoricalTrades(){
+		String ticker = "BX";
+		StockData bx = new StockData(ticker);
+		List<HistoricalQuote> listOfTrades = null;
+		 try {
+			listOfTrades = YahooFinance.get(ticker).getHistory();
+		 } catch (IOException e) {
+			e.printStackTrace();
+		}
+		SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		Integer middlePosition = null;
+		if(listOfTrades.size()%2 == 0) {
+			middlePosition = listOfTrades.size()/2;
+		}else {
+			middlePosition = (listOfTrades.size()/2)+1;
+		}
+		String  simpleDate = formatDate.format(listOfTrades.get(middlePosition).getDate().getTime());
+		BigDecimal expected = listOfTrades.get(middlePosition).getOpen();
+		Map actualMap = (Map) bx.getStockHistoricalTrades().get(simpleDate);
+		BigDecimal actual = (BigDecimal) actualMap.get("OPEN");
+		assertEquals(actual,expected);
+	}
+	
 	
 	
 }
