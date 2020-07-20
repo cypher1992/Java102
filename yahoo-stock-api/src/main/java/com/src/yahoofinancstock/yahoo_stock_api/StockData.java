@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
+import yahoofinance.histquotes.Interval;
 
 
 public class StockData 
@@ -55,6 +56,31 @@ public class StockData
 		List<HistoricalQuote> listOfTrades = null;
 		 try {
 			listOfTrades = YahooFinance.get(this.ticker).getHistory();
+		 } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+		 SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		 for (HistoricalQuote trade:listOfTrades) {
+			 String  simpleDate = formatDate.format(trade.getDate().getTime());
+			 Map<String,Object> tradeDate = new TreeMap<String,Object>(); 
+			 tradeDate.put("HIGH", trade.getHigh());
+			 tradeDate.put("LOW", trade.getLow());
+			 tradeDate.put("CLOSE",trade.getClose());
+			 tradeDate.put("OPEN", trade.getOpen());
+			 tradeDate.put("VOLUME",trade.getVolume());
+			 historicalTrades.put(simpleDate,tradeDate);
+		 }
+		 
+		 return historicalTrades;
+	}
+	
+	public Map getStockHistoricalTrades(Calendar from,Calendar to,Interval inter){
+		
+		List<HistoricalQuote> listOfTrades = null;
+		 try {
+			listOfTrades = YahooFinance.get(this.ticker).getHistory(from,to,inter);
 		 } catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
