@@ -452,8 +452,8 @@ public class StockDataTest extends TestCase
 	public void testBXHighFirstIndexGetStockHistoricalTradesInputs(){
 		String ticker = "BX";
 		StockData bx = new StockData(ticker);
-		Calendar from = new GregorianCalendar(2011,1,31);
-		Calendar to = new GregorianCalendar(2015,1,31);
+		Calendar from = new GregorianCalendar(2011,0,31);
+		Calendar to = new GregorianCalendar(2015,0,31);
 		List<HistoricalQuote> listOfTrades = null;
 		 try {
 			listOfTrades = YahooFinance.get(ticker).getHistory(from,to,Interval.DAILY);
@@ -466,6 +466,27 @@ public class StockDataTest extends TestCase
 		BigDecimal expected = listOfTrades.get(0).getHigh();
 		Map actualMap = (Map) bx.getStockHistoricalTrades(from,to,Interval.DAILY).get(simpleDate);
 		BigDecimal actual = (BigDecimal) actualMap.get("HIGH");
+		assertEquals(actual,expected);
+	}
+	
+	
+	public void testBXLowFirstIndexGetStockHistoricalTradesInputs(){
+		String ticker = "BX";
+		StockData bx = new StockData(ticker);
+		Calendar from = new GregorianCalendar(2000,0,1);
+		Calendar to = new GregorianCalendar(2020,7,21);
+		List<HistoricalQuote> listOfTrades = null;
+		 try {
+			listOfTrades = YahooFinance.get(ticker).getHistory(from,to,Interval.DAILY);
+		 } catch (IOException e) {
+			e.printStackTrace();
+		}
+		SimpleDateFormat formatDate = new SimpleDateFormat("MMM-dd-yyyy");
+		String  simpleDate = formatDate.format(listOfTrades.get(0).getDate().getTime());
+		
+		BigDecimal expected = listOfTrades.get(0).getLow();
+		Map actualMap = (Map) bx.getStockHistoricalTrades(from,to,Interval.DAILY).get(simpleDate);
+		BigDecimal actual = (BigDecimal) actualMap.get("LOW");
 		assertEquals(actual,expected);
 	}
 	
