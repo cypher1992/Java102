@@ -1,11 +1,14 @@
 package com.src.persistence;
 
 import java.util.Map;
+import java.sql.*;
+import java.util.Scanner; 
 
 public class DBDAO implements DAO<String, Object> {
+	
 
 	public void add(Map<String, Object> stockPriceSeries) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
