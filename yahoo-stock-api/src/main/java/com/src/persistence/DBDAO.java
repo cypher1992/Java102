@@ -6,6 +6,22 @@ import java.util.Scanner;
 
 public class DBDAO implements DAO<String, Object> {
 	
+	public Connection connection() {
+		Connection con = null;
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			String connectionStr = "jdbc:oracle:thin:@localhost:1522:orcl";
+			String usr = "SYS as sysdba";
+			System.out.println("Enter pw");
+			Scanner readInput = new Scanner(System.in);
+			String pw = readInput.nextLine();
+			con = DriverManager.getConnection(connectionStr,usr,pw);
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return con;
+		
+	}
 
 	public void add(Map<String, Object> stockPriceSeries) {
 		
