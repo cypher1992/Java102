@@ -23,6 +23,17 @@ public class DBDAO implements DAO<String, Object> {
 		
 	}
 	
+	public Statement getStatement(Connection conn){
+		Statement stm = null;
+		try {
+			stm = conn.createStatement();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+		return stm;
+	}
+	
 
 	public void add(Map<String, Object> stockPriceSeries) {
 		
