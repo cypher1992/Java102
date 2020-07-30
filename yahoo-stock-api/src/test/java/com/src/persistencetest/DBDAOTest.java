@@ -14,12 +14,21 @@ public class DBDAOTest extends TestCase {
 		assertTrue(isInstanceOfDBDAO);
 	}
 	
-	public void testDBDAO() {
+	public void testDBDAOGetConnectionreturnsConnection() {
 		// pw 0
 		DBDAO dao = new DBDAO();
 		Connection conn = dao.getConnection();
 		assertNotNull(conn);
 	}
 
+	public void testDBDAOgetStatementReturnsStatement() {
+		// pw 0
+		DBDAO dao = new DBDAO();
+		Connection conn = dao.getConnection();
+		Statement stmt = dao.getStatement(conn);
+		assertNotNull(conn);
+	}
+	
+	
 	
 }

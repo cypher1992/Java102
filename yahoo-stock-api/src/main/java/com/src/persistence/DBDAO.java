@@ -24,14 +24,14 @@ public class DBDAO implements DAO<String, Object> {
 	}
 	
 	public Statement getStatement(Connection conn){
-		Statement stm = null;
+		Statement stmt = null;
 		try {
-			stm = conn.createStatement();
+			stmt = conn.createStatement();
 		}
 		catch(Exception e){
 			System.out.println(e);
 		}
-		return stm;
+		return stmt;
 	}
 	
 
