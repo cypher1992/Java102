@@ -15,9 +15,11 @@ public class DBDAOTest extends TestCase {
 	}
 	
 	public void testDBDAO() {
+		// pw 0
 		DBDAO dao = new DBDAO();
-		Connection conn = dao.connection();
+		Connection conn = dao.getConnection();
 		assertNotNull(conn);
 	}
+
 	
 }

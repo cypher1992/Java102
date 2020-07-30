@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class DBDAO implements DAO<String, Object> {
 	
-	public Connection connection() {
+	public Connection getConnection() {
 		Connection con = null;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -22,6 +22,7 @@ public class DBDAO implements DAO<String, Object> {
 		return con;
 		
 	}
+	
 
 	public void add(Map<String, Object> stockPriceSeries) {
 		
