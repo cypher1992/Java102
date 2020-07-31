@@ -34,6 +34,14 @@ public class DBDAO implements DAO<String, Object> {
 		return stmt;
 	}
 	
+	public void closeConnection(Connection conn){
+		try {
+			conn.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	
 
 	public void add(Map<String, Object> stockPriceSeries) {
 		
