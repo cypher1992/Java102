@@ -35,6 +35,12 @@ public class DBDAOTest extends TestCase {
 		dao.closeConnection(conn);
 		assertNull(conn);
 	}
-
+	
+	public void testCloseConnectionreturns() {
+		DBDAO dao = new DBDAO();
+		Connection conn = dao.getConnection();
+		dao.closeConnection(conn);
+		assertNotNull(conn);
+	}
 	
 }
