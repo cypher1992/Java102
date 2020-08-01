@@ -34,11 +34,13 @@ public class StockData
 		BigDecimal pe = null;
 		BigDecimal eps = null;
 		BigDecimal ebitda = null;
+		BigDecimal bookValuePerShare = null;
 		try {
 			outstandingShares = YahooFinance.get(ticker).getStats().getSharesOutstanding();
 			pe = YahooFinance.get(ticker).getStats().getPe();
 			eps = YahooFinance.get(ticker).getStats().getEps();
 			ebitda = YahooFinance.get(ticker).getStats().getEBITDA();
+			bookValuePerShare = YahooFinance.get(ticker).getStats().getBookValuePerShare();
 		} catch (IOException e) {
 			System.out.println(e);
 		}
@@ -47,6 +49,7 @@ public class StockData
 		stats.put("PRICETOEARNING", pe);
 		stats.put("EARNINGPERSHARE", eps);
 		stats.put("EBITDA", ebitda);
+		stats.put("BOOKVALUEPS", bookValuePerShare );
 		return stats;
 		
 	}
