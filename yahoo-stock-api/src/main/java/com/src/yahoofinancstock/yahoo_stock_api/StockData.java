@@ -35,7 +35,9 @@ public class StockData
 		BigDecimal eps = null;
 		BigDecimal ebitda = null;
 		BigDecimal bookValuePerShare = null;
+		String symbol = null;
 		try {
+			symbol = YahooFinance.get(ticker).getStats().getSymbol();
 			outstandingShares = YahooFinance.get(ticker).getStats().getSharesOutstanding();
 			pe = YahooFinance.get(ticker).getStats().getPe();
 			eps = YahooFinance.get(ticker).getStats().getEps();
@@ -45,6 +47,7 @@ public class StockData
 			System.out.println(e);
 		}
 		
+		stats.put("SYMBOL",symbol);
 		stats.put("OUTSTANDINGSHARES", outstandingShares);
 		stats.put("PRICETOEARNING", pe);
 		stats.put("EARNINGPERSHARE", eps);
