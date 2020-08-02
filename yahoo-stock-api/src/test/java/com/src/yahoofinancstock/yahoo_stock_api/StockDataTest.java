@@ -94,7 +94,7 @@ public class StockDataTest extends TestCase
 		assertEquals(expected,actual);
 	}
 	
-	/**
+
 	public void testBLIAQStockStatData() {
 		// this is blockbuster stock why is it still pull data for a company that do not exist
 		String ticker = "BLIAQ";
@@ -106,10 +106,17 @@ public class StockDataTest extends TestCase
 			BigDecimal pe = YahooFinance.get(ticker).getStats().getPe();
 			BigDecimal eps = YahooFinance.get(ticker).getStats().getEps();
 			BigDecimal ebitda = YahooFinance.get(ticker).getStats().getEBITDA();
+			BigDecimal bookValuePerShare = YahooFinance.get(ticker).getStats().getBookValuePerShare();
+			String symbol = YahooFinance.get(ticker).getStats().getSymbol();
+			BigDecimal annualTargetPrice = YahooFinance.get(ticker).getStats().getOneYearTargetPrice();
+			
+			expected.put("SYMBOL", symbol);
 			expected.put("OUTSTANDINGSHARES", outstandingShares);
 			expected.put("PRICETOEARNING", pe);
 			expected.put("EARNINGPERSHARE", eps);
 			expected.put("EBITDA", ebitda);
+			expected.put("BOOKVALUEPS", bookValuePerShare);
+			expected.put("ANNUALTARGETPRICE", annualTargetPrice);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -117,7 +124,7 @@ public class StockDataTest extends TestCase
 		assertEquals(expected,actual);
 	}
 	
-	
+	/**
 	public void testLEHLQStockStatData() {
 		// this is Lehman Brother is accurate since bankruptcy 
 		String ticker = "LEHLQ";
