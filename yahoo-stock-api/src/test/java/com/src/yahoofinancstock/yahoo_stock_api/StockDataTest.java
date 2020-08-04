@@ -182,6 +182,19 @@ public class StockDataTest extends TestCase
 		assertEquals(expected,actual);
 	}
 	
+	public void testWFCStockStatATPData() { 
+		String ticker = "LEHLQ";
+		StockData sd = new StockData(ticker);
+		String actual = (String) sd.getStockStats().get("ANNNUALTARGETPRICE");
+		BigDecimal expected = null;
+		try {
+			expected = YahooFinance.get(ticker).getStats().getOneYearTargetPrice();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		assertEquals(expected,actual);
+	}
+	
 	/**
 	public void testPStockStatData() {
 		// stock does not exist on liquidity centers 
