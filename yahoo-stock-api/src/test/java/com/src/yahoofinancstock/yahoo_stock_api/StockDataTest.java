@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import com.src.persistence.DBDAO;
 import com.src.yahoofinancstock.yahoo_stock_api.StockData;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -30,6 +31,15 @@ public class StockDataTest extends TestCase
      * @param testName name of the test case
      */
   
+	public void testWFCaddData() { 
+		String ticker = "WFC";
+		StockData sd = new StockData(ticker);
+		Map<String,Object> actual = sd.getStockStats();
+		DBDAO dao = new DBDAO();
+		dao.add(actual);
+	}
+	
+	/**
 	public void testIsInstanceOfStockData() {
 		StockData sd = new StockData("BX");
 		Boolean isInstanceOfStockData = sd instanceof StockData ;
@@ -181,6 +191,7 @@ public class StockDataTest extends TestCase
 		}
 		assertEquals(expected,actual);
 	}
+
 	
 	public void testWFCStockStatATPData() { 
 		String ticker = "LEHLQ";
@@ -195,7 +206,6 @@ public class StockDataTest extends TestCase
 		assertEquals(expected,actual);
 	}
 	
-	/**
 	public void testPStockStatData() {
 		// stock does not exist on liquidity centers 
 		String ticker = "P";
