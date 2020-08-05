@@ -7,7 +7,7 @@ public interface DAO <K,V>{
 
 	public void add(Map<K,V> stockPriceSeries);
 	
-	public void remove(Map<K,V> stockPriceSeries);
+	public void remove();
 	
 	public void query(String ticker);
 	
