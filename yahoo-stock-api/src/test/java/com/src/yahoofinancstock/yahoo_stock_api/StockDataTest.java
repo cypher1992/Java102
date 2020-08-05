@@ -30,15 +30,7 @@ public class StockDataTest extends TestCase
      *
      * @param testName name of the test case
      */
-  
-	public void testWFCaddData() { 
-		String ticker = "WFC";
-		StockData sd = new StockData(ticker);
-		Map<String,Object> actual = sd.getStockStats();
-		DBDAO dao = new DBDAO();
-		dao.add(actual);
-	}
-	
+ 
 	/**
 	public void testIsInstanceOfStockData() {
 		StockData sd = new StockData("BX");

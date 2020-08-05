@@ -42,9 +42,8 @@ public class DBDAO implements DAO<String, Object> {
 		}
 	}
 	
-
 	public void add(Map<String, Object> stockMapObject) {
-		//this.getStatement(this.getConnection());
+		Statement stat = this.getStatement(this.getConnection());
 		String insertStatement = "INSERT INTO STOCK "
 				+ "VALUES('" + stockMapObject.get("SYMBOL") + "', '" 
 				+ stockMapObject.get("OUTSTANDINGSHARES") + "', '"
@@ -54,7 +53,13 @@ public class DBDAO implements DAO<String, Object> {
 				+ stockMapObject.get("ANNUALTARGETPRICE") + "',"
 				+ "SYSDATE)";
 		System.out.println(insertStatement);
-		
+		try {
+			stat.executeUpdate(insertStatement);
+			this.getConnection().close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void remove(Map<String, Object> stockPriceSeries) {
