@@ -73,8 +73,16 @@ public class DBDAO implements DAO<String, Object> {
 	}
 
 	public void remove() {
-		// TODO Auto-generated method stub
-		
+		Statement stat = this.getStatement(this.getConnection());
+		String deleteStatement = "DELETE FROM STOCK";
+		System.out.println(deleteStatement);
+		try {
+			stat.executeUpdate(deleteStatement);
+			this.getConnection().close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	
