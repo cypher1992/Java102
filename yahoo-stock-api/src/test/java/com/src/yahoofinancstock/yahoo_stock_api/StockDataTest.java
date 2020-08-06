@@ -37,6 +37,14 @@ public class StockDataTest extends TestCase
 		Map<String,Object> actual = sd.getStockStats();
 		DBDAO dao = new DBDAO();
 		dao.add(actual);
+	}
+	
+	public void testWFCremoveData() { 
+		String ticker = "WFC";
+		StockData sd = new StockData(ticker);
+		Map<String,Object> actual = sd.getStockStats();
+		DBDAO dao = new DBDAO();
+		dao.add(actual);
 		dao.remove();
 	}
 	
