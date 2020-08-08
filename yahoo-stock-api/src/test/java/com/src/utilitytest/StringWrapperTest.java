@@ -26,5 +26,17 @@ public class StringWrapperTest extends TestCase {
 		
 		assertEquals(actual,expected);
 	}
+	
+	public void testNullSingleQuoteMapReturnsMapOfSingleQuotes() {
+		StringWrapper sw = new StringWrapper();
+		Map tm = new TreeMap<String,Object>();
+		Double price = null;
+		tm.put("PRICE", price);
+		Map actual = sw.StringSingleQuoteMap(tm);
+		Map expected = new TreeMap<String,Object>();
+		expected.put("PRICE", null);
+		
+		assertEquals(actual,expected);
+	}
 
 }
