@@ -26,7 +26,7 @@ public class StringWrapperTest extends TestCase {
 		
 		assertEquals(actual,expected);
 	}
-	
+	/**
 	public void testNullStringSingleQuoteMapReturnsMapOfSingleQuotes() {
 		StringWrapper sw = new StringWrapper();
 		Map tm = new TreeMap<String,Object>();
@@ -61,5 +61,5 @@ public class StringWrapperTest extends TestCase {
 		Map expected = new TreeMap<String,Object>();
 		assertEquals(actual,expected);
 	}
-
+	**/
 }

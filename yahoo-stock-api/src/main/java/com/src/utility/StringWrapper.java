@@ -7,13 +7,21 @@ public class StringWrapper {
 	
 	public Map StringSingleQuoteMap(Map map) {
 		Set setKeys = map.keySet();
-		
+		int count = 0;
+		int lastIndex = setKeys.size()-1;
 		for(Object key: setKeys) {
-			if(map.get(key) != null) {
-				map.put(key,"'" + map.get(key) +"'");
+			if(count == lastIndex) {
+				if(map.get(key) != null) {
+					map.put(key,"'" + map.get(key) +"' ");
+					count+=1;
+				}
+			}else {
+				if(map.get(key) != null) {
+					map.put(key,"'" + map.get(key) +"', ");
+					count+=1;
+				}
 			}
 		}
-		
 		return map;
 		
 	}
