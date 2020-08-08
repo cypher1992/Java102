@@ -22,7 +22,7 @@ public class StringWrapperTest extends TestCase {
 		tm.put("PRICE", price);
 		Map actual = sw.StringSingleQuoteMap(tm);
 		Map expected = new TreeMap<String,Object>();
-		expected.put("PRICE", "'" + price + "'");
+		expected.put("PRICE", "'" + price + "' ");
 		
 		assertEquals(actual,expected);
 	}
