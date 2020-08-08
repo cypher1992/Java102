@@ -5,7 +5,7 @@ import java.util.Set;
 public class StringWrapper {
 
 	
-	public Map StringSingleQuoteMap(Map map) {
+	public Map StringSingleQuoteMap(Map<Object, Object> map) {
 		Set setKeys = map.keySet();
 		int count = 0;
 		int lastIndex = setKeys.size()-1;
@@ -19,6 +19,8 @@ public class StringWrapper {
 				if(map.get(key) != null) {
 					map.put(key,"'" + map.get(key) +"', ");
 					count+=1;
+				}else {
+					map.put(key, map.get(key) +", ");
 				}
 			}
 		}
