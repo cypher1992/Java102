@@ -53,5 +53,13 @@ public class StringWrapperTest extends TestCase {
 		
 		assertEquals(actual,expected);
 	}
+	
+	public void testEmptyKeyMapStringSingleQuoteMapReturnsMapOfSingleQuotes() {
+		StringWrapper sw = new StringWrapper();
+		Map tm = new TreeMap<String,Object>();
+		Map actual = sw.StringSingleQuoteMap(tm);
+		Map expected = new TreeMap<String,Object>();
+		assertEquals(actual,expected);
+	}
 
 }
