@@ -51,7 +51,7 @@ public class StringWrapperTest extends TestCase {
 		Map actual = sw.StringSingleQuoteMap(tm);
 		Map expected = new TreeMap<String,Object>();
 		expected.put("PRICE", null + ", ");
-		expected.put("PRICE2", "" + price2 + "' ");
+		expected.put("PRICE2", "'" + price2 + "' ");
 		
 		assertEquals(actual,expected);
 	}
