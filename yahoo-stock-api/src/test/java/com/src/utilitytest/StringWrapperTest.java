@@ -7,7 +7,7 @@ import java.util.TreeMap;
 import junit.framework.TestCase;
 
 public class StringWrapperTest extends TestCase {
-	
+	/**
 	public void testIsInstanceOfStringWrapper() {
 		StringWrapper sw = new StringWrapper();
 		Boolean isInstanceOfStringWrapper = sw instanceof StringWrapper ;
@@ -38,8 +38,9 @@ public class StringWrapperTest extends TestCase {
 		
 		assertEquals(actual,expected);
 	}
+	**/
 	
-	/**
+	
 	public void testMultiKeyMapStringSingleQuoteMapReturnsMapOfSingleQuotes() {
 		StringWrapper sw = new StringWrapper();
 		Map tm = new TreeMap<String,Object>();
@@ -49,12 +50,12 @@ public class StringWrapperTest extends TestCase {
 		tm.put("PRICE2", price2);
 		Map actual = sw.StringSingleQuoteMap(tm);
 		Map expected = new TreeMap<String,Object>();
-		expected.put("PRICE", null);
-		expected.put("PRICE2", "'" + price2 + "'");
+		expected.put("PRICE", null + ", ");
+		expected.put("PRICE2", "" + price2 + "' ");
 		
 		assertEquals(actual,expected);
 	}
-	
+	/**
 	public void testEmptyKeyMapStringSingleQuoteMapReturnsMapOfSingleQuotes() {
 		StringWrapper sw = new StringWrapper();
 		Map tm = new TreeMap<String,Object>();

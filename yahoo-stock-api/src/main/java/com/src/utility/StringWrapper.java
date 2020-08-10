@@ -5,26 +5,28 @@ import java.util.Set;
 public class StringWrapper {
 
 	
-	public Map StringSingleQuoteMap(Map<Object, Object> map) {
-		Set setKeys = map.keySet();
+	public Map StringSingleQuoteMap(Map<String, Object> stockMapObject) {
+		Set setKeys = stockMapObject.keySet();
 		int count = 0;
 		int lastIndex = setKeys.size()-1;
 		for(Object key: setKeys) {
+			System.out.println(count);
 			if(count == lastIndex) {
-				if(map.get(key) != null) {
-					map.put(key,"'" + map.get(key) +"' ");
+				if(stockMapObject.get(key) != null) {
+					stockMapObject.put((String) key,"'" + stockMapObject.get(key) +"' ");
 					count+=1;
 				}
 			}else {
-				if(map.get(key) != null) {
-					map.put(key,"'" + map.get(key) +"', ");
+				if(stockMapObject.get(key) != null) {
+					stockMapObject.put((String) key,"'" + stockMapObject.get(key) +"', ");
 					count+=1;
 				}else {
-					map.put(key, map.get(key) +", ");
+					stockMapObject.put((String) key, stockMapObject.get(key) +", ");
+					count+=1;
 				}
 			}
 		}
-		return map;
+		return stockMapObject;
 		
 	}
 	
