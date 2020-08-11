@@ -10,7 +10,6 @@ public class StringWrapper {
 		int count = 0;
 		int lastIndex = setKeys.size()-1;
 		for(Object key: setKeys) {
-			System.out.println(count);
 			if(count == lastIndex) {
 				if(stockMapObject.get(key) != null) {
 					stockMapObject.put((String) key,"'" + stockMapObject.get(key) +"' ");

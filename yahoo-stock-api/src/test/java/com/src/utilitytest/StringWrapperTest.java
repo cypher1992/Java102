@@ -84,6 +84,23 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	public void testMultiKeyStrNullsMapStringSingleQuoteMapReturnsMapOfSingleQuotes() {
+		StringWrapper sw = new StringWrapper();
+		Map tm = new TreeMap<String,Object>();
+		String price = "50.00";
+		String price2 = null;
+		String price3 = "20.00";
+		tm.put("PRICE", price);
+		tm.put("PRICE2", price2);
+		tm.put("PRICE3", price3);
+		Map actual = sw.StringSingleQuoteMap(tm);
+		Map expected = new TreeMap<String,Object>();
+		expected.put("PRICE", "'"+ price + "', ");
+		expected.put("PRICE2", "" +price2 + ", " );
+		expected.put("PRICE3", "'"+ price3 + "' ");
+		
+		assertEquals(actual,expected);
+	}
 	
 	public void testEmptyKeyMapStringSingleQuoteMapReturnsMapOfSingleQuotes() {
 		StringWrapper sw = new StringWrapper();
