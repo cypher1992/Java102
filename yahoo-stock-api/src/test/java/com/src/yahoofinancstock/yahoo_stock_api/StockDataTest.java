@@ -39,6 +39,7 @@ public class StockDataTest extends TestCase
 		dao.add(actual);
 	}
 	
+	/**
 	public void testWFCremoveData() { 
 		String ticker = "WFC";
 		StockData sd = new StockData(ticker);

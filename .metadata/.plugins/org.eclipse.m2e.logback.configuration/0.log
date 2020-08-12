@@ -1621,3 +1621,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracle:oj
 2020-08-10 20:49:06,226 [Worker-670: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-08-10 20:49:06,227 [Worker-670: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
 2020-08-10 20:49:06,229 [Worker-670: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-10 20:49:06,230 [Worker-670: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2020-08-11 22:27:04,456 [Worker-853: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-11 22:27:04,489 [Worker-853: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
+2020-08-11 22:27:04,509 [Worker-853: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-11 22:27:04,510 [Worker-853: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2020-08-11 22:29:00,723 [Worker-864: Launching StockDataTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-08-11 22:29:00,724 [Worker-864: Launching StockDataTest] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zero\Java_WorkSpace\yahoo-stock-api\src\main\resources
+2020-08-11 22:29:00,726 [Worker-864: Launching StockDataTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

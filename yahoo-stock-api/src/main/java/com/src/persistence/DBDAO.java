@@ -47,14 +47,14 @@ public class DBDAO implements DAO<String, Object> {
 		Statement stat = this.getStatement(this.getConnection());
 		StringWrapper sw = new StringWrapper();
 		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
+		
 		String insertStatement = "INSERT INTO STOCK "
-				+ "VALUES('" + stockMapObject.get("SYMBOL") + "', '" 
-				+ stockMapObject.get("OUTSTANDINGSHARES") + "', '"
-				+ stockMapObject.get("PRICETOEARNING") + "', '"
-				+ stockMapObject.get("EBITDA") + "', '"
-				+ stockMapObject.get("BOOKVALUEPS") + "', '"
-				+ stockMapObject.get("ANNUALTARGETPRICE") + "',"
-				+ "SYSDATE)";
+				+ "VALUES (" + stringWrapperMap.get("SYMBOL") + ""
+				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
+				+ stringWrapperMap.get("PRICETOEARNING") + ""
+				+ stringWrapperMap.get("EBITDA") + ""
+				+ stringWrapperMap.get("BOOKVALUEPS") + ""
+				+ stringWrapperMap.get("ANNUALTARGETPRICE") + "SYSDATE)";
 		System.out.println(insertStatement);
 		try {
 			stat.executeUpdate(insertStatement);
