@@ -3,6 +3,8 @@ package com.src.persistence;
 import java.util.Map;
 import java.sql.*;
 import java.util.Scanner;
+import java.util.Set;
+
 import com.src.utility.StringWrapper;
 
 public class DBDAO implements DAO<String, Object> {
@@ -47,7 +49,8 @@ public class DBDAO implements DAO<String, Object> {
 		Statement stat = this.getStatement(this.getConnection());
 		StringWrapper sw = new StringWrapper();
 		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
-		
+		Set keySet = stringWrapperMap.keySet();
+		System.out.println(keySet);
 		String insertStatement = "INSERT INTO STOCK "
 				+ "VALUES (" + stringWrapperMap.get("SYMBOL") + ""
 				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
