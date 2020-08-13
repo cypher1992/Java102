@@ -33,14 +33,18 @@ public class StringWrapper {
 		String setStr = "";
 		int size = set.size();
 		int count = 0;
-		for(Object key:set){
-			if(count == size-1){	
-				setStr += key;
-			}else {
-				setStr += key + ", ";
+		if(size > 0) {
+			for(Object key:set){
+				if(count == size-1){	
+					setStr += key;
+				}else {
+					setStr += key + ", ";
+				}
 			}
+		}else {
+			setStr = "";
 		}
-		return null;
+		return setStr;
 		
 	}
 	
