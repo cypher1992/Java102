@@ -29,5 +29,20 @@ public class StringWrapper {
 		
 	}
 	
+	public String appendString(Set set){
+		String setStr = "";
+		int size = set.size();
+		int count = 0;
+		for(Object key:set){
+			if(count == size-1){	
+				setStr += key;
+			}else {
+				setStr += key + ", ";
+			}
+		}
+		return null;
+		
+	}
+	
 	
 }

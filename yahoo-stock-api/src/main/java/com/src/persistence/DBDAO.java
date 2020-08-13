@@ -51,13 +51,16 @@ public class DBDAO implements DAO<String, Object> {
 		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
 		Set keySet = stringWrapperMap.keySet();
 		System.out.println(keySet);
-		String insertStatement = "INSERT INTO STOCK "
-				+ "VALUES (" + stringWrapperMap.get("SYMBOL") + ""
+		String insertStatement = "INSERT INTO STOCK (";
+		String columnValue = "";
+		/**
+		stringWrapperMap.get("SYMBOL") + ""
 				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
 				+ stringWrapperMap.get("PRICETOEARNING") + ""
 				+ stringWrapperMap.get("EBITDA") + ""
 				+ stringWrapperMap.get("BOOKVALUEPS") + ""
 				+ stringWrapperMap.get("ANNUALTARGETPRICE") + "SYSDATE)";
+		**/
 		System.out.println(insertStatement);
 		try {
 			stat.executeUpdate(insertStatement);
