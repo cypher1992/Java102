@@ -113,5 +113,12 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	public void testEmptySetAppendStringReturnsEmptyString(){
+		Set<String> keySet = Collections.<String>emptySet(); 
+		StringWrapper sw = new StringWrapper();
+		String actual = sw.appendString(keySet);
+		String expected = "";
+		assertEquals(actual,expected);
+	}
 
 }
