@@ -3,6 +3,7 @@ package com.src.utilitytest;
 import com.src.utility.StringWrapper;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -118,6 +119,15 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = sw.appendString(keySet);
 		String expected = "";
+		assertEquals(actual,expected);
+	}
+	
+	public void testSetOneValueAppendStringReturnsEmptyString(){
+		Set<String> keySet = new HashSet<String>(); 
+		keySet.add("BX");
+		StringWrapper sw = new StringWrapper();
+		String actual = sw.appendString(keySet);
+		String expected = "BX";
 		assertEquals(actual,expected);
 	}
 
