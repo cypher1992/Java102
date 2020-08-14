@@ -39,6 +39,7 @@ public class StringWrapper {
 					setStr += key;
 				}else {
 					setStr += key + ", ";
+					count+=1;
 				}
 			}
 		}else {

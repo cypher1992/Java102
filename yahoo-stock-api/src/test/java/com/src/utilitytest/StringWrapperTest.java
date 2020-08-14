@@ -130,5 +130,15 @@ public class StringWrapperTest extends TestCase {
 		String expected = "BX";
 		assertEquals(actual,expected);
 	}
+	
+	public void testSetTwoValueAppendStringReturnsEmptyString(){
+		Set<String> keySet = new HashSet<String>(); 
+		keySet.add("BX");
+		keySet.add("MUFA");
+		StringWrapper sw = new StringWrapper();
+		String actual = sw.appendString(keySet);
+		String expected = "BX, MUFG";
+		assertEquals(actual,expected);
+	}
 
 }
