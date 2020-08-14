@@ -37,6 +37,7 @@ public class StringWrapper {
 			for(Object key:set){
 				if(count == size-1){	
 					setStr += key;
+					count+=1;
 				}else {
 					setStr += key + ", ";
 					count+=1;
