@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 import junit.framework.TestCase;
 
@@ -138,6 +139,17 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = sw.appendString(keySet);
 		String expected = "BX, MUFA";
+		assertEquals(actual,expected);
+	}
+	
+	public void testSetThreeValueAppendStringReturnsEmptyString(){
+		Set<String> keySet = new TreeSet<String>(); 
+		keySet.add("BX");
+		keySet.add("MUFA");
+		keySet.add("WFC");
+		StringWrapper sw = new StringWrapper();
+		String actual = sw.appendString(keySet);
+		String expected = "BX, MUFA, WFC";
 		assertEquals(actual,expected);
 	}
 
