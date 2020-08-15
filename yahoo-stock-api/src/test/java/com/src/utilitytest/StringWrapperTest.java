@@ -4,6 +4,7 @@ import com.src.utility.StringWrapper;
 
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -150,6 +151,18 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = sw.appendString(keySet);
 		String expected = "BX, MUFA, WFC";
+		assertEquals(actual,expected);
+	}
+	
+	public void testSetFourValueAppendStringReturnsEmptyString(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		keySet.add("BX");
+		keySet.add("MUFA");
+		keySet.add("WFC");
+		keySet.add("GS");
+		StringWrapper sw = new StringWrapper();
+		String actual = sw.appendString(keySet);
+		String expected = "BX, MUFA, WFC, GS";
 		assertEquals(actual,expected);
 	}
 
