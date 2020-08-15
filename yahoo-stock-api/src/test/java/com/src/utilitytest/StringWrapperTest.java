@@ -137,7 +137,7 @@ public class StringWrapperTest extends TestCase {
 		keySet.add("MUFA");
 		StringWrapper sw = new StringWrapper();
 		String actual = sw.appendString(keySet);
-		String expected = "BX, MUFG";
+		String expected = "BX, MUFA";
 		assertEquals(actual,expected);
 	}
 
