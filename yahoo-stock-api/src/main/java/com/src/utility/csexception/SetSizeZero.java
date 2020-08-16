@@ -1,4 +1,4 @@
-package com.src.utilitytest.csexception;
+package com.src.utility.csexception;
 
 @SuppressWarnings("serial")
 public class SetSizeZero extends Exception {
