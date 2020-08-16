@@ -46,6 +46,8 @@ public class StringWrapper {
 		}else {
 			setStr = "";
 		}
+		setStr = "( " + setStr + " )";
+		
 		return setStr;
 		
 	}
