@@ -165,5 +165,5 @@ public class StringWrapperTest extends TestCase {
 		String expected = "BX, MUFA, WFC, GS";
 		assertEquals(actual,expected);
 	}
-
+	
 }
