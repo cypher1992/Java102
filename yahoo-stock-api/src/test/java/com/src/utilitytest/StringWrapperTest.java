@@ -1,6 +1,8 @@
 package com.src.utilitytest;
 
 import com.src.utility.StringWrapper;
+import com.src.utility.csexception.SetSizeZero;
+
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -9,7 +11,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.Test;
+import junit.framework.Assert;
 import junit.framework.TestCase;
 
 public class StringWrapperTest extends TestCase {
@@ -116,14 +120,18 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	@Test
 	public void testEmptySetAppendStringReturnsEmptyString(){
 		Set<String> keySet = Collections.<String>emptySet(); 
 		StringWrapper sw = new StringWrapper();
-		String actual = sw.appendString(keySet);
-		String expected = "";
-		assertEquals(actual,expected);
+		String actual = null;
+		Assertions.assertThrows(SetSizeZero.class, () -> {
+			sw.appendString(keySet);
+			}
+		);
 	}
 	
+	/*
 	public void testSetOneValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
@@ -165,5 +173,5 @@ public class StringWrapperTest extends TestCase {
 		String expected = "BX, MUFA, WFC, GS";
 		assertEquals(actual,expected);
 	}
-	
+	*/
 }
