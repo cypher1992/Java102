@@ -131,16 +131,22 @@ public class StringWrapperTest extends TestCase {
 		);
 	}
 	
-	/*
 	public void testSetOneValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
 		StringWrapper sw = new StringWrapper();
-		String actual = sw.appendString(keySet);
-		String expected = "BX";
+		String actual = null;
+		try {
+			actual = sw.appendString(keySet);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( BX )";
 		assertEquals(actual,expected);
 	}
 	
+	/*
 	public void testSetTwoValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
