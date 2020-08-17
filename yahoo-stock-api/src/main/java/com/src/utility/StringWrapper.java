@@ -30,7 +30,7 @@ public class StringWrapper {
 		
 	}
 	
-	public String appendString(Set set){
+	public String appendString(Set set) throws SetSizeZero{
 		String setStr = "";
 		int size = set.size();
 		int count = 0;
@@ -45,7 +45,7 @@ public class StringWrapper {
 				}
 			}
 		}else {
-			setStr = "";
+			throw new SetSizeZero("Set size is zero");
 		}
 		setStr = "( " + setStr + " )";
 		
