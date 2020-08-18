@@ -131,7 +131,7 @@ public class StringWrapperTest extends TestCase {
 		);
 	}
 	
-	public void testSetOneValueAppendStringReturnsEmptyString(){
+	public void testSetOneValueAppendStringReturnsString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
 		StringWrapper sw = new StringWrapper();
@@ -146,24 +146,37 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	/*
-	public void testSetTwoValueAppendStringReturnsEmptyString(){
+	
+	public void testSetTwoValueAppendStringReturnsString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
 		StringWrapper sw = new StringWrapper();
-		String actual = sw.appendString(keySet);
-		String expected = "BX, MUFA";
+		String actual = null;
+		try {
+			actual = sw.appendString(keySet);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( BX, MUFA )";
 		assertEquals(actual,expected);
 	}
 	
+	/*
 	public void testSetThreeValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new TreeSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
 		keySet.add("WFC");
 		StringWrapper sw = new StringWrapper();
-		String actual = sw.appendString(keySet);
+		String actual = null;
+		try {
+			actual = sw.appendString(keySet);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		String expected = "BX, MUFA, WFC";
 		assertEquals(actual,expected);
 	}
