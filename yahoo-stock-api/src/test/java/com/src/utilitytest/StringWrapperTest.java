@@ -163,7 +163,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	/*
+	
 	public void testSetThreeValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new TreeSet<String>(); 
 		keySet.add("BX");
@@ -181,6 +181,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	/*
 	public void testSetFourValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		keySet.add("BX");
