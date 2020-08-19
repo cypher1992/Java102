@@ -181,7 +181,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	/*
+	
 	public void testSetFourValueAppendStringReturnsEmptyString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		keySet.add("BX");
@@ -189,9 +189,14 @@ public class StringWrapperTest extends TestCase {
 		keySet.add("WFC");
 		keySet.add("GS");
 		StringWrapper sw = new StringWrapper();
-		String actual = sw.appendString(keySet);
-		String expected = "BX, MUFA, WFC, GS";
+		String actual = null;
+		try {
+			actual = sw.appendString(keySet);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( BX, MUFA, WFC, GS )";
 		assertEquals(actual,expected);
 	}
-	*/
 }
