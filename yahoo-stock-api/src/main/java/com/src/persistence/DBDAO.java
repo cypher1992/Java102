@@ -53,13 +53,13 @@ public class DBDAO implements DAO<String, Object> {
 		String insertStatement = "INSERT INTO STOCK ";
 		String columnValue = null;
 		try {
-			columnValue = sw.appendString(keySet);
+			columnValue = sw.appendKey(keySet);
 		} catch (SetSizeZero e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		
-		insertStatement += columnValue + "VALUES"; 
+		insertStatement += columnValue + "VALUES "; 
 		
 		System.out.println(insertStatement);
 		/**

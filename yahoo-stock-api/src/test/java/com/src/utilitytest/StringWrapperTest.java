@@ -126,7 +126,7 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = null;
 		Assertions.assertThrows(SetSizeZero.class, () -> {
-			sw.appendString(keySet);
+			sw.appendKey(keySet);
 			}
 		);
 	}
@@ -137,7 +137,7 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = null;
 		try {
-			actual = sw.appendString(keySet);
+			actual = sw.appendKey(keySet);
 		} catch (SetSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -154,7 +154,7 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = null;
 		try {
-			actual = sw.appendString(keySet);
+			actual = sw.appendKey(keySet);
 		} catch (SetSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -172,7 +172,7 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = null;
 		try {
-			actual = sw.appendString(keySet);
+			actual = sw.appendKey(keySet);
 		} catch (SetSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -191,7 +191,7 @@ public class StringWrapperTest extends TestCase {
 		StringWrapper sw = new StringWrapper();
 		String actual = null;
 		try {
-			actual = sw.appendString(keySet);
+			actual = sw.appendKey(keySet);
 		} catch (SetSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
