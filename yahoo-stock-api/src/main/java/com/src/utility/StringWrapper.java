@@ -53,5 +53,28 @@ public class StringWrapper {
 		
 	}
 	
+	public String appendValue(Set set,Map map) throws SetSizeZero{
+		String mapStr = "";
+		int size = set.size();
+		int count = 0;
+		if(size > 0) {
+			for(Object key:set){
+				if(count == size-1){	
+					mapStr += map.get(key);
+					count+=1;
+				}else {
+					mapStr += map.get(key) + ", ";
+					count+=1;
+				}
+			}
+		}else {
+			throw new SetSizeZero("Set size is zero");
+		}
+		mapStr = "( " + mapStr + " )";
+		
+		return mapStr;
+		
+	}
+	
 	
 }

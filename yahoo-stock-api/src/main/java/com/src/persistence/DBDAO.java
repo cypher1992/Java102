@@ -4,8 +4,8 @@ import java.util.Map;
 import java.sql.*;
 import java.util.Scanner;
 import java.util.Set;
-
 import com.src.utility.StringWrapper;
+import com.src.utility.csexception.SetSizeZero;
 
 public class DBDAO implements DAO<String, Object> {
 	
@@ -50,9 +50,18 @@ public class DBDAO implements DAO<String, Object> {
 		StringWrapper sw = new StringWrapper();
 		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
 		Set keySet = stringWrapperMap.keySet();
-		System.out.println(keySet);
-		String insertStatement = "INSERT INTO STOCK (";
-		String columnValue = "";
+		String insertStatement = "INSERT INTO STOCK ";
+		String columnValue = null;
+		try {
+			columnValue = sw.appendString(keySet);
+		} catch (SetSizeZero e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		insertStatement += columnValue + "VALUES"; 
+		
+		System.out.println(insertStatement);
 		/**
 		stringWrapperMap.get("SYMBOL") + ""
 				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
@@ -60,7 +69,7 @@ public class DBDAO implements DAO<String, Object> {
 				+ stringWrapperMap.get("EBITDA") + ""
 				+ stringWrapperMap.get("BOOKVALUEPS") + ""
 				+ stringWrapperMap.get("ANNUALTARGETPRICE") + "SYSDATE)";
-		**/
+		
 		System.out.println(insertStatement);
 		try {
 			stat.executeUpdate(insertStatement);
@@ -69,6 +78,7 @@ public class DBDAO implements DAO<String, Object> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		**/
 	}
 	
 	public void query(String ticker) {
