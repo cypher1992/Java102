@@ -200,7 +200,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	public void testappendEmptyKeySetKeyValueThrowSetSizeZeroException(){
+	public void testEmptyKeySetKeyAppendKeyValueThrowSetSizeZeroException(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
 		StringWrapper sw = new StringWrapper();
@@ -209,5 +209,25 @@ public class StringWrapperTest extends TestCase {
 			}
 		);
 	}
+	
+
+	public void testappendKeyValueReturnsOneString(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		Map<String,Object> keyMap = new TreeMap<String,Object>();
+		String actual = null;
+		int bxNum = 1;
+		keySet.add("BX");
+		keyMap.put("BX", bxNum);
+		StringWrapper sw = new StringWrapper();
+		try {
+			actual = sw.appendKeyValue(keySet, keyMap);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( '1' )";
+		assertEquals(actual,expected);
+	}
+
 		
 }
