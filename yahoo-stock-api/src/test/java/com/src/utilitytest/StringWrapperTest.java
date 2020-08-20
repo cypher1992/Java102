@@ -182,7 +182,7 @@ public class StringWrapperTest extends TestCase {
 	}
 	
 	
-	public void testSetFourValueAppendStringReturnsEmptyString(){
+	public void testSetFourValueappendKeyValueReturnsEmptyString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
@@ -199,4 +199,15 @@ public class StringWrapperTest extends TestCase {
 		String expected = "( BX, MUFA, WFC, GS )";
 		assertEquals(actual,expected);
 	}
+	
+	public void testappendEmptyKeySetKeyValueThrowSetSizeZeroException(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		Map<String,Object> keyMap = new TreeMap<String,Object>();
+		StringWrapper sw = new StringWrapper();
+		Assertions.assertThrows(SetSizeZero.class, () -> {
+			sw.appendKeyValue(keySet, keyMap);
+			}
+		);
+	}
+		
 }
