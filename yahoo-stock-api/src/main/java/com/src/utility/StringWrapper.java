@@ -59,12 +59,23 @@ public class StringWrapper {
 		int count = 0;
 		if(size > 0) {
 			for(Object key:set){
-				if(count == size-1){	
-					mapStr += map.get(key);
-					count+=1;
+				if(count == size-1){
+					// need to surround values with single quote and anticipate for nulls
+					if(key != null) {
+						mapStr += "'"+ map.get(key) +"'";
+						count+=1;
+					}else {
+						mapStr += map.get(key);
+						count+=1;
+					}
 				}else {
-					mapStr += map.get(key) + ", ";
-					count+=1;
+					if(key != null) {
+						mapStr += "'" + map.get(key) + "', ";
+						count+=1;
+					}else {
+						mapStr += map.get(key) + ",";
+						count+=1;
+					}
 				}
 			}
 		}else {
