@@ -1,5 +1,7 @@
 package com.src.utility;
 import java.util.Map;
+
+import com.src.utility.csexception.MapSetSizeZero;
 import com.src.utility.csexception.SetSizeZero;
 import java.util.Set;
 
@@ -55,11 +57,12 @@ public class StringWrapper {
 	
 	public String appendKeyValue(Set set,Map map) throws SetSizeZero{
 		String mapStr = "";
-		int size = set.size();
+		int setSize = set.size();
+		int mapSize = map.size();
 		int count = 0;
-		if(size > 0) {
+		if(setSize > 0 && mapSize >0) {
 			for(Object key:set){
-				if(count == size-1){
+				if(count == setSize-1){
 					// need to surround values with single quote and anticipate for nulls
 					if(key != null) {
 						mapStr += "'"+ map.get(key) +"'";
@@ -79,7 +82,13 @@ public class StringWrapper {
 				}
 			}
 		}else {
-			throw new SetSizeZero("Set size is zero");
+			if(setSize == 0 && mapSize > 0) {
+				throw new SetSizeZero("Set size is zero");
+			}else if(mapSize == 0 && setSize > 0){
+				throw new SetSizeZero("Map size is zero");
+			}else {
+				throw new MapSetSizeZero("Map & Set size is zero");
+			}
 		}
 		mapStr = "( " + mapStr + " )";
 		
