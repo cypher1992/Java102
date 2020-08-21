@@ -210,6 +210,7 @@ public class StringWrapperTest extends TestCase {
 		);
 	}
 	
+	// need to add new exception if map is empty
 
 	public void testappendKeyValueReturnsOneString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
