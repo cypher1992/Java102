@@ -215,7 +215,7 @@ public class StringWrapperTest extends TestCase {
 	// need to add new exception if map is empty
 
 	
-	public void testEmptyMapSetKeyAppendKeyValueThrowSetSizeZeroException(){
+	public void testEmptyMapAppendKeyValueThrowSetSizeZeroException(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		keySet.add("BX");
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
@@ -226,7 +226,7 @@ public class StringWrapperTest extends TestCase {
 		);
 	}
 	
-	/*
+
 	public void testappendKeyValueReturnsOneString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
@@ -236,7 +236,12 @@ public class StringWrapperTest extends TestCase {
 		keyMap.put("BX", bxNum);
 		StringWrapper sw = new StringWrapper();
 		try {
-			actual = sw.appendKeyValue(keySet, keyMap);
+			try {
+				actual = sw.appendKeyValue(keySet, keyMap);
+			} catch (MapSetSizeZero | MapSizeZero e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch (SetSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -244,6 +249,6 @@ public class StringWrapperTest extends TestCase {
 		String expected = "( '1' )";
 		assertEquals(actual,expected);
 	}
-	*/
+	
 		
 }
