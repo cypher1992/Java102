@@ -59,14 +59,11 @@ public class StringWrapper {
 	public String appendKeyValue(Set set,Map map) throws SetSizeZero, MapSetSizeZero, MapSizeZero{
 		String mapStr = "";
 		int setSize = set.size();
-		System.out.println(setSize);
 		int mapSize = map.size();
-		System.out.println(mapSize);
 		int count = 0;
 		if(setSize > 0 && mapSize >0) {
 			for(Object key:set){
 				if(count == setSize-1){
-					// need to surround values with single quote and anticipate for nulls
 					if(key != null) {
 						mapStr += "'"+ map.get(key) +"'";
 						count+=1;
