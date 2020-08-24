@@ -64,7 +64,7 @@ public class StringWrapper {
 		if(setSize > 0 && mapSize >0) {
 			for(Object key:set){
 				if(count == setSize-1){
-					if(key != null) {
+					if(map.get(key) != null) {
 						mapStr += "'"+ map.get(key) +"'";
 						count+=1;
 					}else {
@@ -72,7 +72,7 @@ public class StringWrapper {
 						count+=1;
 					}
 				}else {
-					if(key != null) {
+					if(map.get(key) != null) {
 						mapStr += "'" + map.get(key) + "', ";
 						count+=1;
 					}else {
