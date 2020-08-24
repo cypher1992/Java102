@@ -259,6 +259,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	
 	public void testappendKeyNullValueReturnsOneString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
