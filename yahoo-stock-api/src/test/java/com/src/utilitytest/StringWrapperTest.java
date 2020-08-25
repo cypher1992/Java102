@@ -280,8 +280,6 @@ public class StringWrapperTest extends TestCase {
 			e.printStackTrace();
 		}
 		String expected = "( null )";
-		System.out.println(actual);
-		System.out.println(expected);
 		assertEquals(actual,expected);
 	}
 	
@@ -308,8 +306,6 @@ public class StringWrapperTest extends TestCase {
 			e.printStackTrace();
 		}
 		String expected = "( '50.2', '74.2' )";
-		System.out.println(actual);
-		System.out.println(expected);
 		assertEquals(actual,expected);
 	}
 	
@@ -336,8 +332,6 @@ public class StringWrapperTest extends TestCase {
 			e.printStackTrace();
 		}
 		String expected = "( null, '74.2' )";
-		System.out.println(actual);
-		System.out.println(expected);
 		assertEquals(actual,expected);
 	}
 	
@@ -364,10 +358,37 @@ public class StringWrapperTest extends TestCase {
 			e.printStackTrace();
 		}
 		String expected = "( '74.2', null )";
-		System.out.println(actual);
-		System.out.println(expected);
 		assertEquals(actual,expected);
 	}
 	
+	
+	public void testappendKeyNullValueReturnsThreeValueString(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		Map<String,Object> keyMap = new TreeMap<String,Object>();
+		String actual = null;
+		Double bxNum = (74.20);
+		Double jpmNum = null;
+		Double cNum = (81.30);
+		keySet.add("BX");
+		keySet.add("JPM");
+		keySet.add("C");
+		keyMap.put("BX", bxNum);
+		keyMap.put("JPM", jpmNum);
+		keyMap.put("C", cNum);
+		StringWrapper sw = new StringWrapper();
+		try {
+			try {
+				actual = sw.appendKeyValue(keySet, keyMap);
+			} catch (MapSetSizeZero | MapSizeZero e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( '74.2', null, '81.3' )";
+		assertEquals(actual,expected);
+	}
 		
 }
