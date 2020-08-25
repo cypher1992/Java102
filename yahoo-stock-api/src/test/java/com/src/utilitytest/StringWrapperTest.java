@@ -341,5 +341,33 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
+	public void testappendKeyReverseNullValueReturnsTwoValueString(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		Map<String,Object> keyMap = new TreeMap<String,Object>();
+		String actual = null;
+		Double bxNum = (74.20);
+		Double jpmNum = null;
+		keySet.add("BX");
+		keySet.add("JPM");
+		keyMap.put("BX", bxNum);
+		keyMap.put("JPM", jpmNum);
+		StringWrapper sw = new StringWrapper();
+		try {
+			try {
+				actual = sw.appendKeyValue(keySet, keyMap);
+			} catch (MapSetSizeZero | MapSizeZero e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( '74.2', null )";
+		System.out.println(actual);
+		System.out.println(expected);
+		assertEquals(actual,expected);
+	}
+	
 		
 }
