@@ -76,7 +76,7 @@ public class StringWrapper {
 						mapStr += "'" + map.get(key) + "', ";
 						count+=1;
 					}else {
-						mapStr += map.get(key) + ",";
+						mapStr += map.get(key) + ", ";
 						count+=1;
 					}
 				}

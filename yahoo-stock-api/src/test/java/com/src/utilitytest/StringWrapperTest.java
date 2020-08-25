@@ -285,7 +285,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	public void testappendKeyNullValueReturnsTwoValueString(){
+	public void testappendKeyValueReturnsTwoValueString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
 		String actual = null;
@@ -308,6 +308,34 @@ public class StringWrapperTest extends TestCase {
 			e.printStackTrace();
 		}
 		String expected = "( '50.2', '74.2' )";
+		System.out.println(actual);
+		System.out.println(expected);
+		assertEquals(actual,expected);
+	}
+	
+	public void testappendKeyNullValueReturnsTwoValueString(){
+		Set<String> keySet = new LinkedHashSet<String>(); 
+		Map<String,Object> keyMap = new TreeMap<String,Object>();
+		String actual = null;
+		Double bxNum = null;
+		Double jpmNum = (74.20);
+		keySet.add("BX");
+		keySet.add("JPM");
+		keyMap.put("BX", bxNum);
+		keyMap.put("JPM", jpmNum);
+		StringWrapper sw = new StringWrapper();
+		try {
+			try {
+				actual = sw.appendKeyValue(keySet, keyMap);
+			} catch (MapSetSizeZero | MapSizeZero e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String expected = "( null, '74.2' )";
 		System.out.println(actual);
 		System.out.println(expected);
 		assertEquals(actual,expected);
