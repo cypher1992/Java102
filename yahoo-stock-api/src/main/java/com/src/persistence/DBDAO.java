@@ -50,13 +50,13 @@ public class DBDAO implements DAO<String, Object> {
 	public void add(Map<String, Object> stockMapObject) {
 		Statement stat = this.getStatement(this.getConnection());
 		StringWrapper sw = new StringWrapper();
-		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
-		Set keySet = stringWrapperMap.keySet();
+		Set keySet = stockMapObject.keySet();
 		String insertStatement = "INSERT INTO STOCK ";
+		System.out.println(stockMapObject);
 		try {
 			insertStatement += sw.appendKey(keySet);
 			insertStatement += " Values ";
-			insertStatement += sw.appendKeyValue(keySet, stockMapObject);
+			insertStatement += sw.appendKeyValue(keySet,stockMapObject);
 		} catch (SetSizeZero | MapSetSizeZero | MapSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
