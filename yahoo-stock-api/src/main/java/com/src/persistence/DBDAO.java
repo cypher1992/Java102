@@ -51,6 +51,13 @@ public class DBDAO implements DAO<String, Object> {
 		Map stringWrapperMap = sw.StringSingleQuoteMap(stockMapObject);
 		Set keySet = stringWrapperMap.keySet();
 		String insertStatement = "INSERT INTO STOCK ";
+		try {
+			insertStatement += sw.appendKey(keySet);
+		} catch (SetSizeZero e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(insertStatement);
 		String columnValue = null;
 		try {
 			columnValue = sw.appendKey(keySet);
