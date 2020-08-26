@@ -5,6 +5,8 @@ import java.sql.*;
 import java.util.Scanner;
 import java.util.Set;
 import com.src.utility.StringWrapper;
+import com.src.utility.csexception.MapSetSizeZero;
+import com.src.utility.csexception.MapSizeZero;
 import com.src.utility.csexception.SetSizeZero;
 
 public class DBDAO implements DAO<String, Object> {
@@ -53,22 +55,15 @@ public class DBDAO implements DAO<String, Object> {
 		String insertStatement = "INSERT INTO STOCK ";
 		try {
 			insertStatement += sw.appendKey(keySet);
-		} catch (SetSizeZero e) {
+			insertStatement += " Values ";
+			insertStatement += sw.appendKeyValue(keySet, stockMapObject);
+		} catch (SetSizeZero | MapSetSizeZero | MapSizeZero e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println(insertStatement);
-		String columnValue = null;
-		try {
-			columnValue = sw.appendKey(keySet);
-		} catch (SetSizeZero e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
 		
-		insertStatement += columnValue + "VALUES "; 
 		
-		System.out.println(insertStatement);
 		/**
 		stringWrapperMap.get("SYMBOL") + ""
 				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
