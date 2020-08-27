@@ -90,7 +90,7 @@ public class StringWrapper {
 				throw new MapSetSizeZero("Map & Set size is zero");
 			}
 		}
-		mapStr = "( " + mapStr + " )";
+		mapStr = "( " + mapStr + ", sysdate )";
 		
 		return mapStr;
 		
