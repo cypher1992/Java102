@@ -50,7 +50,7 @@ public class StringWrapper {
 		}else {
 			throw new SetSizeZero("Set size is zero");
 		}
-		setStr = "( " + setStr + " )";
+		setStr = "( " + setStr + ",INSERT_TS )";
 		
 		return setStr;
 		
