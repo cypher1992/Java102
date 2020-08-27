@@ -63,16 +63,6 @@ public class DBDAO implements DAO<String, Object> {
 		}
 		System.out.println(insertStatement);
 		
-		
-		/**
-		stringWrapperMap.get("SYMBOL") + ""
-				+ stringWrapperMap.get("OUTSTANDINGSHARES") + ""
-				+ stringWrapperMap.get("PRICETOEARNING") + ""
-				+ stringWrapperMap.get("EBITDA") + ""
-				+ stringWrapperMap.get("BOOKVALUEPS") + ""
-				+ stringWrapperMap.get("ANNUALTARGETPRICE") + "SYSDATE)";
-		
-		System.out.println(insertStatement);
 		try {
 			stat.executeUpdate(insertStatement);
 			this.getConnection().close();
@@ -80,7 +70,6 @@ public class DBDAO implements DAO<String, Object> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		**/
 	}
 	
 	public void query(String ticker) {
