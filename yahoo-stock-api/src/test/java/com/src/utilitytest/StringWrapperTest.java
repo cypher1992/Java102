@@ -258,7 +258,7 @@ public class StringWrapperTest extends TestCase {
 		String expected = "( '1' )";
 		assertEquals(actual,expected);
 	}
-	
+
 	
 	public void testappendKeyNullValueReturnsOneString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
@@ -387,7 +387,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( '74.2', null, '81.3' )";
+		String expected = "( '74.2', null, '81.3', sysdate )";
 		assertEquals(actual,expected);
 	}
 		
