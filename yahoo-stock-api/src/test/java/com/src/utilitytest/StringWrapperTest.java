@@ -305,7 +305,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( '50.2', '74.2' )";
+		String expected = "( '50.2', '74.2', sysdate )";
 		assertEquals(actual,expected);
 	}
 	
