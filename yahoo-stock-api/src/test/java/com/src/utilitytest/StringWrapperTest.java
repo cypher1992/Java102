@@ -283,7 +283,7 @@ public class StringWrapperTest extends TestCase {
 		assertEquals(actual,expected);
 	}
 	
-	public void testappendKeyValueReturnsTwoValueString(){
+	public void testappendKeyValueReturnsThreeValueString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
 		String actual = null;
@@ -331,11 +331,11 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( null, '74.2' )";
+		String expected = "( null, '74.2', sysdate )";
 		assertEquals(actual,expected);
 	}
 	
-	public void testappendKeyReverseNullValueReturnsTwoValueString(){
+	public void testappendKeyReverseNullValueReturnsThreeObjects(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
 		String actual = null;
@@ -357,7 +357,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( '74.2', null )";
+		String expected = "( '74.2', null, sysdate )";
 		assertEquals(actual,expected);
 	}
 	
