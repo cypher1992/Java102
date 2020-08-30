@@ -166,7 +166,7 @@ public class StringWrapperTest extends TestCase {
 	}
 	
 	
-	public void testSetThreeValueAppendStringReturnsEmptyString(){
+	public void testSetThreeValueAppendStringReturnsFourObjects(){
 		Set<String> keySet = new TreeSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
