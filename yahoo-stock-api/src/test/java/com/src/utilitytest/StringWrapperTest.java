@@ -260,7 +260,7 @@ public class StringWrapperTest extends TestCase {
 	}
 
 	
-	public void testappendKeyNullValueReturnsOneString(){
+	public void testappendKeyNullValueReturnsTwoObject(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		Map<String,Object> keyMap = new TreeMap<String,Object>();
 		String actual = null;
@@ -279,7 +279,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( null )";
+		String expected = "( null, sysdate )";
 		assertEquals(actual,expected);
 	}
 	
