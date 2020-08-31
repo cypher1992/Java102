@@ -133,7 +133,7 @@ public class StringWrapperTest extends TestCase {
 		);
 	}
 	
-	public void testSetOneValueAppendStringReturnsString(){
+	public void testSetOneValueAppendKeyReturnsString(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
 		StringWrapper sw = new StringWrapper();
@@ -144,7 +144,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( BX, INSERT_TS )";
+		String expected = "( BX, INSERT_TIMESTAMP )";
 		assertEquals(actual,expected);
 	}
 	
