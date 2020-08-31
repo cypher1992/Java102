@@ -198,7 +198,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( BX, MUFA, WFC, GS )";
+		String expected = "( BX, MUFA, WFC, GS, INSERT_TS )";
 		assertEquals(actual,expected);
 	}
 	
