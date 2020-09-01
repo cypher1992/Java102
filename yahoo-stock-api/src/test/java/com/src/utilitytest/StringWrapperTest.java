@@ -149,7 +149,7 @@ public class StringWrapperTest extends TestCase {
 	}
 	
 	
-	public void testSetTwoValueAppendStringReturnsString(){
+	public void testSetTwoValueAppendStringReturnsThreeObjects(){
 		Set<String> keySet = new HashSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
@@ -184,7 +184,7 @@ public class StringWrapperTest extends TestCase {
 	}
 	
 	
-	public void testSetFourValueappendKeyValueReturnsEmptyString(){
+	public void testSetFourValueappendKeyValueReturnsFiveString(){
 		Set<String> keySet = new LinkedHashSet<String>(); 
 		keySet.add("BX");
 		keySet.add("MUFA");
@@ -198,7 +198,7 @@ public class StringWrapperTest extends TestCase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String expected = "( BX, MUFA, WFC, GS, INSERT_TS )";
+		String expected = "( BX, MUFA, WFC, GS, INSERT_TIMESTAMP )";
 		assertEquals(actual,expected);
 	}
 	
