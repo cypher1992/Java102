@@ -65,10 +65,15 @@ public class DBDAO implements DAO<String, Object> {
 		
 		try {
 			stat.executeUpdate(insertStatement);
-			this.getConnection().close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				this.getConnection().close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 	
