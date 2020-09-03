@@ -65,7 +65,6 @@ public class StockDataTest extends TestCase
 		dao.remove();
 	}
 	
-	/**
 	public void testIsInstanceOfStockData() {
 		StockData sd = new StockData("BX");
 		Boolean isInstanceOfStockData = sd instanceof StockData ;
