@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.generics{ListMethods.java[ListMethods" modifiers="1" timestamp="1589769239557"/>
-<typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.generics{GenericMapClass.java[GenericMapClass" modifiers="1" timestamp="1589942363235"/>
-<typeInfo handle="=Java101BASICS/src&lt;com.local.lessions.datesntime{DateNTime.java[DateNTime" modifiers="1" timestamp="1592011598671"/>
-<typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.persistence.listpersist{ListDao.java[ListDao" modifiers="1" timestamp="1593139246393"/>
-<typeInfo handle="=Java101BASICS/test&lt;com.local.lessons.persistence.listpersist{ListDaoTest.java[ListDaoTest" modifiers="0" timestamp="1593051113371"/>
+    <typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.generics{ListMethods.java[ListMethods" modifiers="1" timestamp="1589769239557"/>
+    <typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.generics{GenericMapClass.java[GenericMapClass" modifiers="1" timestamp="1589942363235"/>
+    <typeInfo handle="=Java101BASICS/src&lt;com.local.lessions.datesntime{DateNTime.java[DateNTime" modifiers="1" timestamp="1592011598671"/>
+    <typeInfo handle="=Java101BASICS/src&lt;com.local.lessons.persistence.listpersist{ListDao.java[ListDao" modifiers="1" timestamp="1593139246393"/>
+    <typeInfo handle="=Java101BASICS/test&lt;com.local.lessons.persistence.listpersist{ListDaoTest.java[ListDaoTest" modifiers="0" timestamp="1593051113371"/>
 </typeInfoHistroy>

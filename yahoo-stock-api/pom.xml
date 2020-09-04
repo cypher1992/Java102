@@ -33,11 +33,6 @@
       <scope>test</scope>
 	</dependency>
 	<dependency>
-	  <groupId>com.oracle</groupId>
-	  <artifactId>ojdbc14</artifactId>
-	  <version>10.2.0.4.0</version>
-	</dependency>
-	<dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>5.0.1</version>

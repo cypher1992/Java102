@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.local.lessons.generics.ListMethods"/>
-<fullyQualifiedTypeName name="com.local.lessons.generics.GenericMapClass"/>
-<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
-<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="yahoofinance.quotes.stock.StockStats"/>
-<fullyQualifiedTypeName name="yahoofinance.Stock"/>
-<fullyQualifiedTypeName name="yahoofinance.YahooFinance"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="java.math.BigDecimal"/>
-<fullyQualifiedTypeName name="com.src.yahoofinancstock.yahoo_stock_api.StockData"/>
-<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="com.local.lessons.generics.ListMethods"/>
+    <fullyQualifiedTypeName name="com.local.lessons.generics.GenericMapClass"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="yahoofinance.quotes.stock.StockStats"/>
+    <fullyQualifiedTypeName name="yahoofinance.Stock"/>
+    <fullyQualifiedTypeName name="yahoofinance.YahooFinance"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.TreeMap"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="com.src.yahoofinancstock.yahoo_stock_api.StockData"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
 </qualifiedTypeNameHistroy>
