@@ -21,19 +21,51 @@ public class VariablesAndTypes {
 		- String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes
 	 **/
 	
-	public static void main(String[] args) {
-		byte BYTE = 123;
-		short SHORT = 32767;
-		int INT = -2147483647;
-		long LONG = -1;
-		float FLOAT = 0.14f;
-		double DOUBLE = 14.111d;
-		boolean TRUE = true;
-		char CHAR = 'A';
-		String hello = "HELLO WORLD";
-		
-		System.out.println("Here I am");
-
+	private byte BYTE = 123;
+	private short SHORT = 32767;
+	private int INT = -2147483647;
+	private long LONG = -1;
+	private float FLOAT = 0.14f;
+	private double DOUBLE = 14.111d;
+	private boolean TRUE = true;
+	private char CHAR = 'A';
+	private String STRING = "HELLO WORLD";
+	
+	public VariablesAndTypes(){
+		this.BYTE = BYTE;
 	}
+	
+	public byte getBYTE() {
+		return this.BYTE;
+	}
+	
+	public short getSHORT() {
+		return this.SHORT;
+	}
+	
+	public int getINT() {
+		return this.INT;
+	}
+	
+	public long getLONG() {
+		return this.LONG;
+	}
+	
+	public float getFLOAT() {
+		return this.FLOAT;
+	}
+	
+	public double getDOUBLE() {
+		return this.DOUBLE;
+	}
+	
+	public char getCHAR() {
+		return this.CHAR;
+	}
+	
+	public String getSTRING() {
+		return this.STRING;
+	}
+	
 
 }
