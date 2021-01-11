@@ -27,12 +27,20 @@ public class VariablesAndTypes {
 	private long LONG = -1;
 	private float FLOAT = 0.14f;
 	private double DOUBLE = 14.111d;
-	private boolean TRUE = true;
+	private boolean BOOL = true;
 	private char CHAR = 'A';
 	private String STRING = "HELLO WORLD";
 	
 	public VariablesAndTypes(){
 		this.BYTE = BYTE;
+		this.SHORT = SHORT;
+		this.INT = INT;
+		this.LONG = LONG;
+		this.FLOAT = FLOAT;
+		this.DOUBLE = DOUBLE;
+		this.BOOL= BOOL;
+		this.CHAR = CHAR;
+		this.STRING = STRING;
 	}
 	
 	public byte getBYTE() {
@@ -57,6 +65,10 @@ public class VariablesAndTypes {
 	
 	public double getDOUBLE() {
 		return this.DOUBLE;
+	}
+	
+	public boolean getBOOL() {
+		return this.BOOL;
 	}
 	
 	public char getCHAR() {

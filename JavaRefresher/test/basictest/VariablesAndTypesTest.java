@@ -1,19 +1,24 @@
 package basictest;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+import basics.VariablesAndTypes;
+
 
 class VariablesAndTypesTest {
-
+	
+	VariablesAndTypes obj = new VariablesAndTypes();
+	
+	
 	@Test
 	void testVariablesAndTypes() {
-		fail("Not yet implemented");
+		assertTrue(obj instanceof VariablesAndTypes);
 	}
 
 	@Test
 	void testGetBYTE() {
-		fail("Not yet implemented");
+		Byte actual = obj.getBYTE();
+		assertTrue(actual instanceof Byte);
 	}
 
 	@Test
