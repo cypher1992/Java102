@@ -23,17 +23,20 @@ class VariablesAndTypesTest {
 
 	@Test
 	void testGetSHORT() {
-		fail("Not yet implemented");
+		Short actual = obj.getSHORT();
+		assertTrue(actual instanceof Short);
 	}
 
 	@Test
 	void testGetINT() {
-		fail("Not yet implemented");
+		Integer actual = obj.getINT();
+		assertTrue(actual instanceof Integer);
 	}
 
 	@Test
 	void testGetLONG() {
-		fail("Not yet implemented");
+		Long actual = obj.getLONG();
+		assertTrue(actual instanceof Long);
 	}
 
 	@Test
