@@ -41,22 +41,26 @@ class VariablesAndTypesTest {
 
 	@Test
 	void testGetFLOAT() {
-		fail("Not yet implemented");
+		Float actual = obj.getFLOAT();
+		assertTrue(actual instanceof Float);
 	}
 
 	@Test
 	void testGetDOUBLE() {
-		fail("Not yet implemented");
+		Double actual = obj.getDOUBLE();
+		assertTrue(actual instanceof Double);
 	}
 
 	@Test
 	void testGetCHAR() {
-		fail("Not yet implemented");
+		Character actual = obj.getCHAR();
+		assertTrue(actual instanceof Character);
 	}
 
 	@Test
 	void testGetSTRING() {
-		fail("Not yet implemented");
+		String actual = obj.getSTRING();
+		assertTrue(actual instanceof String);
 	}
 
 }
