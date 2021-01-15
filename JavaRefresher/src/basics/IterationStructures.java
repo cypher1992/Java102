@@ -4,7 +4,8 @@ public class IterationStructures {
 	
 	private int start;
 	private int end;
-	static private int counter = 0; 
+	//static private int counter = 0; 
+	private int counter = 0; 
 	
 	public IterationStructures(int start,int end) {
 		this.start = start;
@@ -28,12 +29,12 @@ public class IterationStructures {
 		this.end = end;
 	}
 	
-	public static int getCounter() {
+	public int getCounter() {
 		return counter;
 	}
 
-	public static void setCounter(int counter) {
-		IterationStructures.counter = counter;
+	public void setCounter(int counter) {
+		this.counter = counter;
 	}
 
 	public int forLoop(){
@@ -54,6 +55,7 @@ public class IterationStructures {
 	public int doWhile() {
 		do {
 			this.setCounter(this.getCounter()+1);
+			System.out.println(this.getCounter());
 		}while(this.getCounter() < this.getEnd());
 		return this.getCounter();
 	}

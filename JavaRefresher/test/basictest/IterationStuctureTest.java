@@ -34,7 +34,8 @@ class IterationStuctureTest {
 	void testDoWhileLoop() {
 		IterationStructures is = new IterationStructures(0,5);
 		Integer actual = is.doWhile();
-		Integer expected = 6;
+		Integer expected = 5;
 		assertTrue(actual == expected);
 	}
+	
 }
