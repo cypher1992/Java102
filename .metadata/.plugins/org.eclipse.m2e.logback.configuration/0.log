@@ -3086,3 +3086,8 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracle:oj
 2021-01-12 14:30:42,410 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\zero\Project\Java_WorkSpace\yahoo-stock-api\src\main\resources
 2021-01-12 14:30:42,415 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-01-12 14:30:42,416 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\zero\Project\Java_WorkSpace\yahoo-stock-api\src\test\resources
+2021-01-14 20:24:26,937 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-01-14 20:33:37,880 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:33:37,881 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\zero\Project\Java_WorkSpace\yahoo-stock-api\src\main\resources
+2021-01-14 20:33:37,886 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:33:37,887 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\zero\Project\Java_WorkSpace\yahoo-stock-api\src\test\resources

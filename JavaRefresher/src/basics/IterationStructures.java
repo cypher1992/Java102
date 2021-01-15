@@ -44,6 +44,13 @@ public class IterationStructures {
 		return this.getCounter();
 	}
 	
+	public int whileLoop(){
+		while(this.getCounter()<this.getEnd()){
+			this.setCounter(this.getCounter()+1);
+		}
+		return this.getCounter();
+	}
+	
 	
 
 }
