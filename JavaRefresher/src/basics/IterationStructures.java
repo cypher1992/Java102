@@ -51,6 +51,15 @@ public class IterationStructures {
 		return this.getCounter();
 	}
 	
+	public int doWhile() {
+		do {
+			this.setCounter(this.getCounter()+1);
+		}while(this.getCounter() < this.getEnd());
+		return this.getCounter();
+	}
+	
+	
+	
 	
 
 }

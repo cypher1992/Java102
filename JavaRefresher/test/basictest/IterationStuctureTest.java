@@ -23,11 +23,18 @@ class IterationStuctureTest {
 	
 	
 	@Test
-	void testwhileLoop() {
+	void testWhileLoop() {
 		IterationStructures is = new IterationStructures(0,5);
 		Integer actual = is.whileLoop();
 		Integer expected = 5;
 		assertTrue(actual == expected);
 	}
-
+	
+	@Test
+	void testDoWhileLoop() {
+		IterationStructures is = new IterationStructures(0,5);
+		Integer actual = is.doWhile();
+		Integer expected = 6;
+		assertTrue(actual == expected);
+	}
 }
