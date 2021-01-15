@@ -47,5 +47,14 @@ class ConditionStructureTest {
 		Boolean actual = cs.switchIsNeutural();
 		assertTrue(actual);
 	}
+	
+	@Test
+	void testTernaryPositive() {
+		ConditionStructures cs = new ConditionStructures(1);
+		Boolean actual = cs.ternaryPositive();
+		Boolean expected = true;
+		assertEquals(actual,true);
+	}
+
 
 }

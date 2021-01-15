@@ -123,5 +123,8 @@ public class ConditionStructures {
 		}
 	}
 	
+	public Boolean ternaryPositive(){
+		return (this.getNumber() >0) ? true : false;
+	}
 	
 }

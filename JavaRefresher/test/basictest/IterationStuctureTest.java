@@ -32,9 +32,11 @@ class IterationStuctureTest {
 	
 	@Test
 	void testDoWhileLoop() {
+		// this occured because static is inplace
+		//Meaning that there is one one instance of counter for the class not multiples for each instance
 		IterationStructures is = new IterationStructures(0,5);
 		Integer actual = is.doWhile();
-		Integer expected = 5;
+		Integer expected = 6;
 		assertTrue(actual == expected);
 	}
 	
