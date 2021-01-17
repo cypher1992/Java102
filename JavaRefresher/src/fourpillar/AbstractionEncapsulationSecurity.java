@@ -1,6 +1,6 @@
 package fourpillar;
 
-abstract public class AbstractionSecurity {
+abstract public class AbstractionEncapsulationSecurity {
 	
 	/*
 	 * Abstraction - showing the necessary information towards an entity
@@ -22,10 +22,15 @@ abstract public class AbstractionSecurity {
 	private String secType;
 	
 	// can create a constructor for abstract class but not implement it
-	public AbstractionSecurity(){
+	public AbstractionEncapsulationSecurity(String ticker, String exchange, String secType){
 		this.ticker = ticker;
 		this.exchange = exchange;
 		this.secType = secType; 
+	}
+	
+	public AbstractionEncapsulationSecurity(String ticker, String exchange){
+		this.ticker = ticker;
+		this.exchange = exchange;
 	}
 	
 	public String getTicker() {
@@ -51,7 +56,7 @@ abstract public class AbstractionSecurity {
 	abstract public String info();
 	
 	public String tickSecType() {
-		return this.getTicker()+this.getSecType();
+		return this.getTicker()+this.getSecType()+"OVERRIDING";
 		
 	}
 	
