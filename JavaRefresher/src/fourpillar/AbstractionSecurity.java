@@ -7,6 +7,15 @@ abstract public class AbstractionSecurity {
 	 * Key word abstraction applies Class and Methods
 	 * Abstraction describes superclass
 	 * */
+	
+	/*
+	 * Encapsulation - wrapping both methods and attributes of an entity
+	 * Protect the class via accessors and prevent access from outside the class and package
+	 * 	Private - attributes only accessible via it on class
+	 * 	Protected - attributes only accessible via inheritance of superclass and within the same package
+	 *  Default - only accessible via within the same package
+	 *  Public - all attributes and methods are accessible outside package and class scope
+	 * */
 
 	private String ticker;
 	private String exchange;
@@ -41,5 +50,9 @@ abstract public class AbstractionSecurity {
 	
 	abstract public String info();
 	
+	public String tickSecType() {
+		return this.getTicker()+this.getSecType();
+		
+	}
 	
 }
