@@ -1,6 +1,6 @@
 package fourpillar;
 
-public class StockInheritencePolymorphism extends AbstractionEncapsulationSecurity {
+public class StockInheritencePolymorphism extends AbstractionEncapsulationSecurity{
 	
 	/*
 	 * Inheritance receives properties and behaviors of superclass via extends key word
