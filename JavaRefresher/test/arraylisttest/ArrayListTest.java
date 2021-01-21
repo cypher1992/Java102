@@ -80,5 +80,53 @@ class ArrayListTest {
 		Integer actual = arrayListCls.get(1);
 		assertEquals(expected,actual);
 	}
-
+	
+	@Test
+	void testSizeReturn0() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		Integer  expected = 0;
+		Integer actual = arrayListCls.size();
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testSizeReturn1() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		arrayListCls.add(1);
+		Integer  expected = 1;
+		Integer actual = arrayListCls.size();
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testisEmptyReturnTrue() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		Boolean  expected = true;
+		Boolean actual = arrayListCls.isEmpty();
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testisEmptyReturnFalse() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		arrayListCls.add(1);
+		Boolean  expected = false;
+		Boolean actual = arrayListCls.isEmpty();
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testclearReturn0() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		arrayListCls.add(1);
+		arrayListCls.clear();
+		Integer  expected = 0;
+		Integer actual = arrayListCls.size();
+		assertEquals(expected,actual);
+	}
 }
