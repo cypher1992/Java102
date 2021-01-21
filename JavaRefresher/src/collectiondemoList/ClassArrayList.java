@@ -1,6 +1,9 @@
 package collectiondemoList;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 /*
  * 
@@ -52,4 +55,15 @@ public class ClassArrayList {
 		this.getArrayList().clear();
 	}
 	
+	public boolean removeAll(Collection<?> c){
+		return this.getArrayList().removeAll(c);
+	}
+	
+	public boolean removeIf(Predicate<? super Integer> filter){
+		return this.getArrayList().removeIf(filter);
+	}
+	
+	public Stream<Integer> steam(){
+		return this.getArrayList().stream();
+	}
 }
