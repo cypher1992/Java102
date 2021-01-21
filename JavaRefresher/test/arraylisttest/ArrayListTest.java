@@ -131,7 +131,7 @@ class ArrayListTest {
 	}
 	
 	@Test
-	void testRemoveAllReturnEmptyArrayList() {
+	void testRemoveAllReturnsizeof0() {
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		ArrayList<Integer> removeList = new ArrayList<Integer>();
 		removeList.add(1);
@@ -144,7 +144,7 @@ class ArrayListTest {
 	}
 	
 	@Test
-	void testRemoveAll1ReturnEmptyArrayList1() {
+	void testRemoveAll1Returnsizeof1() {
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		ArrayList<Integer> removeList = new ArrayList<Integer>();
 		removeList.add(1);
@@ -156,5 +156,21 @@ class ArrayListTest {
 		Integer actual = arrayListCls.size();
 		assertEquals(expected,actual);
 	}
+	
+	@Test
+	void testRemoveAll12Returnsizeof0() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ArrayList<Integer> removeList = new ArrayList<Integer>();
+		removeList.add(1);
+		removeList.add(2);
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		arrayListCls.add(1);
+		arrayListCls.add(2);
+		arrayListCls.removeAll(removeList);
+		Integer  expected =0;
+		Integer actual = arrayListCls.size();
+		assertEquals(expected,actual);
+	}
+	
 	
 }
