@@ -40,6 +40,16 @@ public class ClassArrayList {
 		return this.getArrayList().get((int) position);
 	}
 	
+	public Integer size() {
+		return this.getArrayList().size();
+	}
 	
+	public Boolean isEmpty() {
+		return this.getArrayList().isEmpty();
+	}
+	
+	public void clear(){
+		this.getArrayList().clear();
+	}
 	
 }
