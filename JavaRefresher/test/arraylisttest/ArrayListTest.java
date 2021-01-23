@@ -3,7 +3,10 @@ package arraylisttest;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
 import collectiondemoList.ClassArrayList;
@@ -182,6 +185,16 @@ class ArrayListTest {
 		arrayListCls.removeAll(removeList);
 		Integer  expected =0;
 		Integer actual = arrayListCls.size();
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testArrayListStreamReturnList() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ArrayList<Integer> streamList = new ArrayList<Integer>();
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		List expected = streamList.stream().collect(Collectors.toList());
+		List actual = arrayListCls.stream().collect(Collectors.toList());
 		assertEquals(expected,actual);
 	}
 	

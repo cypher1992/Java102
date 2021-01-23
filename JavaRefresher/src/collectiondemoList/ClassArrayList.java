@@ -63,7 +63,7 @@ public class ClassArrayList {
 		return this.getArrayList().removeIf(filter);
 	}
 	
-	public Stream<Integer> steam(){
+	public Stream<Integer> stream(){
 		return this.getArrayList().stream();
 	}
 }
