@@ -189,13 +189,25 @@ class ArrayListTest {
 	}
 	
 	@Test
-	void testArrayListStreamReturnList() {
+	void testEmptyArrayListStreamReturnList() {
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		ArrayList<Integer> streamList = new ArrayList<Integer>();
 		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
 		List expected = streamList.stream().collect(Collectors.toList());
 		List actual = arrayListCls.stream().collect(Collectors.toList());
 		assertEquals(expected,actual);
+	}
+	
+	@Test
+	void testArrayList1StreamReturnList() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		arraylist.add(1);
+		ArrayList<Integer> streamList = new ArrayList<Integer>();
+		streamList.add(1);
+		ClassArrayList arrayListCls = new ClassArrayList(arraylist);
+		List expected = streamList.stream().collect(Collectors.toList());
+		List actual = arrayListCls.stream().collect(Collectors.toList());
+		assertEquals(actual,expected);
 	}
 	
 	
