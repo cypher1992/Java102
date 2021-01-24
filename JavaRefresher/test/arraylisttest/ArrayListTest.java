@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -210,5 +211,14 @@ class ArrayListTest {
 		assertEquals(actual,expected);
 	}
 	
-	
+	@Test
+	void testEmptyArrayListRemoveIfEvenReturnEmptyList() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		ArrayList<Integer> expected = new ArrayList<Integer>();
+		ClassArrayList arraycls = new ClassArrayList(arraylist);
+		Predicate<Integer> condition = index -> index%2==0;
+		arraycls.removeIf(condition);
+		ArrayList<Integer> actual = arraycls.getArrayList();
+		assertEquals(actual,expected);
+	}
 }
