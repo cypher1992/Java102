@@ -246,4 +246,18 @@ class ArrayListTest {
 		ArrayList<Integer> actual = arraycls.getArrayList();
 		assertEquals(actual,expected);
 	}
+	
+	@Test
+	void testArrayList21RemoveIfEvenReturnArrayList1() {
+		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		arraylist.add(2);
+		arraylist.add(1);
+		ArrayList<Integer> expected = new ArrayList<Integer>();
+		ClassArrayList arraycls = new ClassArrayList(arraylist);
+		Predicate<Integer> condition = index -> index%2==0;
+		arraycls.removeIf(condition);
+		ArrayList<Integer> actual = arraycls.getArrayList();
+		expected.add(1);
+		assertEquals(actual,expected);
+	}
 }
