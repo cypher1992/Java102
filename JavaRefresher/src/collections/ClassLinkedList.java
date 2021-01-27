@@ -9,7 +9,11 @@ public class ClassLinkedList {
 	public ClassLinkedList() {
 		this.linkedlist = linkedlist;
 	}
-
+	
+	public ClassLinkedList(LinkedList<Integer> linkedlist) {
+		this.linkedlist = linkedlist;
+	}
+	
 	public LinkedList<Integer> getLinkedlist() {
 		return linkedlist;
 	}
