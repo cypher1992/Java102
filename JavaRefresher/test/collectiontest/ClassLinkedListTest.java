@@ -1,14 +1,16 @@
 package collectiontest;
 
 import static org.junit.jupiter.api.Assertions.*;
+import collections.ClassLinkedList;
 
 import org.junit.jupiter.api.Test;
 
 class ClassLinkedListTest {
 
 	@Test
-	void testClassLinkedList() {
-		fail("Not yet implemented");
+	void testClassLinkedListIsInstanceOfClassLinkedList() {
+		ClassLinkedList linkedlist = new ClassLinkedList();
+		assertTrue(linkedlist instanceof ClassLinkedList);
 	}
 
 	@Test
